@@ -104,8 +104,6 @@
     <None Include="Resources\notepad-dot_logo-png_200x200.png" />
     <None Include="Resources\notepad-dot_logo-png_175x175.png" />
     <None Include="Resources\notepad-dot_logo-png.png" />
-    <None Include="Resources\icon6-large_161x177.png" />
-    <None Include="Resources\icon6-large.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
