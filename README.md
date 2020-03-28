@@ -1,14 +1,16 @@
 # Notepad Dot 
+
 A lightweight, very simple and easy to use text editor.
 
 ## Download
+
 [Download Notepad Dot](https://github.com/ncyxie/Notepad-Dot/releases/)
 Stable (Release) is recommended version for everyday use, least bugs.
 Beta (Pre-Release) has latest features, but it may contain bugs.
 Think wisely before choosing between those two. :)
 
 ## FAQ
---
+
 1. **Why did you decided to make a notepad?**
 
 Friend recommended me to do it, and also it is fun to mess up with files.
