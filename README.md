@@ -5,6 +5,7 @@ A lightweight, very simple and easy to use text editor.
 ## Download
 
 [Download Notepad Dot](https://github.com/ncyxie/Notepad-Dot/releases/)
+
 Stable (Release) is recommended version for everyday use, least bugs.
 Beta (Pre-Release) has latest features, but it may contain bugs.
 Think wisely before choosing between those two. :)
