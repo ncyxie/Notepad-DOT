@@ -45,5 +45,5 @@ but make sure you run Windows OS (7 or higher recommended).
 5. **Is this Notepad a virus?**
 
 No, it is not even possible. But if you still get any of detections, 
-please add an exception to your anti-virus for `Notepad Dot.exe` 
-(or the folder it is in).
+please add an exception to your anti-virus for `Notepad Dot.exe` or
+whatever you named Notepad Dot (or the folder it is in).
