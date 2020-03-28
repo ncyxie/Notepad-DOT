@@ -47,3 +47,10 @@ but make sure you run Windows OS (7 or higher recommended).
 No, it is not even possible. But if you still get any of detections, 
 please add an exception to your anti-virus for `Notepad Dot.exe` or
 whatever you named Notepad Dot (or the folder it is in).
+
+## Thanks to
+
+- xezrunner;
+- YouTube tutorials;
+- Forums support;
+- and most importantly.. YOU!
