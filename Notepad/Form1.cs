@@ -260,9 +260,9 @@ namespace Notepad
             System.Diagnostics.Process.Start("https://t.me/ncyxie");
         }
 
-        private void ourWebsiteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void GithubRepoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            System.Diagnostics.Process.Start("https://github.com/ncyxie/Notepad-Dot");
         }
 
         private void searchWithGoogleToolStripMenuItem_Click(object sender, EventArgs e)
@@ -341,7 +341,10 @@ namespace Notepad
             statusBar1.Panels[0].Text = DateTime.Now.ToString("HH:mm:ss");
         }
 
-
+        private void gitHubReleasesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/ncyxie/Notepad-Dot/releases");
+        }
     }
     }
 

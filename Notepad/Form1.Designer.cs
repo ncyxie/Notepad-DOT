@@ -41,7 +41,8 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.telegramSupportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ourWebsiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.GithubRepoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gitHubReleasesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,8 +72,8 @@
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.statusBar1 = new System.Windows.Forms.StatusBar();
             this.statusBarPanel1 = new System.Windows.Forms.StatusBarPanel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.statusBarPanel2 = new System.Windows.Forms.StatusBarPanel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).BeginInit();
@@ -159,7 +160,8 @@
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.telegramSupportToolStripMenuItem,
-            this.ourWebsiteToolStripMenuItem,
+            this.GithubRepoToolStripMenuItem,
+            this.gitHubReleasesToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
@@ -168,21 +170,28 @@
             // telegramSupportToolStripMenuItem
             // 
             this.telegramSupportToolStripMenuItem.Name = "telegramSupportToolStripMenuItem";
-            this.telegramSupportToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.telegramSupportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.telegramSupportToolStripMenuItem.Text = "&Telegram Support";
             this.telegramSupportToolStripMenuItem.Click += new System.EventHandler(this.telegramSupportToolStripMenuItem_Click);
             // 
-            // ourWebsiteToolStripMenuItem
+            // GithubRepoToolStripMenuItem
             // 
-            this.ourWebsiteToolStripMenuItem.Name = "ourWebsiteToolStripMenuItem";
-            this.ourWebsiteToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
-            this.ourWebsiteToolStripMenuItem.Text = "&Our Website (Soon)";
-            this.ourWebsiteToolStripMenuItem.Click += new System.EventHandler(this.ourWebsiteToolStripMenuItem_Click);
+            this.GithubRepoToolStripMenuItem.Name = "GithubRepoToolStripMenuItem";
+            this.GithubRepoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.GithubRepoToolStripMenuItem.Text = "&GitHub Repository";
+            this.GithubRepoToolStripMenuItem.Click += new System.EventHandler(this.GithubRepoToolStripMenuItem_Click);
+            // 
+            // gitHubReleasesToolStripMenuItem
+            // 
+            this.gitHubReleasesToolStripMenuItem.Name = "gitHubReleasesToolStripMenuItem";
+            this.gitHubReleasesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gitHubReleasesToolStripMenuItem.Text = "&GitHub Releases";
+            this.gitHubReleasesToolStripMenuItem.Click += new System.EventHandler(this.gitHubReleasesToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -412,15 +421,15 @@
             this.statusBarPanel1.Text = "statusBarPanel1";
             this.statusBarPanel1.Width = 55;
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // statusBarPanel2
             // 
             this.statusBarPanel2.Name = "statusBarPanel2";
             this.statusBarPanel2.Text = "statusBarPanel2";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Notepad
             // 
@@ -477,7 +486,7 @@
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.ToolStripMenuItem telegramSupportToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ourWebsiteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem GithubRepoToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem searchWithGoogleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchWithBingToolStripMenuItem;
@@ -490,6 +499,7 @@
         private System.Windows.Forms.StatusBarPanel statusBarPanel1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.StatusBarPanel statusBarPanel2;
+        private System.Windows.Forms.ToolStripMenuItem gitHubReleasesToolStripMenuItem;
     }
 }
 
