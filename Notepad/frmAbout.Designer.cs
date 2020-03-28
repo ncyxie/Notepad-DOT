@@ -75,7 +75,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 48);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Version: 2.0.0 Beta\r\nMade by ncyxie.\r\nThanks to xezrunner.";
+            this.label1.Text = "Version: 2.1.0 Beta\r\nMade by ncyxie.\r\nThanks to xezrunner.";
             // 
             // pictureBox1
             // 

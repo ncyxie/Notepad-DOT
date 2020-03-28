@@ -336,15 +336,15 @@ namespace Notepad
             this.textBox.ForeColor = Color.Black;
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            statusBar1.Panels[0].Text = DateTime.Now.ToString("HH:mm:ss");
-        }
-
         private void gitHubReleasesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/ncyxie/Notepad-Dot/releases");
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            statusBar1.Panels[0].Text = DateTime.Now.ToString("HH:mm:ss");
+        }
     }
-    }
+ }
 

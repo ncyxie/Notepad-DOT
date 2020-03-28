@@ -68,15 +68,18 @@
             this.blueModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pinkModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oliveModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.offToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hourClockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hourClockToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.statusBar1 = new System.Windows.Forms.StatusBar();
             this.statusBarPanel1 = new System.Windows.Forms.StatusBarPanel();
-            this.statusBarPanel2 = new System.Windows.Forms.StatusBarPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox
@@ -170,28 +173,28 @@
             // telegramSupportToolStripMenuItem
             // 
             this.telegramSupportToolStripMenuItem.Name = "telegramSupportToolStripMenuItem";
-            this.telegramSupportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.telegramSupportToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.telegramSupportToolStripMenuItem.Text = "&Telegram Support";
             this.telegramSupportToolStripMenuItem.Click += new System.EventHandler(this.telegramSupportToolStripMenuItem_Click);
             // 
             // GithubRepoToolStripMenuItem
             // 
             this.GithubRepoToolStripMenuItem.Name = "GithubRepoToolStripMenuItem";
-            this.GithubRepoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.GithubRepoToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.GithubRepoToolStripMenuItem.Text = "&GitHub Repository";
             this.GithubRepoToolStripMenuItem.Click += new System.EventHandler(this.GithubRepoToolStripMenuItem_Click);
             // 
             // gitHubReleasesToolStripMenuItem
             // 
             this.gitHubReleasesToolStripMenuItem.Name = "gitHubReleasesToolStripMenuItem";
-            this.gitHubReleasesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gitHubReleasesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.gitHubReleasesToolStripMenuItem.Text = "&GitHub Releases";
             this.gitHubReleasesToolStripMenuItem.Click += new System.EventHandler(this.gitHubReleasesToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -333,7 +336,8 @@
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.preferencesToolStripMenuItem});
+            this.preferencesToolStripMenuItem,
+            this.statusBarToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.settingsToolStripMenuItem.Text = "&Settings";
@@ -348,7 +352,7 @@
             this.pinkModeToolStripMenuItem,
             this.oliveModeToolStripMenuItem});
             this.preferencesToolStripMenuItem.Name = "preferencesToolStripMenuItem";
-            this.preferencesToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.preferencesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.preferencesToolStripMenuItem.Text = "&Preferences";
             // 
             // lightModeToolStripMenuItem
@@ -387,6 +391,42 @@
             this.oliveModeToolStripMenuItem.Text = "&Olive Mode";
             this.oliveModeToolStripMenuItem.Click += new System.EventHandler(this.oliveModeToolStripMenuItem_Click);
             // 
+            // statusBarToolStripMenuItem
+            // 
+            this.statusBarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.timeToolStripMenuItem});
+            this.statusBarToolStripMenuItem.Name = "statusBarToolStripMenuItem";
+            this.statusBarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.statusBarToolStripMenuItem.Text = "&Status Bar";
+            // 
+            // timeToolStripMenuItem
+            // 
+            this.timeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.offToolStripMenuItem,
+            this.hourClockToolStripMenuItem,
+            this.hourClockToolStripMenuItem1});
+            this.timeToolStripMenuItem.Name = "timeToolStripMenuItem";
+            this.timeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.timeToolStripMenuItem.Text = "&Time (Soon)";
+            // 
+            // offToolStripMenuItem
+            // 
+            this.offToolStripMenuItem.Name = "offToolStripMenuItem";
+            this.offToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.offToolStripMenuItem.Text = "&Off";
+            // 
+            // hourClockToolStripMenuItem
+            // 
+            this.hourClockToolStripMenuItem.Name = "hourClockToolStripMenuItem";
+            this.hourClockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hourClockToolStripMenuItem.Text = "&12 Hour Clock";
+            // 
+            // hourClockToolStripMenuItem1
+            // 
+            this.hourClockToolStripMenuItem1.Name = "hourClockToolStripMenuItem1";
+            this.hourClockToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.hourClockToolStripMenuItem1.Text = "&24 Hour Clock";
+            // 
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
@@ -408,8 +448,7 @@
             this.statusBar1.Location = new System.Drawing.Point(0, 567);
             this.statusBar1.Name = "statusBar1";
             this.statusBar1.Panels.AddRange(new System.Windows.Forms.StatusBarPanel[] {
-            this.statusBarPanel1,
-            this.statusBarPanel2});
+            this.statusBarPanel1});
             this.statusBar1.ShowPanels = true;
             this.statusBar1.Size = new System.Drawing.Size(905, 22);
             this.statusBar1.TabIndex = 2;
@@ -419,12 +458,7 @@
             // 
             this.statusBarPanel1.Name = "statusBarPanel1";
             this.statusBarPanel1.Text = "statusBarPanel1";
-            this.statusBarPanel1.Width = 55;
-            // 
-            // statusBarPanel2
-            // 
-            this.statusBarPanel2.Name = "statusBarPanel2";
-            this.statusBarPanel2.Text = "statusBarPanel2";
+            this.statusBarPanel1.Width = 60;
             // 
             // timer1
             // 
@@ -449,7 +483,6 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -498,8 +531,12 @@
         private System.Windows.Forms.StatusBar statusBar1;
         private System.Windows.Forms.StatusBarPanel statusBarPanel1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.StatusBarPanel statusBarPanel2;
         private System.Windows.Forms.ToolStripMenuItem gitHubReleasesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem statusBarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem timeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem offToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hourClockToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hourClockToolStripMenuItem1;
     }
 }
 
