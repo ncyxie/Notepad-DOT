@@ -101,7 +101,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="notepad-dot_logo-ico.ico" />
-    <Content Include="notepad-dot_logo-png.ico" />
     <None Include="Resources\notepad-dot_logo-png_200x200.png" />
     <None Include="Resources\notepad-dot_logo-png_175x175.png" />
     <None Include="Resources\notepad-dot_logo-png.png" />
