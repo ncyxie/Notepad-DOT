@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Notepad Dot** is a open source, lightweight and very simple text editor.
+**Notepad Dot** is an open source, lightweight and very simple text editor.
 It has all basic notepad functions and more junk. It is for everyday
 life, from newbies to advanced users. 
 Since it is open source, you can modify it and even make it better.
@@ -26,7 +26,7 @@ strip menu above, or click on blue **Issues** text.
 
 1. **Why did you decided to make a notepad?**
 
-Friend recommended me to do it, and also it is fun to mess up with files.
+Friend recommended me to do it, and it is fun to mess up with files.
 
 2. **Why Beta versions has only portable versions?**
 
@@ -44,7 +44,7 @@ but make sure you run Windows OS (7 or higher recommended).
 
 5. **Is this Notepad a virus?**
 
-No, it is not even possible. But if you still get any of detections, 
+No, it is not even possible. But if you still get any kind of detection, 
 please add an exception to your anti-virus for `Notepad Dot.exe` or
 whatever you named Notepad Dot (or the folder it is in).
 
