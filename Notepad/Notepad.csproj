@@ -36,7 +36,7 @@
     <StartupObject>Notepad.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icon6-large.ico</ApplicationIcon>
+    <ApplicationIcon>notepad-dot_logo-ico.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
@@ -100,7 +100,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="icon6-large.ico" />
+    <Content Include="notepad-dot_logo-ico.ico" />
+    <Content Include="notepad-dot_logo-png.ico" />
+    <None Include="Resources\notepad-dot_logo-png_200x200.png" />
+    <None Include="Resources\notepad-dot_logo-png_175x175.png" />
+    <None Include="Resources\notepad-dot_logo-png.png" />
     <None Include="Resources\icon6-large_161x177.png" />
     <None Include="Resources\icon6-large.png" />
   </ItemGroup>

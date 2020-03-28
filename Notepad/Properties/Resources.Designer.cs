@@ -79,5 +79,35 @@ namespace Notepad.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notepad_dot_logo_png {
+            get {
+                object obj = ResourceManager.GetObject("notepad-dot_logo-png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notepad_dot_logo_png_175x175 {
+            get {
+                object obj = ResourceManager.GetObject("notepad-dot_logo-png_175x175", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notepad_dot_logo_png_200x200 {
+            get {
+                object obj = ResourceManager.GetObject("notepad-dot_logo-png_200x200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
