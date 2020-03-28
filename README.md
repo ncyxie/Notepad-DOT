@@ -1,6 +1,11 @@
 # Notepad Dot 
 
-A lightweight, very simple and easy to use text editor.
+## Introduction
+
+**Notepad Dot** is a open source, lightweight, very simple text editor.
+It has all basic notepad functions and more junk. It is for everyday
+life, from newbies to advanced users. 
+Since it is open source, you can modify it and even make it better.
 
 ## Download
 
@@ -11,6 +16,11 @@ Stable (Release) is recommended version for everyday use, least bugs.
 Beta (Pre-Release) has latest features, but it may contain bugs.
 
 Think wisely before choosing between those two. :)
+
+## Bug reports
+
+Since you are here, you just need to enter [Issues](https://github.com/ncyxie/Notepad-Dot/issues/) page in
+strip menu above, or click on blue **Issues** text.
 
 ## FAQ
 
