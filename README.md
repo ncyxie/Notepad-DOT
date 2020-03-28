@@ -8,6 +8,7 @@ A lightweight, very simple and easy to use text editor.
 
 Stable (Release) is recommended version for everyday use, least bugs.
 Beta (Pre-Release) has latest features, but it may contain bugs.
+
 Think wisely before choosing between those two. :)
 
 ## FAQ
