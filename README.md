@@ -12,10 +12,13 @@ Since it is open source, you can modify it and even make it better.
 [Download Notepad Dot](https://github.com/ncyxie/Notepad-Dot/releases/)
 
 Stable (Release) is recommended version for everyday use, least bugs.
-
 Beta (Pre-Release) has latest features, but it may contain bugs.
-
 Think wisely before choosing between those two. :)
+
+## Screenshots
+
+N/A, screenshots will be available when first stable version 
+will be released.
 
 ## Bug reports
 
@@ -50,7 +53,7 @@ whatever you named Notepad Dot (or the folder it is in).
 
 ## Thanks to
 
-- xezrunner;
+- [XeZrunner;](https://github.com/XeZrunner/)
 - YouTube tutorials;
 - Forums support;
 - and most importantly.. YOU!
