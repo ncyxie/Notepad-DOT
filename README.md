@@ -38,7 +38,7 @@ Stable has setup and portable file for sure.
 
 3. **Does this Notepad works with Mac or Linux?**
 
-Unfortunately, no. This application is optimized only for Windows.
+Unfortunately, no. This application is optimized only for Windows OS.
 
 4. **What are this Notepad system requirements?**
 
