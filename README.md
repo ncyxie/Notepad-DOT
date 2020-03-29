@@ -53,7 +53,7 @@ whatever you named Notepad Dot (or the folder it is in).
 
 ## Thanks to
 
-- [XeZrunner;](https://github.com/XeZrunner/)
+- [XeZrunner](https://github.com/XeZrunner/);
 - YouTube tutorials;
 - Forums support;
 - and most importantly.. YOU!
