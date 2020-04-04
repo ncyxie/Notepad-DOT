@@ -1,6 +1,59 @@
-# Notepad-Dot
-It's a open source notepad for everyone.
--------
-A lightweight, very simple and easy to use text editor.
+# Notepad Dot 
+
+## Introduction
+
+**Notepad Dot** is an open source, lightweight and very simple text editor.
+It has all basic notepad functions and more junk. It is for everyday
+life, from newbies to advanced users. 
+Since it is open source, you can modify it and even make it better.
+
+## Download
 
 [Download Notepad Dot](https://github.com/ncyxie/Notepad-Dot/releases/)
+
+Stable (Release) is recommended version for everyday use, least bugs.
+Beta (Pre-Release) has latest features, but it may contain bugs.
+Think wisely before choosing between those two. :)
+
+## Screenshots
+
+N/A, screenshots will be available when first stable version 
+will be released.
+
+## Bug reports
+
+Since you are here, you just need to enter [Issues](https://github.com/ncyxie/Notepad-Dot/issues/) page in
+strip menu above, or click on blue **Issues** text.
+
+## FAQ
+
+1. **Why did you decided to make a notepad?**
+
+Friend recommended me to do it, and it is fun to mess up with files.
+
+2. **Why Beta versions has only portable versions?**
+
+Because it is more convenient to just compile notepad and paste it here.
+Stable has setup and portable file for sure.
+
+3. **Does this Notepad works with Mac or Linux?**
+
+Unfortunately, no. This application is optimized only for Windows OS.
+
+4. **What are this Notepad system requirements?**
+
+No special requirements are needed, even junk PC can run this application, 
+but make sure you run Windows OS (7 or higher recommended).
+
+5. **Is this Notepad a virus?**
+
+No, it is not even possible. But if you still get any kind of detection, 
+please add an exception to your anti-virus for `Notepad Dot.exe` or
+whatever you named Notepad Dot (or the folder it is in).
+
+## Thanks to
+
+- [XeZrunner](https://github.com/XeZrunner/);
+- YouTube tutorials;
+- Forums support;
+- and most importantly.. YOU!
