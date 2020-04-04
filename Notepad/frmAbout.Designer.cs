@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAbout));
             this.lblProductName = new System.Windows.Forms.Label();
             this.btnOK = new System.Windows.Forms.Button();
             this.lblProductVersion = new System.Windows.Forms.Label();
@@ -79,11 +80,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Notepad.Properties.Resources.notepad_dot_logo_png_200x200;
-            this.pictureBox1.Location = new System.Drawing.Point(149, 6);
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(144, 7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(163, 193);
-            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.Size = new System.Drawing.Size(168, 194);
+            this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // frmAbout

@@ -345,6 +345,7 @@ namespace Notepad
         {
             statusBar1.Panels[0].Text = DateTime.Now.ToString("HH:mm:ss");
         }
+
     }
  }
 

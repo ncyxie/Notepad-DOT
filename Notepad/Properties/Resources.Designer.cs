@@ -109,5 +109,15 @@ namespace Notepad.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notepad_dot_logo_png_200x2001 {
+            get {
+                object obj = ResourceManager.GetObject("notepad-dot_logo-png_200x2001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
