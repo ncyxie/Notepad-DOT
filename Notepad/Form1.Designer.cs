@@ -414,18 +414,21 @@
             this.offToolStripMenuItem.Name = "offToolStripMenuItem";
             this.offToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.offToolStripMenuItem.Text = "&Off";
+            this.offToolStripMenuItem.Click += new System.EventHandler(this.offToolStripMenuItem_Click);
             // 
             // hourClockToolStripMenuItem
             // 
             this.hourClockToolStripMenuItem.Name = "hourClockToolStripMenuItem";
             this.hourClockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.hourClockToolStripMenuItem.Text = "&12 Hour Clock";
+            this.hourClockToolStripMenuItem.Click += new System.EventHandler(this.hourClockToolStripMenuItem_Click_1);
             // 
             // hourClockToolStripMenuItem1
             // 
             this.hourClockToolStripMenuItem1.Name = "hourClockToolStripMenuItem1";
             this.hourClockToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.hourClockToolStripMenuItem1.Text = "&24 Hour Clock";
+            this.hourClockToolStripMenuItem1.Click += new System.EventHandler(this.hourClockToolStripMenuItem1_Click);
             // 
             // printDocument1
             // 

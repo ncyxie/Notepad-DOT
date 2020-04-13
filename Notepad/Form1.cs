@@ -27,6 +27,8 @@ namespace Notepad
             {
                 this.BackColor = Color.FromArgb(30, 30, 30);
             }
+
+            statusBar1.Panels[0].Text = "";
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
@@ -343,7 +345,42 @@ namespace Notepad
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            statusBar1.Panels[0].Text = DateTime.Now.ToString("HH:mm:ss");
+            if (hourClockToolStripMenuItem.Checked)
+            {
+                statusBar1.Panels[0].Text = DateTime.Now.ToString("hh:mm:ss");
+            }
+            else if (hourClockToolStripMenuItem1.Checked)
+            {
+                statusBar1.Panels[0].Text = DateTime.Now.ToString("HH:mm:ss");
+            }
+        }
+
+        private void hourClockToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            hourClockToolStripMenuItem.Checked = true;
+            hourClockToolStripMenuItem1.Checked = false;
+            offToolStripMenuItem.Checked = false;
+
+            timer1.Start();
+        }
+
+        private void hourClockToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            hourClockToolStripMenuItem.Checked = false;
+            hourClockToolStripMenuItem1.Checked = true;
+            offToolStripMenuItem.Checked = false;
+
+            timer1.Start();
+        }
+
+        private void offToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            hourClockToolStripMenuItem.Checked = false;
+            hourClockToolStripMenuItem1.Checked = false;
+            offToolStripMenuItem.Checked = true;
+
+            timer1.Stop();
+            statusBar1.Panels[0].Text = "";
         }
 
     }
