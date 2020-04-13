@@ -78,6 +78,8 @@
             this.statusBar1 = new System.Windows.Forms.StatusBar();
             this.statusBarPanel1 = new System.Windows.Forms.StatusBarPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).BeginInit();
             this.SuspendLayout();
@@ -414,18 +416,21 @@
             this.offToolStripMenuItem.Name = "offToolStripMenuItem";
             this.offToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.offToolStripMenuItem.Text = "&Off";
+            this.offToolStripMenuItem.Click += new System.EventHandler(this.offToolStripMenuItem_Click);
             // 
             // hourClockToolStripMenuItem
             // 
             this.hourClockToolStripMenuItem.Name = "hourClockToolStripMenuItem";
             this.hourClockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.hourClockToolStripMenuItem.Text = "&12 Hour Clock";
+            this.hourClockToolStripMenuItem.Click += new System.EventHandler(this.hourClockToolStripMenuItem_Click);
             // 
             // hourClockToolStripMenuItem1
             // 
             this.hourClockToolStripMenuItem1.Name = "hourClockToolStripMenuItem1";
             this.hourClockToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.hourClockToolStripMenuItem1.Text = "&24 Hour Clock";
+            this.hourClockToolStripMenuItem1.Click += new System.EventHandler(this.hourClockToolStripMenuItem1_Click);
             // 
             // printDocument1
             // 
@@ -464,6 +469,14 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            // 
+            // timer3
+            // 
+            this.timer3.Enabled = true;
             // 
             // Notepad
             // 
@@ -537,6 +550,8 @@
         private System.Windows.Forms.ToolStripMenuItem offToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hourClockToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hourClockToolStripMenuItem1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer3;
     }
 }
 
