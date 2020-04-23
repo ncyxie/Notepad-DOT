@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
 
 namespace Notepad
 {
@@ -28,7 +30,10 @@ namespace Notepad
                 this.BackColor = Color.FromArgb(30, 30, 30);
             }
 
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
             statusBar1.Panels[0].Text = "";
+            statusBar1.Panels[1].Text = "";
+            statusBar1.Panels[2].Text = "";
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
@@ -183,10 +188,6 @@ namespace Notepad
                     Application.Exit();
                 }
             }
-        }
-        private void textBox_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void darkModeToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -347,11 +348,11 @@ namespace Notepad
         {
             if (hourClockToolStripMenuItem.Checked)
             {
-                statusBar1.Panels[0].Text = DateTime.Now.ToString("hh:mm:ss");
+                statusBar1.Panels[0].Text = DateTime.Now.ToString("hh:mm tt ");
             }
             else if (hourClockToolStripMenuItem1.Checked)
             {
-                statusBar1.Panels[0].Text = DateTime.Now.ToString("HH:mm:ss");
+                statusBar1.Panels[0].Text = DateTime.Now.ToString("HH:mm");
             }
         }
 
@@ -383,6 +384,54 @@ namespace Notepad
             statusBar1.Panels[0].Text = "";
         }
 
+        private void WordCounter(object sender, EventArgs e)
+        {
+            string txt = textBox.Text;
+            char[] separator = { ' ' };
+
+            int wordsCount = txt.Split(separator, StringSplitOptions.RemoveEmptyEntries).Length;
+
+            statusBar1.Panels[1].Text = "Words: " + wordsCount.ToString();
+        }
+
+        private void onToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            onToolStripMenuItem.Checked = true;
+            offToolStripMenuItem1.Checked = false;
+            textBox.TextChanged += WordCounter;
+        }
+
+        private void offToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            onToolStripMenuItem.Checked = false;
+            offToolStripMenuItem1.Checked = true;
+            textBox.TextChanged -= WordCounter;
+            statusBar1.Panels[1].Text = "";
+        }
+
+
+        private void CharCounter(object sender, EventArgs e)
+        {
+            string txt = textBox.Text;
+
+            int charCount = txt.Length;
+            statusBar1.Panels[2].Text = "Characters: " + charCount.ToString();
+        }
+
+        private void onToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            onToolStripMenuItem1.Checked = true;
+            offToolStripMenuItem2.Checked = false;
+            textBox.TextChanged += CharCounter;
+        }
+
+        private void offToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            onToolStripMenuItem1.Checked = false;
+            offToolStripMenuItem2.Checked = true;
+            textBox.TextChanged -= CharCounter;
+            statusBar1.Panels[2].Text = "";
+        }
     }
  }
 

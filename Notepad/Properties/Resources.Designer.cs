@@ -63,9 +63,9 @@ namespace Notepad.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon6_large {
+        internal static System.Drawing.Bitmap Notepad_DOT_134x196 {
             get {
-                object obj = ResourceManager.GetObject("icon6-large", resourceCulture);
+                object obj = ResourceManager.GetObject("Notepad-DOT-134x196", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,49 +73,9 @@ namespace Notepad.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icon6_large_161x177 {
+        internal static System.Drawing.Bitmap Notepad_Dot_176x276 {
             get {
-                object obj = ResourceManager.GetObject("icon6-large_161x177", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap notepad_dot_logo_png {
-            get {
-                object obj = ResourceManager.GetObject("notepad-dot_logo-png", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap notepad_dot_logo_png_175x175 {
-            get {
-                object obj = ResourceManager.GetObject("notepad-dot_logo-png_175x175", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap notepad_dot_logo_png_200x200 {
-            get {
-                object obj = ResourceManager.GetObject("notepad-dot_logo-png_200x200", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap notepad_dot_logo_png_200x2001 {
-            get {
-                object obj = ResourceManager.GetObject("notepad-dot_logo-png_200x2001", resourceCulture);
+                object obj = ResourceManager.GetObject("Notepad-Dot-176x276", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

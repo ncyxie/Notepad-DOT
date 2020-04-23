@@ -7,7 +7,7 @@
     <ProjectGuid>{1544B42E-6F7C-42B5-B4F8-786B8C2C5D9A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Notepad</RootNamespace>
-    <AssemblyName>Notepad Dot</AssemblyName>
+    <AssemblyName>Notepad DOT</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -36,7 +36,7 @@
     <StartupObject>Notepad.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>notepad-dot_logo-ico.ico</ApplicationIcon>
+    <ApplicationIcon>Notepad-DOT-134x196-ico.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
@@ -100,11 +100,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Notepad-DOT-134x196-ico.ico" />
     <Content Include="notepad-dot_logo-ico.ico" />
-    <None Include="Resources\notepad-dot_logo-png_200x2001.png" />
-    <None Include="Resources\notepad-dot_logo-png_200x200.png" />
-    <None Include="Resources\notepad-dot_logo-png_175x175.png" />
-    <None Include="Resources\notepad-dot_logo-png.png" />
+    <None Include="Resources\Notepad-DOT-134x196.png" />
+    <None Include="Resources\Notepad-Dot-176x276.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
