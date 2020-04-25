@@ -83,7 +83,7 @@
             this.pictureBox1.BackgroundImage = global::Notepad.Properties.Resources.Notepad_DOT_134x196;
             this.pictureBox1.Location = new System.Drawing.Point(168, 7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(137, 194);
+            this.pictureBox1.Size = new System.Drawing.Size(134, 194);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
