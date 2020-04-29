@@ -52,6 +52,7 @@ but make sure you run Windows OS (7 or higher recommended).
 No, it is not even possible. But if you still get any kind of detection, 
 please add an exception to your anti-virus for `Notepad DOT.exe` or
 whatever you named Notepad DOT (or the folder it is in).
+If you still do not trust me, you can compile application yourself.
 
 ## Thanks to
 
