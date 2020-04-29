@@ -90,6 +90,7 @@
             this.statusBarPanel2 = new System.Windows.Forms.StatusBarPanel();
             this.statusBarPanel3 = new System.Windows.Forms.StatusBarPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.colorModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).BeginInit();
@@ -391,15 +392,16 @@
             this.darkModeToolStripMenuItem,
             this.blueModeToolStripMenuItem,
             this.pinkModeToolStripMenuItem,
-            this.oliveModeToolStripMenuItem});
+            this.oliveModeToolStripMenuItem,
+            this.colorModeToolStripMenuItem});
             this.preferencesToolStripMenuItem.Name = "preferencesToolStripMenuItem";
-            this.preferencesToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.preferencesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.preferencesToolStripMenuItem.Text = "&Appearance";
             // 
             // lightModeToolStripMenuItem
             // 
             this.lightModeToolStripMenuItem.Name = "lightModeToolStripMenuItem";
-            this.lightModeToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.lightModeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lightModeToolStripMenuItem.Text = "&Light Mode";
             this.lightModeToolStripMenuItem.Click += new System.EventHandler(this.lightModeToolStripMenuItem_Click);
             // 
@@ -407,28 +409,28 @@
             // 
             this.darkModeToolStripMenuItem.CheckOnClick = true;
             this.darkModeToolStripMenuItem.Name = "darkModeToolStripMenuItem";
-            this.darkModeToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.darkModeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.darkModeToolStripMenuItem.Text = "&Dark Mode";
             this.darkModeToolStripMenuItem.Click += new System.EventHandler(this.darkModeToolStripMenuItem_Click_1);
             // 
             // blueModeToolStripMenuItem
             // 
             this.blueModeToolStripMenuItem.Name = "blueModeToolStripMenuItem";
-            this.blueModeToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.blueModeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.blueModeToolStripMenuItem.Text = "&Blue Mode";
             this.blueModeToolStripMenuItem.Click += new System.EventHandler(this.blueModeToolStripMenuItem_Click);
             // 
             // pinkModeToolStripMenuItem
             // 
             this.pinkModeToolStripMenuItem.Name = "pinkModeToolStripMenuItem";
-            this.pinkModeToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.pinkModeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pinkModeToolStripMenuItem.Text = "&Pink Mode";
             this.pinkModeToolStripMenuItem.Click += new System.EventHandler(this.pinkModeToolStripMenuItem_Click);
             // 
             // oliveModeToolStripMenuItem
             // 
             this.oliveModeToolStripMenuItem.Name = "oliveModeToolStripMenuItem";
-            this.oliveModeToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.oliveModeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.oliveModeToolStripMenuItem.Text = "&Olive Mode";
             this.oliveModeToolStripMenuItem.Click += new System.EventHandler(this.oliveModeToolStripMenuItem_Click);
             // 
@@ -439,7 +441,7 @@
             this.wordCounterToolStripMenuItem,
             this.characterCounterToolStripMenuItem});
             this.statusBarToolStripMenuItem.Name = "statusBarToolStripMenuItem";
-            this.statusBarToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.statusBarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.statusBarToolStripMenuItem.Text = "&Status Bar";
             // 
             // timeToolStripMenuItem
@@ -571,6 +573,13 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // colorModeToolStripMenuItem
+            // 
+            this.colorModeToolStripMenuItem.Name = "colorModeToolStripMenuItem";
+            this.colorModeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.colorModeToolStripMenuItem.Text = "&Color Mode";
+            this.colorModeToolStripMenuItem.Click += new System.EventHandler(this.colorModeToolStripMenuItem_Click_1);
+            // 
             // Notepad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -657,6 +666,7 @@
         private System.Windows.Forms.ToolStripMenuItem replaceSoonToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem5;
         public System.Windows.Forms.StatusBarPanel statusBarPanel1;
+        private System.Windows.Forms.ToolStripMenuItem colorModeToolStripMenuItem;
     }
 }
 

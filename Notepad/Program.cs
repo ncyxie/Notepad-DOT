@@ -1,22 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Notepad
 {
+
     static class Program
     {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+         static void Main(string[] args)
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Notepad());
+            Notepad notepad = new Notepad();
+            if(args.Length > 0)
+            {
+                string path = args[0];
+                try
+                    {
+                        using (StreamReader sr = new StreamReader(path))
+                        {
+                            Task<string> text = sr.ReadToEndAsync();
+                        notepad.textBox.Text = text.Result;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+            }
+            Application.Run(notepad);
+
+
         }
     }
 }

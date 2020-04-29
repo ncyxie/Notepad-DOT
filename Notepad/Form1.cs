@@ -65,6 +65,11 @@ namespace Notepad
             }
         }
 
+        internal ColorDialog ColorDialog()
+        {
+            throw new NotImplementedException();
+        }
+
         private async void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(path))
@@ -338,6 +343,25 @@ namespace Notepad
             this.textBox.BackColor = Color.FromArgb(255, 192, 203);
             this.textBox.ForeColor = Color.Black;
         }
+         private void colorModeToolStripMenuItem_Click_1(object sender, EventArgs e)
+         {
+            darkModeToolStripMenuItem.Checked = false;
+            lightModeToolStripMenuItem.Checked = false;
+            blueModeToolStripMenuItem.Checked = false;
+            oliveModeToolStripMenuItem.Checked = false;
+            pinkModeToolStripMenuItem.Checked = false;
+            colorModeToolStripMenuItem.Checked = true;
+
+            Properties.Settings.Default.Theme = "color";
+            
+            ColorDialog MyDialog = new ColorDialog();
+
+    MyDialog.Color = textBox.BackColor;
+    
+    if (MyDialog.ShowDialog() == DialogResult.OK)
+        textBox.BackColor =  MyDialog.Color;
+
+         }
 
         private void gitHubReleasesToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -432,6 +456,8 @@ namespace Notepad
             textBox.TextChanged -= CharCounter;
             statusBar1.Panels[2].Text = "";
         }
-    }
- }
+
+
+    } 
+}
 
