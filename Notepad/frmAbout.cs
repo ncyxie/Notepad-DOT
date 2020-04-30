@@ -12,6 +12,7 @@ namespace Notepad
 {
     public partial class frmAbout : Form
     {
+        public Notepad notepad;
         public frmAbout()
         {
             InitializeComponent();

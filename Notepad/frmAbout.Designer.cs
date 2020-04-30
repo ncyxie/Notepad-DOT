@@ -50,7 +50,7 @@
             // btnOK
             // 
             this.btnOK.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(105, 216);
+            this.btnOK.Location = new System.Drawing.Point(105, 221);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(103, 33);
             this.btnOK.TabIndex = 1;
@@ -72,11 +72,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.label1.Location = new System.Drawing.Point(13, 145);
+            this.label1.Location = new System.Drawing.Point(13, 140);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 48);
+            this.label1.Size = new System.Drawing.Size(153, 64);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Version: 1.0.0 Stable \r\nMade by ncyxie.\r\nThanks to xezrunner.";
+            this.label1.Text = "Version: 1.1.0 Stable \r\nMade by ncyxie.\r\nThanks to XeZrunner.\r\nThanks to zero9178" +
+    ".";
             // 
             // pictureBox1
             // 
@@ -91,7 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 266);
+            this.ClientSize = new System.Drawing.Size(314, 273);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblProductVersion);
