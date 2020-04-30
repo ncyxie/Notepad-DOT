@@ -21,19 +21,22 @@ namespace Notepad
         public Notepad()
         {
             InitializeComponent();
-            if (Properties.Settings.Default.Theme == "light")
-            {
-                this.BackColor = Color.White;
-            }
-            else
-            {
-                this.BackColor = Color.FromArgb(30, 30, 30);
-            }
 
             Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
+
             statusBar1.Panels[0].Text = "";
             statusBar1.Panels[1].Text = "";
             statusBar1.Panels[2].Text = "";
+
+            offToolStripMenuItem3.Checked = true;
+            onToolStripMenuItem2.Checked = false;
+            statusBar1.Hide();
+            timeToolStripMenuItem.Enabled = false;
+            wordCounterToolStripMenuItem.Enabled = false;
+            characterCounterToolStripMenuItem.Enabled = false;
+
+            bothToolStripMenuItem.Checked = true;
+            textBox.WordWrap = false;
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
@@ -195,20 +198,6 @@ namespace Notepad
             }
         }
 
-        private void darkModeToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            darkModeToolStripMenuItem.Checked = true;
-            lightModeToolStripMenuItem.Checked = false;
-            blueModeToolStripMenuItem.Checked = false;
-            oliveModeToolStripMenuItem.Checked = false;
-            pinkModeToolStripMenuItem.Checked = false;
-
-            Properties.Settings.Default.Theme = "dark";
-
-            this.textBox.BackColor = Color.FromArgb(30, 30, 30);
-            this.textBox.ForeColor = Color.White;
-        }
-
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             textBox.Undo();
@@ -295,11 +284,27 @@ namespace Notepad
             blueModeToolStripMenuItem.Checked = false;
             oliveModeToolStripMenuItem.Checked = false;
             pinkModeToolStripMenuItem.Checked = false;
+            colorModeToolStripMenuItem.Checked = false;
 
             Properties.Settings.Default.Theme = "light";
 
             this.textBox.BackColor = Color.White;
             this.textBox.ForeColor = Color.Black;
+        }
+
+        private void darkModeToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            darkModeToolStripMenuItem.Checked = true;
+            lightModeToolStripMenuItem.Checked = false;
+            blueModeToolStripMenuItem.Checked = false;
+            oliveModeToolStripMenuItem.Checked = false;
+            pinkModeToolStripMenuItem.Checked = false;
+            colorModeToolStripMenuItem.Checked = false;
+
+            Properties.Settings.Default.Theme = "dark";
+
+            this.textBox.BackColor = Color.FromArgb(30, 30, 30);
+            this.textBox.ForeColor = Color.White;
         }
 
         private void blueModeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -309,6 +314,7 @@ namespace Notepad
             blueModeToolStripMenuItem.Checked = true;
             oliveModeToolStripMenuItem.Checked = false;
             pinkModeToolStripMenuItem.Checked = false;
+            colorModeToolStripMenuItem.Checked = false;
 
             Properties.Settings.Default.Theme = "blue";
 
@@ -323,6 +329,7 @@ namespace Notepad
             blueModeToolStripMenuItem.Checked = false;
             oliveModeToolStripMenuItem.Checked = true;
             pinkModeToolStripMenuItem.Checked = false;
+            colorModeToolStripMenuItem.Checked = false;
 
             Properties.Settings.Default.Theme = "olive";
 
@@ -337,6 +344,7 @@ namespace Notepad
             blueModeToolStripMenuItem.Checked = false;
             oliveModeToolStripMenuItem.Checked = false;
             pinkModeToolStripMenuItem.Checked = true;
+            colorModeToolStripMenuItem.Checked = false;
 
             Properties.Settings.Default.Theme = "pink";
 
@@ -372,7 +380,7 @@ namespace Notepad
         {
             if (hourClockToolStripMenuItem.Checked)
             {
-                statusBar1.Panels[0].Text = DateTime.Now.ToString("hh:mm tt ");
+                statusBar1.Panels[0].Text = DateTime.Now.ToString("hh:mm tt");
             }
             else if (hourClockToolStripMenuItem1.Checked)
             {
@@ -457,7 +465,84 @@ namespace Notepad
             statusBar1.Panels[2].Text = "";
         }
 
+        private void noneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            noneToolStripMenuItem.Checked = true;
+            bothToolStripMenuItem.Checked = false;
+            horizontalToolStripMenuItem.Checked = false;
+            verticalToolStripMenuItem.Checked = false;
 
+            textBox.ScrollBars = ScrollBars.None;
+            textBox.WordWrap = true;
+        }
+
+        private void bothToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            noneToolStripMenuItem.Checked = false;
+            bothToolStripMenuItem.Checked = true;
+            horizontalToolStripMenuItem.Checked = false;
+            verticalToolStripMenuItem.Checked = false;
+
+            textBox.ScrollBars = ScrollBars.Both;
+            textBox.WordWrap = false;
+        }
+
+        private void horizontalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            noneToolStripMenuItem.Checked = false;
+            bothToolStripMenuItem.Checked = false;
+            horizontalToolStripMenuItem.Checked = true;
+            verticalToolStripMenuItem.Checked = false;
+
+            textBox.ScrollBars = ScrollBars.Horizontal;
+            textBox.WordWrap = false;
+        }
+
+        private void verticalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            noneToolStripMenuItem.Checked = false;
+            bothToolStripMenuItem.Checked = false;
+            horizontalToolStripMenuItem.Checked = false;
+            verticalToolStripMenuItem.Checked = true;
+
+            textBox.ScrollBars = ScrollBars.Vertical;
+            textBox.WordWrap = true;
+        }
+
+        private void offToolStripMenuItem3_Click_1(object sender, EventArgs e)
+        {
+            offToolStripMenuItem3.Checked = true;
+            onToolStripMenuItem2.Checked = false;
+            statusBar1.Hide();
+            timeToolStripMenuItem.Enabled = false;
+            wordCounterToolStripMenuItem.Enabled = false;
+            characterCounterToolStripMenuItem.Enabled = false;
+        }
+
+        private void onToolStripMenuItem2_Click_1(object sender, EventArgs e)
+        {
+            offToolStripMenuItem3.Checked = false;
+            onToolStripMenuItem2.Checked = true;
+            statusBar1.Show();
+            timeToolStripMenuItem.Enabled = true;
+            wordCounterToolStripMenuItem.Enabled = true;
+            characterCounterToolStripMenuItem.Enabled = true;
+        }
+
+        private void timeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wordCounterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterCounterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     } 
 }
 

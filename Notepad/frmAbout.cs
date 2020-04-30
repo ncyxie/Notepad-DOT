@@ -13,6 +13,7 @@ namespace Notepad
     public partial class frmAbout : Form
     {
         public Notepad notepad;
+
         public frmAbout()
         {
             InitializeComponent();
@@ -46,6 +47,7 @@ namespace Notepad
                 this.ForeColor = Color.Black;
                 btnOK.ForeColor = Color.Black;
             }
+
         }
 
         private void btnOK_Click(object sender, EventArgs e)
