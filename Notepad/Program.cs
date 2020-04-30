@@ -28,7 +28,7 @@ namespace Notepad
                         {
                             Task<string> text = sr.ReadToEndAsync();
                         notepad.textBox.Text = text.Result;
-                        notepad.textBox.SelectionLength = 0;
+                        notepad.textBox.Select(0, 0);
                         }
                     }
                     catch (Exception ex)
