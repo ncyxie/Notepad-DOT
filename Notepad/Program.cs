@@ -23,7 +23,7 @@ namespace Notepad
             {
                 string path = args[0];
                 try
-                    {
+                {
                         using (StreamReader sr = new StreamReader(path))
                         {
                             Task<string> text = sr.ReadToEndAsync();
@@ -34,7 +34,7 @@ namespace Notepad
                     catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                }
             }
             Application.Run(notepad);
 
