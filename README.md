@@ -2,7 +2,7 @@
 
 ## Latest News
 
-**NOTEPAD DOT v1.1.0-STABLE VERSION IS RELEASED NOW!**
+**NOTEPAD DOT v1.1.0-STABLE VERSION IS OUT NOW!**
 
 ## Introduction
 
