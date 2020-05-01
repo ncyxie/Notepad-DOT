@@ -1,5 +1,9 @@
 # Notepad DOT
 
+## Latest News
+
+**NOTEPAD DOT v1.1.0-STABLE VERSION IS RELEASED NOW!**
+
 ## Introduction
 
 **Notepad DOT** is an open source, lightweight and very simple text editor.
