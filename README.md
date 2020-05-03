@@ -4,6 +4,8 @@
 
 **NOTEPAD DOT v1.1.0-STABLE VERSION IS OUT NOW!**
 
+**FEEL FREE TO SHARE YOUR IDEAS, BUGS OF THIS NOTEPAD!**
+
 ## Introduction
 
 **Notepad DOT** is an open source, lightweight and very simple text editor.
