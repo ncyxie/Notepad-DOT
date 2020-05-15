@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Drawing.Printing;
+using System.Globalization;
 using System.IO;
-using System.Linq;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Globalization;
-using System.Threading;
 
 namespace Notepad
 {
@@ -96,7 +90,7 @@ namespace Notepad
                     }
                 }
             }
-            else 
+            else
             {
                 try
                 {
@@ -125,7 +119,7 @@ namespace Notepad
                             await sw.WriteLineAsync(textBox.Text);
                         }
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -140,7 +134,7 @@ namespace Notepad
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using(frmAbout frm=new frmAbout())
+            using (frmAbout frm = new frmAbout())
             {
                 frm.ShowDialog();
             }
@@ -351,8 +345,8 @@ namespace Notepad
             this.textBox.BackColor = Color.FromArgb(255, 192, 203);
             this.textBox.ForeColor = Color.Black;
         }
-         private void colorModeToolStripMenuItem_Click_1(object sender, EventArgs e)
-         {
+        private void colorModeToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
             darkModeToolStripMenuItem.Checked = false;
             lightModeToolStripMenuItem.Checked = false;
             blueModeToolStripMenuItem.Checked = false;
@@ -361,15 +355,15 @@ namespace Notepad
             colorModeToolStripMenuItem.Checked = true;
 
             Properties.Settings.Default.Theme = "color";
-            
+
             ColorDialog MyDialog = new ColorDialog();
 
-    MyDialog.Color = textBox.BackColor;
-    
-    if (MyDialog.ShowDialog() == DialogResult.OK)
-        textBox.BackColor =  MyDialog.Color;
+            MyDialog.Color = textBox.BackColor;
 
-         }
+            if (MyDialog.ShowDialog() == DialogResult.OK)
+                textBox.BackColor = MyDialog.Color;
+
+        }
 
         private void gitHubReleasesToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -543,6 +537,6 @@ namespace Notepad
         {
 
         }
-    } 
+    }
 }
 

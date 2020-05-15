@@ -246,7 +246,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Notepad DOT"
         "ProductCode" = "8:{A70F4E81-0386-4C28-80C0-923051402B1C}"
-        "PackageCode" = "8:{62D90AE8-E714-43E8-9B03-911C0A5A7227}"
+        "PackageCode" = "8:{621FEADE-9158-4491-8272-FFE66808A1B0}"
         "UpgradeCode" = "8:{8752C33A-38BE-467E-8AEA-6146DF8B2A4B}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
