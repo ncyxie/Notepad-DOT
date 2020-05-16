@@ -2,7 +2,7 @@
 
 ## Latest News
 
-**PROJECT IS BACK ON DEVELOPMENT. NEW UPDATES MAY COME SOON!**
+**😏😏 v1.2.0**
 
 ## Introduction
 
