@@ -2,7 +2,7 @@
 
 ## Latest News
 
-**😏 v1.2.0**
+**Working on v1.2.0 update :)**
 
 ## Introduction
 
