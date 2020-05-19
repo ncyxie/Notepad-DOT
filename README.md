@@ -4,7 +4,7 @@
 
 **Working on v1.2.0 update.**
 
-**Font saving function 😋**
+**Font saving feature 😋**
 
 ## Introduction
 
