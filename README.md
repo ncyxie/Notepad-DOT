@@ -3,7 +3,7 @@
 ## Latest News
 
 **Working on v1.2.0 update.**
-**It may take a week or two. :)**
+**Font saving function**
 
 ## Introduction
 
