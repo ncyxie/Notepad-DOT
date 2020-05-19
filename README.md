@@ -2,7 +2,7 @@
 
 ## Latest News
 
-**Working on v1.2.0 update.** <b>
+**Working on v1.2.0 update.**
 **Font saving function 😋**
 
 ## Introduction
