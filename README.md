@@ -2,7 +2,7 @@
 
 ## Latest News
 
-**Working on v1.2.0 update.**
+**v1.2.0 Customization update is coming soon. Within everyday, update is getting closer.**
 
 ## Introduction
 
