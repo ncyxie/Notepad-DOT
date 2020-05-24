@@ -240,6 +240,7 @@ namespace Notepad
         private void fontToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FontDialog op = new FontDialog();
+            op.Font = textBox.Font;
             if (op.ShowDialog() == DialogResult.OK)
                 textBox.Font = op.Font;
         }
@@ -247,6 +248,7 @@ namespace Notepad
         private void colorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ColorDialog op = new ColorDialog();
+            op.Color = textBox.ForeColor;
             if (op.ShowDialog() == DialogResult.OK)
                 textBox.ForeColor = op.Color;
         }
