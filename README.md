@@ -2,18 +2,20 @@
 
 ## Latest News
 
-**PROJECT IS BACK ON DEVELOPMENT. NEW UPDATES MAY COME SOON!**
+**Working on v1.2.0 update.**
+
+**Font saving feature 😋**
 
 ## Introduction
 
 **Notepad DOT** is an open source, lightweight and very simple text editor.
-It has all basic notepad functions and more junk. It is for everyday
-life, from newbies to advanced users. 
+It has all basic notepad functions and more customisation junk. 
+It is for everyday life, from newbies to advanced users. 
 Since it is open source, you can modify it and even make it better.
 
 ## Download
 
-[Download Notepad Dot](https://github.com/ncyxie/Notepad-Dot/releases/)
+[Download Notepad DOT](https://github.com/ncyxie/Notepad-Dot/releases/)
 
 Stable (Release) is recommended version for everyday use, least bugs.
 Beta (Pre-Release) has latest features, but it may contain bugs.
@@ -44,12 +46,13 @@ Stable has setup and portable file for sure.
 
 3. **Does this Notepad works with Mac or Linux?**
 
-Unfortunately, no. This application is optimized only for Windows OS.
+Unfortunately, no. This application runs only on Windows OS (because of WinForms),
+but you are free to modify it, and make run on your desired OS.
 
 4. **What are this Notepad system requirements?**
 
 No special requirements are needed, even junk PC can run this application, 
-but make sure you run Windows OS (7 or higher recommended).
+but make sure you run Windows OS (minimum 7, but 8.1 or higher recommended).
 
 5. **Is this Notepad a virus?**
 
