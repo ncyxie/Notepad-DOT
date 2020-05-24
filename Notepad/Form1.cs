@@ -33,6 +33,24 @@ namespace Notepad
             textBox.WordWrap = false;
         }
 
+        public void GetSettings()
+        {
+            textBox.Font = Properties.Settings.Default.Font;
+            textBox.ForeColor = Properties.Settings.Default.Color;
+        }
+
+        public void SaveSettings()
+        {
+            Properties.Settings.Default.Font = textBox.Font;
+            Properties.Settings.Default.Color = textBox.ForeColor;
+            Properties.Settings.Default.Save();
+        }
+
+        private void Notepad_Load(object sender, EventArgs e)
+        {
+            GetSettings();
+        }
+
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             path = string.Empty;
@@ -140,11 +158,6 @@ namespace Notepad
             }
         }
 
-        private void Notepad_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
@@ -189,6 +202,8 @@ namespace Notepad
                     CanApplicationClose = true;
                     Application.Exit();
                 }
+
+                SaveSettings();
             }
         }
 
