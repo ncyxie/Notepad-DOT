@@ -296,6 +296,7 @@ namespace Notepad
             oliveModeToolStripMenuItem.Checked = false;
             pinkModeToolStripMenuItem.Checked = false;
             colorModeToolStripMenuItem.Checked = false;
+            followStripMenuToolStripMenuItem.Checked = false;
 
             Properties.Settings.Default.Theme = "light";
 
@@ -311,6 +312,7 @@ namespace Notepad
             oliveModeToolStripMenuItem.Checked = false;
             pinkModeToolStripMenuItem.Checked = false;
             colorModeToolStripMenuItem.Checked = false;
+            followStripMenuToolStripMenuItem.Checked = false;
 
             Properties.Settings.Default.Theme = "dark";
 
@@ -326,6 +328,7 @@ namespace Notepad
             oliveModeToolStripMenuItem.Checked = false;
             pinkModeToolStripMenuItem.Checked = false;
             colorModeToolStripMenuItem.Checked = false;
+            followStripMenuToolStripMenuItem.Checked = false;
 
             Properties.Settings.Default.Theme = "blue";
 
@@ -341,6 +344,7 @@ namespace Notepad
             oliveModeToolStripMenuItem.Checked = true;
             pinkModeToolStripMenuItem.Checked = false;
             colorModeToolStripMenuItem.Checked = false;
+            followStripMenuToolStripMenuItem.Checked = false;
 
             Properties.Settings.Default.Theme = "olive";
 
@@ -356,6 +360,7 @@ namespace Notepad
             oliveModeToolStripMenuItem.Checked = false;
             pinkModeToolStripMenuItem.Checked = true;
             colorModeToolStripMenuItem.Checked = false;
+            followStripMenuToolStripMenuItem.Checked = false;
 
             Properties.Settings.Default.Theme = "pink";
 
@@ -370,6 +375,7 @@ namespace Notepad
             oliveModeToolStripMenuItem.Checked = false;
             pinkModeToolStripMenuItem.Checked = false;
             colorModeToolStripMenuItem.Checked = true;
+            followStripMenuToolStripMenuItem.Checked = false;
 
             Properties.Settings.Default.Theme = "color";
 
@@ -383,6 +389,18 @@ namespace Notepad
             if (MyDialog.ShowDialog() == DialogResult.OK)
                 textBox.BackColor = MyDialog.Color;
 
+        }
+        private void followStripMenuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            darkModeToolStripMenuItem.Checked = false;
+            lightModeToolStripMenuItem.Checked = false;
+            blueModeToolStripMenuItem.Checked = false;
+            oliveModeToolStripMenuItem.Checked = false;
+            pinkModeToolStripMenuItem.Checked = false;
+            colorModeToolStripMenuItem.Checked = false;
+            followStripMenuToolStripMenuItem.Checked = true;
+
+            textBox.BackColor = menuStrip1.BackColor;
         }
 
         private void gitHubReleasesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -680,6 +698,7 @@ namespace Notepad
 
             menuStrip1.BackColor = textBox.BackColor;
         }
+
     }
 }
 

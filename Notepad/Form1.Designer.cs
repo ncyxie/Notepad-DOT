@@ -113,6 +113,7 @@
             this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripSeparator();
             this.colorModeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.followTextBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.followStripMenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).BeginInit();
@@ -419,7 +420,8 @@
             this.pinkModeToolStripMenuItem,
             this.oliveModeToolStripMenuItem,
             this.toolStripMenuItem7,
-            this.colorModeToolStripMenuItem});
+            this.colorModeToolStripMenuItem,
+            this.followStripMenuToolStripMenuItem});
             this.preferencesToolStripMenuItem.Name = "preferencesToolStripMenuItem";
             this.preferencesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.preferencesToolStripMenuItem.Text = "&Appearance";
@@ -774,6 +776,13 @@
             this.followTextBoxToolStripMenuItem.Text = "&Follow textBox";
             this.followTextBoxToolStripMenuItem.Click += new System.EventHandler(this.followTextBoxToolStripMenuItem_Click);
             // 
+            // followStripMenuToolStripMenuItem
+            // 
+            this.followStripMenuToolStripMenuItem.Name = "followStripMenuToolStripMenuItem";
+            this.followStripMenuToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.followStripMenuToolStripMenuItem.Text = "&Follow stripMenu";
+            this.followStripMenuToolStripMenuItem.Click += new System.EventHandler(this.followStripMenuToolStripMenuItem_Click);
+            // 
             // Notepad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -883,6 +892,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem9;
         private System.Windows.Forms.ToolStripMenuItem colorModeToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem followTextBoxToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem followStripMenuToolStripMenuItem;
     }
 }
 
