@@ -4,8 +4,6 @@
 
 **Working on v1.2.0 update.**
 
-**Font saving feature 😋**
-
 ## Introduction
 
 **Notepad DOT** is an open source, lightweight and very simple text editor.
