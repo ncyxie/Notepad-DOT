@@ -28,6 +28,7 @@ namespace Notepad
             timeToolStripMenuItem.Enabled = false;
             wordCounterToolStripMenuItem.Enabled = false;
             characterCounterToolStripMenuItem.Enabled = false;
+            fontToolStripMenuItem2.Enabled = false;
 
             bothToolStripMenuItem.Checked = true;
             textBox.WordWrap = false;
@@ -549,6 +550,7 @@ namespace Notepad
             timeToolStripMenuItem.Enabled = false;
             wordCounterToolStripMenuItem.Enabled = false;
             characterCounterToolStripMenuItem.Enabled = false;
+            fontToolStripMenuItem2.Enabled = false;
         }
 
         private void onToolStripMenuItem2_Click_1(object sender, EventArgs e)
@@ -559,6 +561,7 @@ namespace Notepad
             timeToolStripMenuItem.Enabled = true;
             wordCounterToolStripMenuItem.Enabled = true;
             characterCounterToolStripMenuItem.Enabled = true;
+            fontToolStripMenuItem2.Enabled = true;
         }
 
         private void timeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -699,6 +702,15 @@ namespace Notepad
             menuStrip1.BackColor = textBox.BackColor;
         }
 
+        private void fontToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FontDialog op = new FontDialog();
+            op.Font = statusBar1.Font;
+            op.MinSize = 8;
+            op.MaxSize = 24;
+            if (op.ShowDialog() == DialogResult.OK)
+                statusBar1.Font = op.Font;
+        }
     }
 }
 
