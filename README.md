@@ -2,9 +2,7 @@
 
 ## Latest News
 
-**Working on v1.2.0 update.**
-
-**Font saving feature 😋**
+**v2.0.0 Customization update is coming soon. Within everyday, update is getting closer.**
 
 ## Introduction
 
