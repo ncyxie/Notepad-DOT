@@ -4,6 +4,8 @@
 
 **v2.0.0 Customization update is coming soon. Within everyday, update is getting closer. :)**
 
+**Update is taking long, due to school and because update will be huge.**
+
 ## Introduction
 
 **Notepad DOT** is an open source, lightweight and very simple text editor.
