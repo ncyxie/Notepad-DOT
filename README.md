@@ -8,7 +8,7 @@
 
 **Find, Find Next, Replace functions might be there at next update.**
 
-**Only few things left to do, update is really close.**
+**Only few things left to do, update is really close. 😎**
 
 ## Introduction
 
