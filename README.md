@@ -6,7 +6,7 @@
 
 **Update is taking long, due to school and because update will be huge.**
 
-**Find, Find Next, Replace functions might be there at next update.**
+**Find, Find Next, Replace is finally almost done.**
 
 **Only few things left to do, update is really close. 😎**
 
