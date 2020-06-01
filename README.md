@@ -2,7 +2,7 @@
 
 ## Latest News
 
-**v2.0.0 Customization update is coming soon. Within everyday, update is getting closer. :)**
+**v2.0.0 Customization update is coming soon.**
 
 **Only few things left to do, update is really close. 😎**
 
