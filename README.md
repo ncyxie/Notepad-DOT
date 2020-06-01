@@ -4,8 +4,6 @@
 
 **v2.0.0 Customization update is coming soon. Within everyday, update is getting closer. :)**
 
-**Find, Find Next, Replace functions is finally almost done.**
-
 **Only few things left to do, update is really close. 😎**
 
 ## Introduction
