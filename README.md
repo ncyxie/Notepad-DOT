@@ -4,7 +4,7 @@
 
 **v2.0.0 Customization update is coming soon.**
 
-**Only few things left to do, update is really close. 😎**
+**Separate Beta repository will be created, **
 
 ## Introduction
 
