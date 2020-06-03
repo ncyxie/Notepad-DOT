@@ -16,7 +16,9 @@ Since it is open source, you can modify it and even make it better.
 
 ## Download
 
-[Download Notepad DOT](https://github.com/ncyxie/Notepad-Dot/releases/)
+[Download Notepad DOT](https://github.com/ncyxie/Notepad-DOT/releases/)
+
+[Download Notepad DOT Beta](https://github.com/ncyxie/Notepad-DOT-Beta/releases/)
 
 Stable (Release) is recommended version for everyday use, least bugs.
 Beta (Pre-Release) has latest features, but it may contain bugs.
