@@ -5,7 +5,7 @@
 **v2.0.0 Customization update is coming soon. Beta version will be released first,
 if every function will be stable, I will release stable version too.**
 
-**Now Stable and Beta versions will be divided, creating Beta repository soon.**
+**Now Stable and Beta versions are divided**
 
 ## Introduction
 
@@ -16,7 +16,7 @@ Since it is open source, you can modify it and even make it better.
 
 ## Download
 
-[Download Notepad DOT](https://github.com/ncyxie/Notepad-DOT/releases/)
+[Download Notepad DOT Stable](https://github.com/ncyxie/Notepad-DOT/releases/)
 
 [Download Notepad DOT Beta](https://github.com/ncyxie/Notepad-DOT-Beta/releases/)
 
