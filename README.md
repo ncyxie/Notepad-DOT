@@ -2,10 +2,9 @@
 
 ## Latest News
 
-**v2.0.0 Customization update is coming soon. Beta version will be released first,
-if every function will be stable, I will release stable version too.**
+**v2.0.0 CUSTOMISATION RELEASE WILL BE OUT AT SATURDAY!**
 
-**Now Stable and Beta versions are divided**
+**2020/06/06**
 
 ## Introduction
 
