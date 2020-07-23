@@ -2,18 +2,25 @@
 
 ## Latest News
 
-**v2.0.0 Customization update is coming soon. Within everyday, update is getting closer.**
+**Unfortunately, I decided to drop this application development for a while. Do not worry, I'll be back.
+I am busy irl, and I also need to work on other projects too. And I lost motivation of developing this notepad. But I hope I will get motivation 
+to continue this notepad development soon. I may focus and develop new applications like video players, music players or something like that.
+Peace! ✌️**
+
+**Note: NOTEPAD DOT V2.0.0 STABLE UPDATE TOMORROW! 23/07/2020 :)**
 
 ## Introduction
 
-**Notepad DOT** is an open source, lightweight and very simple text editor.
+**Notepad DOT** is an open source, lightweight and customisable text editor.
 It has all basic notepad functions and more customisation junk. 
 It is for everyday life, from newbies to advanced users. 
 Since it is open source, you can modify it and even make it better.
 
 ## Download
 
-[Download Notepad DOT](https://github.com/ncyxie/Notepad-Dot/releases/)
+[Download Notepad DOT Stable](https://github.com/ncyxie/Notepad-DOT/releases/)
+
+[Download Notepad DOT Beta](https://github.com/ncyxie/Notepad-DOT-Beta/releases/)
 
 Stable (Release) is recommended version for everyday use, least bugs.
 Beta (Pre-Release) has latest features, but it may contain bugs.
@@ -37,10 +44,9 @@ strip menu above, or click on blue **Issues** text.
 
 Friend recommended me to do it, and it is fun to mess up with files.
 
-2. **Why Beta versions has only portable versions?**
+2. **Can I "kang" a little of this Notepad code?**
 
-Because it is more convenient to just compile notepad and paste it here.
-Stable has setup and portable file for sure.
+Lmao, sure. This is why it is open-source. Do not hesitate, make it better :).
 
 3. **Does this Notepad works with Mac or Linux?**
 
