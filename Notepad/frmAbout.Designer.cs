@@ -64,9 +64,9 @@
             this.lblProductVersion.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.lblProductVersion.Location = new System.Drawing.Point(12, 51);
             this.lblProductVersion.Name = "lblProductVersion";
-            this.lblProductVersion.Size = new System.Drawing.Size(148, 80);
+            this.lblProductVersion.Size = new System.Drawing.Size(137, 80);
             this.lblProductVersion.TabIndex = 2;
-            this.lblProductVersion.Text = "A open source,\r\nlightweight,\r\nvery simple text \r\neditor. \r\n";
+            this.lblProductVersion.Text = "A open source,\r\nlightweight and\r\ncustomisable \r\ntext editor. \r\n";
             // 
             // label1
             // 
@@ -74,10 +74,10 @@
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.label1.Location = new System.Drawing.Point(13, 140);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 64);
+            this.label1.Size = new System.Drawing.Size(152, 64);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Version: 1.1.0 Stable \r\nMade by ncyxie.\r\nThanks to XeZrunner.\r\nThanks to zero9178" +
-    ".";
+            this.label1.Text = "Version: 2.0.0-Stable\r\nMade by ncyxie.\r\nThanks to XeZrunner.\r\nThanks to zero9178." +
+    "";
             // 
             // pictureBox1
             // 
