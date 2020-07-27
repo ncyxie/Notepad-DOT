@@ -447,5 +447,17 @@ namespace Notepad.Properties {
                 this["statusBar"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0, 0, 0, 0")]
+        public global::System.Drawing.Rectangle windowPosition {
+            get {
+                return ((global::System.Drawing.Rectangle)(this["windowPosition"]));
+            }
+            set {
+                this["windowPosition"] = value;
+            }
+        }
     }
 }

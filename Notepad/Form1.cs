@@ -10,9 +10,9 @@ namespace Notepad
     public partial class Notepad : Form
     {
         #region fields
-        private bool isFileAlreadySaved;
-        private bool isFileDirty;
-        private string currentOpenFileName;
+        public bool isFileAlreadySaved;
+        public bool isFileDirty;
+        public string currentOpenFileName;
         #endregion
 
         bool CanApplicationClose = false;
@@ -30,6 +30,12 @@ namespace Notepad
         public Notepad()
         {
             InitializeComponent();
+
+            if (!Properties.Settings.Default.windowPosition.IsEmpty)
+            {
+                Bounds = Properties.Settings.Default.windowPosition;
+                StartPosition = FormStartPosition.Manual;
+            }
 
             Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
 
@@ -389,6 +395,8 @@ namespace Notepad
 
         public void SaveSettings()
         {
+            Properties.Settings.Default.windowPosition = Bounds;
+
             Properties.Settings.Default.Font = textBox.Font;
             Properties.Settings.Default.Color = textBox.ForeColor;
             Properties.Settings.Default.Mode = textBox.BackColor;
@@ -464,6 +472,8 @@ namespace Notepad
                         break;
                     case DialogResult.No:
                         break;
+                    case DialogResult.Cancel:
+                        return;
                 }
             }
             ClearScreen();
@@ -629,10 +639,13 @@ namespace Notepad
                             break;
                         case DialogResult.No:
                             break;
+                        case DialogResult.Cancel:
+                            return;
                     }
                 }
             }
             CanApplicationClose = true;
+            isFileAlreadySaved = false;
             Application.Exit();
 
             SaveSettings();
