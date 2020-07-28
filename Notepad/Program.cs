@@ -31,6 +31,9 @@ namespace Notepad
 
                     notepad.Text = Path.GetFileName(path) + " - Notepad DOT";
 
+                    notepad.textBox.SelectionStart = notepad.textBox.Text.Length;
+                    notepad.textBox.SelectionLength = 0;
+
                     notepad.isFileAlreadySaved = true;
                     notepad.isFileDirty = false;
                     notepad.currentOpenFileName = path;

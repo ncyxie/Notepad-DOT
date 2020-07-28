@@ -463,7 +463,7 @@ namespace Notepad
         {
             if (isFileDirty)
             {
-                DialogResult result = MessageBox.Show("Do you want to save your changes?", "Notepad DOT", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
+                DialogResult result = MessageBox.Show("Do you want to save text file / changes?", "Notepad DOT", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
 
                 switch (result)
                 {
@@ -582,7 +582,29 @@ namespace Notepad
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (isFileDirty)
+            {
+                if (CanApplicationClose == false)
+                {
+                    DialogResult result = MessageBox.Show("Do you want to save text file / changes?", "Notepad DOT", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
+
+                    switch (result)
+                    {
+                        case DialogResult.Yes:
+                            SaveFileMenu();
+                            break;
+                        case DialogResult.No:
+                            break;
+                        case DialogResult.Cancel:
+                            return;
+                    }
+                }
+            }
+            CanApplicationClose = true;
+            isFileAlreadySaved = false;
             Application.Exit();
+
+            SaveSettings();
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -630,7 +652,7 @@ namespace Notepad
                 if (CanApplicationClose == false)
                 {
                     e.Cancel = true;
-                    DialogResult result = MessageBox.Show("Do you want to save your changes?", "Notepad DOT", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
+                    DialogResult result = MessageBox.Show("Do you want to save text file / changes?", "Notepad DOT", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
 
                     switch (result)
                     {
