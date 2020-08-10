@@ -2,7 +2,8 @@
 
 ## Latest News
 
-**v2.1.0-Stable update is almost finished. Expected release at Monday - Tuesday (08-10 - 08-11).**
+ **v2.1.0-STABLE UPDATE IS OFFICIALLY OUT NOW! ADDED FEATURES LIKE TOOLBAR,
+ CAPS TRACKER, CONTEXT MENU AND MANY MORE STUFF!**
 
 ## Introduction
 
