@@ -2,7 +2,7 @@
 
 ## Latest News
 
-**UPDATE YOUR NOTEPAD DOT NOW! v2.0.1-STABLE IS OFFICIALY RELEASED!**
+**v2.1.0-Stable update is almost finished. Expected release at Monday - Tuesday (08-10 - 08-11).**
 
 ## Introduction
 
