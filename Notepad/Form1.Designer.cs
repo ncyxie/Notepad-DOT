@@ -71,12 +71,6 @@
             this.formatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem13 = new System.Windows.Forms.ToolStripSeparator();
-            this.regularToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.boldToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.italicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.underlineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.strikeoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.preferencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lightModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -157,12 +151,6 @@
             this.toolStripMenuItem15 = new System.Windows.Forms.ToolStripSeparator();
             this.selectAllToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.dateTimeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem16 = new System.Windows.Forms.ToolStripSeparator();
-            this.regularToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.boldToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.italicToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.underlineToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.strikeoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem17 = new System.Windows.Forms.ToolStripSeparator();
             this.searchWithGoogleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.searchWithBingToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -171,6 +159,7 @@
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton26 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
@@ -196,13 +185,6 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton18 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton19 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton25 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton15 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton22 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton23 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton24 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton26 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).BeginInit();
@@ -539,13 +521,7 @@
             // 
             this.formatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fontToolStripMenuItem,
-            this.colorToolStripMenuItem,
-            this.toolStripMenuItem13,
-            this.regularToolStripMenuItem,
-            this.boldToolStripMenuItem,
-            this.italicToolStripMenuItem,
-            this.underlineToolStripMenuItem,
-            this.strikeoutToolStripMenuItem});
+            this.colorToolStripMenuItem});
             this.formatToolStripMenuItem.Name = "formatToolStripMenuItem";
             this.formatToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.formatToolStripMenuItem.Text = "&Format";
@@ -553,61 +529,16 @@
             // fontToolStripMenuItem
             // 
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.fontToolStripMenuItem.Text = "&Font";
             this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
             // 
             // colorToolStripMenuItem
             // 
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.colorToolStripMenuItem.Text = "&Color";
             this.colorToolStripMenuItem.Click += new System.EventHandler(this.colorToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem13
-            // 
-            this.toolStripMenuItem13.Name = "toolStripMenuItem13";
-            this.toolStripMenuItem13.Size = new System.Drawing.Size(130, 6);
-            // 
-            // regularToolStripMenuItem
-            // 
-            this.regularToolStripMenuItem.Image = global::Notepad.Properties.Resources.letter_r_icon_4472c4_721;
-            this.regularToolStripMenuItem.Name = "regularToolStripMenuItem";
-            this.regularToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
-            this.regularToolStripMenuItem.Text = "&Regular";
-            this.regularToolStripMenuItem.Click += new System.EventHandler(this.regularToolStripMenuItem_Click);
-            // 
-            // boldToolStripMenuItem
-            // 
-            this.boldToolStripMenuItem.Image = global::Notepad.Properties.Resources.Bold;
-            this.boldToolStripMenuItem.Name = "boldToolStripMenuItem";
-            this.boldToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
-            this.boldToolStripMenuItem.Text = "&Bold";
-            this.boldToolStripMenuItem.Click += new System.EventHandler(this.boldToolStripMenuItem_Click);
-            // 
-            // italicToolStripMenuItem
-            // 
-            this.italicToolStripMenuItem.Image = global::Notepad.Properties.Resources.Italic;
-            this.italicToolStripMenuItem.Name = "italicToolStripMenuItem";
-            this.italicToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
-            this.italicToolStripMenuItem.Text = "&Italic";
-            this.italicToolStripMenuItem.Click += new System.EventHandler(this.italicToolStripMenuItem_Click);
-            // 
-            // underlineToolStripMenuItem
-            // 
-            this.underlineToolStripMenuItem.Image = global::Notepad.Properties.Resources.Underline;
-            this.underlineToolStripMenuItem.Name = "underlineToolStripMenuItem";
-            this.underlineToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
-            this.underlineToolStripMenuItem.Text = "&Underline";
-            this.underlineToolStripMenuItem.Click += new System.EventHandler(this.underlineToolStripMenuItem_Click);
-            // 
-            // strikeoutToolStripMenuItem
-            // 
-            this.strikeoutToolStripMenuItem.Image = global::Notepad.Properties.Resources.Strike;
-            this.strikeoutToolStripMenuItem.Name = "strikeoutToolStripMenuItem";
-            this.strikeoutToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
-            this.strikeoutToolStripMenuItem.Text = "&Strikeout";
-            this.strikeoutToolStripMenuItem.Click += new System.EventHandler(this.strikeoutToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
@@ -1174,18 +1105,12 @@
             this.toolStripMenuItem15,
             this.selectAllToolStripMenuItem1,
             this.dateTimeToolStripMenuItem1,
-            this.toolStripMenuItem16,
-            this.regularToolStripMenuItem1,
-            this.boldToolStripMenuItem1,
-            this.italicToolStripMenuItem1,
-            this.underlineToolStripMenuItem1,
-            this.strikeoutToolStripMenuItem1,
             this.toolStripMenuItem17,
             this.searchWithGoogleToolStripMenuItem1,
             this.searchWithBingToolStripMenuItem1,
             this.searchWithDuckDuckGoToolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(208, 380);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(208, 264);
             // 
             // undoToolStripMenuItem1
             // 
@@ -1252,51 +1177,6 @@
             this.dateTimeToolStripMenuItem1.Size = new System.Drawing.Size(207, 22);
             this.dateTimeToolStripMenuItem1.Text = "&Date/Time";
             this.dateTimeToolStripMenuItem1.Click += new System.EventHandler(this.dateTimeToolStripMenuItem1_Click);
-            // 
-            // toolStripMenuItem16
-            // 
-            this.toolStripMenuItem16.Name = "toolStripMenuItem16";
-            this.toolStripMenuItem16.Size = new System.Drawing.Size(204, 6);
-            // 
-            // regularToolStripMenuItem1
-            // 
-            this.regularToolStripMenuItem1.Image = global::Notepad.Properties.Resources.letter_r_icon_4472c4_721;
-            this.regularToolStripMenuItem1.Name = "regularToolStripMenuItem1";
-            this.regularToolStripMenuItem1.Size = new System.Drawing.Size(207, 22);
-            this.regularToolStripMenuItem1.Text = "&Regular";
-            this.regularToolStripMenuItem1.Click += new System.EventHandler(this.regularToolStripMenuItem1_Click);
-            // 
-            // boldToolStripMenuItem1
-            // 
-            this.boldToolStripMenuItem1.Image = global::Notepad.Properties.Resources.Bold;
-            this.boldToolStripMenuItem1.Name = "boldToolStripMenuItem1";
-            this.boldToolStripMenuItem1.Size = new System.Drawing.Size(207, 22);
-            this.boldToolStripMenuItem1.Text = "&Bold";
-            this.boldToolStripMenuItem1.Click += new System.EventHandler(this.boldToolStripMenuItem1_Click);
-            // 
-            // italicToolStripMenuItem1
-            // 
-            this.italicToolStripMenuItem1.Image = global::Notepad.Properties.Resources.Italic;
-            this.italicToolStripMenuItem1.Name = "italicToolStripMenuItem1";
-            this.italicToolStripMenuItem1.Size = new System.Drawing.Size(207, 22);
-            this.italicToolStripMenuItem1.Text = "&Italic";
-            this.italicToolStripMenuItem1.Click += new System.EventHandler(this.italicToolStripMenuItem1_Click);
-            // 
-            // underlineToolStripMenuItem1
-            // 
-            this.underlineToolStripMenuItem1.Image = global::Notepad.Properties.Resources.Underline;
-            this.underlineToolStripMenuItem1.Name = "underlineToolStripMenuItem1";
-            this.underlineToolStripMenuItem1.Size = new System.Drawing.Size(207, 22);
-            this.underlineToolStripMenuItem1.Text = "&Underline";
-            this.underlineToolStripMenuItem1.Click += new System.EventHandler(this.underlineToolStripMenuItem1_Click);
-            // 
-            // strikeoutToolStripMenuItem1
-            // 
-            this.strikeoutToolStripMenuItem1.Image = global::Notepad.Properties.Resources.Strike;
-            this.strikeoutToolStripMenuItem1.Name = "strikeoutToolStripMenuItem1";
-            this.strikeoutToolStripMenuItem1.Size = new System.Drawing.Size(207, 22);
-            this.strikeoutToolStripMenuItem1.Text = "&Strikeout";
-            this.strikeoutToolStripMenuItem1.Click += new System.EventHandler(this.strikeoutToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem17
             // 
@@ -1380,16 +1260,10 @@
             this.toolStripButton17,
             this.toolStripSeparator5,
             this.toolStripButton18,
-            this.toolStripButton19,
-            this.toolStripSeparator7,
-            this.toolStripButton25,
-            this.toolStripButton15,
-            this.toolStripButton22,
-            this.toolStripButton23,
-            this.toolStripButton24});
+            this.toolStripButton19});
             this.toolStrip1.Location = new System.Drawing.Point(3, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(683, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(531, 25);
             this.toolStrip1.TabIndex = 0;
             // 
             // toolStripButton1
@@ -1402,6 +1276,16 @@
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.ToolTipText = "New";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // toolStripButton26
+            // 
+            this.toolStripButton26.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton26.Image = global::Notepad.Properties.Resources.NewWindow;
+            this.toolStripButton26.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton26.Name = "toolStripButton26";
+            this.toolStripButton26.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton26.Text = "toolStripButton26";
+            this.toolStripButton26.Click += new System.EventHandler(this.toolStripButton26_Click);
             // 
             // toolStripButton2
             // 
@@ -1644,76 +1528,6 @@
             this.toolStripButton19.ToolTipText = "Color";
             this.toolStripButton19.Click += new System.EventHandler(this.toolStripButton19_Click);
             // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripButton25
-            // 
-            this.toolStripButton25.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton25.Image = global::Notepad.Properties.Resources.letter_r_icon_4472c4_721;
-            this.toolStripButton25.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton25.Name = "toolStripButton25";
-            this.toolStripButton25.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton25.Text = "toolStripButton25";
-            this.toolStripButton25.ToolTipText = "Regular";
-            this.toolStripButton25.Click += new System.EventHandler(this.toolStripButton25_Click);
-            // 
-            // toolStripButton15
-            // 
-            this.toolStripButton15.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton15.Image = global::Notepad.Properties.Resources.Bold;
-            this.toolStripButton15.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton15.Name = "toolStripButton15";
-            this.toolStripButton15.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton15.Text = "toolStripButton15";
-            this.toolStripButton15.ToolTipText = "Bold";
-            this.toolStripButton15.Click += new System.EventHandler(this.toolStripButton15_Click);
-            // 
-            // toolStripButton22
-            // 
-            this.toolStripButton22.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton22.Image = global::Notepad.Properties.Resources.Italic;
-            this.toolStripButton22.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton22.Name = "toolStripButton22";
-            this.toolStripButton22.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton22.Text = "toolStripButton22";
-            this.toolStripButton22.ToolTipText = "Italic";
-            this.toolStripButton22.Click += new System.EventHandler(this.toolStripButton22_Click);
-            // 
-            // toolStripButton23
-            // 
-            this.toolStripButton23.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton23.Image = global::Notepad.Properties.Resources.Underline;
-            this.toolStripButton23.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton23.Name = "toolStripButton23";
-            this.toolStripButton23.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton23.Text = "toolStripButton23";
-            this.toolStripButton23.ToolTipText = "Underline";
-            this.toolStripButton23.Click += new System.EventHandler(this.toolStripButton23_Click);
-            // 
-            // toolStripButton24
-            // 
-            this.toolStripButton24.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton24.Image = global::Notepad.Properties.Resources.Strike;
-            this.toolStripButton24.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton24.Name = "toolStripButton24";
-            this.toolStripButton24.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton24.Text = "toolStripButton24";
-            this.toolStripButton24.ToolTipText = "Strikeout";
-            this.toolStripButton24.Click += new System.EventHandler(this.toolStripButton24_Click);
-            // 
-            // toolStripButton26
-            // 
-            this.toolStripButton26.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton26.Image = global::Notepad.Properties.Resources.NewWindow;
-            this.toolStripButton26.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton26.Name = "toolStripButton26";
-            this.toolStripButton26.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton26.Text = "toolStripButton26";
-            this.toolStripButton26.Click += new System.EventHandler(this.toolStripButton26_Click);
-            // 
             // Notepad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1885,18 +1699,6 @@
         private System.Windows.Forms.ToolStripMenuItem capsTrackerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem onToolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem offToolStripMenuItem7;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
-        private System.Windows.Forms.ToolStripButton toolStripButton15;
-        private System.Windows.Forms.ToolStripButton toolStripButton22;
-        private System.Windows.Forms.ToolStripButton toolStripButton23;
-        private System.Windows.Forms.ToolStripButton toolStripButton24;
-        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem13;
-        private System.Windows.Forms.ToolStripMenuItem regularToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem boldToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem italicToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem underlineToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem strikeoutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripButton toolStripButton25;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem1;
@@ -1908,12 +1710,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem15;
         private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem dateTimeToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem16;
-        private System.Windows.Forms.ToolStripMenuItem regularToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem boldToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem italicToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem underlineToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem strikeoutToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem17;
         private System.Windows.Forms.ToolStripMenuItem searchWithGoogleToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem searchWithBingToolStripMenuItem1;

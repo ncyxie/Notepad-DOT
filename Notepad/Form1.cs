@@ -88,7 +88,6 @@ namespace Notepad
             toolStripSeparator4.Visible = true;
             toolStripSeparator5.Visible = true;
             toolStripSeparator6.Visible = true;
-            toolStripSeparator7.Visible = true;
 
             onToolStripMenuItem4.Checked = false;
             columnsToolStripMenuItem1.Enabled = true;
@@ -453,7 +452,6 @@ namespace Notepad
                 toolStripSeparator4.Visible = true;
                 toolStripSeparator5.Visible = true;
                 toolStripSeparator6.Visible = true;
-                toolStripSeparator7.Visible = true;
             }
 
             else
@@ -467,7 +465,6 @@ namespace Notepad
                 toolStripSeparator4.Visible = false;
                 toolStripSeparator5.Visible = false;
                 toolStripSeparator6.Visible = false;
-                toolStripSeparator7.Visible = false;
             }
 
             onToolStripMenuItem6.Checked = Properties.Settings.Default.capsTracker;
@@ -1673,7 +1670,6 @@ namespace Notepad
             toolStripSeparator4.Visible = true;
             toolStripSeparator5.Visible = true;
             toolStripSeparator6.Visible = true;
-            toolStripSeparator7.Visible = true;
         }
 
         private void offToolStripMenuItem6_Click(object sender, EventArgs e)
@@ -1687,7 +1683,6 @@ namespace Notepad
             toolStripSeparator4.Visible = false;
             toolStripSeparator5.Visible = false;
             toolStripSeparator6.Visible = false;
-            toolStripSeparator7.Visible = false;
         }
 
         private void textBox_KeyDown(object sender, KeyEventArgs e)
@@ -1732,81 +1727,6 @@ namespace Notepad
             statusBarPanel4.Text = "";
         }
 
-        private void regularToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Regular();
-        }
-
-        private void Regular()
-        {
-            textBox.SelectionFont = new Font(textBox.Font, FontStyle.Regular);
-        }
-
-        private void boldToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Bold();
-        }
-
-        private void Bold()
-        {
-            textBox.SelectionFont = new Font(textBox.Font, FontStyle.Bold);
-        }
-
-        private void italicToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Italic();
-        }
-
-        private void Italic()
-        {
-            textBox.SelectionFont = new Font(textBox.Font, FontStyle.Italic);
-        }
-
-        private void underlineToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Underline();
-        }
-
-        private void Underline()
-        {
-            textBox.SelectionFont = new Font(textBox.Font, FontStyle.Underline);
-        }
-
-        private void strikeoutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Strikeout();
-        }
-
-        private void Strikeout()
-        {
-            textBox.SelectionFont = new Font(textBox.Font, FontStyle.Strikeout);
-        }
-
-        private void toolStripButton15_Click(object sender, EventArgs e)
-        {
-            Bold();
-        }
-
-        private void toolStripButton22_Click(object sender, EventArgs e)
-        {
-            Italic();
-        }
-
-        private void toolStripButton23_Click(object sender, EventArgs e)
-        {
-            Underline();
-        }
-
-        private void toolStripButton24_Click(object sender, EventArgs e)
-        {
-            Strikeout();
-        }
-
-        private void toolStripButton25_Click(object sender, EventArgs e)
-        {
-            Regular();
-        }
-
         private void undoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             UndoMethod();
@@ -1845,31 +1765,6 @@ namespace Notepad
         private void dateTimeToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             DateTimeMethod();
-        }
-
-        private void regularToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Regular();
-        }
-
-        private void boldToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Bold();
-        }
-
-        private void italicToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Italic();
-        }
-
-        private void underlineToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Underline();
-        }
-
-        private void strikeoutToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Strikeout();
         }
 
         private void searchWithGoogleToolStripMenuItem1_Click(object sender, EventArgs e)
