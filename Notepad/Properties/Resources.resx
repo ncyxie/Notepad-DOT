@@ -124,6 +124,9 @@
   <data name="Notepad-DOT-134x196" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Notepad-DOT-134x196.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="letter-r-icon-4472c4-721" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\letter-r-icon-4472c4-72.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bold1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -153,6 +156,9 @@
   </data>
   <data name="Cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cut1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewWindow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewWindow.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PrintPreview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PrintPreview_File.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,7 +214,7 @@
   <data name="Open" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Open1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="letter-r-icon-4472c4-721" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\letter-r-icon-4472c4-72.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NewWindow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewWindow.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

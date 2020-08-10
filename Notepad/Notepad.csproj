@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Notepad-DOT-134x196-ico.ico" />
+    <None Include="Resources\NewWindow.ico" />
     <None Include="Resources\letter-r-icon-4472c4-72.ico" />
     <None Include="Resources\Strike1.ico" />
     <None Include="Resources\Underline1.ico" />

@@ -621,6 +621,11 @@ namespace Notepad
 
         private void newWindowToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            NewWindowMethod();
+        }
+
+        private static void NewWindowMethod()
+        {
             System.Diagnostics.Process.Start(Application.ExecutablePath);
         }
 
@@ -1550,6 +1555,11 @@ namespace Notepad
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             NewFile();
+        }
+
+        private void toolStripButton26_Click(object sender, EventArgs e)
+        {
+            NewWindowMethod();
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)
