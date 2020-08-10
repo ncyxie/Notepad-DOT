@@ -42,6 +42,7 @@ namespace Notepad
             statusBar1.Panels[0].Text = "";
             statusBar1.Panels[1].Text = "";
             statusBar1.Panels[2].Text = "";
+            statusBar1.Panels[3].Text = "";
 
             offToolStripMenuItem.Checked = true;
             hourClockToolStripMenuItem.Checked = false;
@@ -54,12 +55,15 @@ namespace Notepad
             onToolStripMenuItem2.Checked = false;
             offToolStripMenuItem4.Checked = true;
             onToolStripMenuItem3.Checked = false;
+            onToolStripMenuItem6.Checked = false;
+            offToolStripMenuItem7.Checked = true;
             statusBar1.Hide();
             timeToolStripMenuItem.Enabled = false;
             wordCounterToolStripMenuItem.Enabled = false;
             characterCounterToolStripMenuItem.Enabled = false;
             fontToolStripMenuItem2.Enabled = false;
             columnsToolStripMenuItem.Enabled = false;
+            capsTrackerToolStripMenuItem.Enabled = false;
 
             bothToolStripMenuItem.Checked = true;
             textBox.WordWrap = false;
@@ -68,10 +72,33 @@ namespace Notepad
             statusBar1.Panels[0].AutoSize = StatusBarPanelAutoSize.Contents;
             statusBar1.Panels[1].AutoSize = StatusBarPanelAutoSize.Contents;
             statusBar1.Panels[2].AutoSize = StatusBarPanelAutoSize.Contents;
+            statusBar1.Panels[3].AutoSize = StatusBarPanelAutoSize.Contents;
 
             statusBar1.Panels[0].BorderStyle = StatusBarPanelBorderStyle.None;
             statusBar1.Panels[1].BorderStyle = StatusBarPanelBorderStyle.None;
             statusBar1.Panels[2].BorderStyle = StatusBarPanelBorderStyle.None;
+            statusBar1.Panels[3].BorderStyle = StatusBarPanelBorderStyle.None;
+
+            onToolStripMenuItem5.Checked = true;
+            offToolStripMenuItem6.Checked = false;
+
+            toolStripSeparator1.Visible = true;
+            toolStripSeparator2.Visible = true;
+            toolStripSeparator3.Visible = true;
+            toolStripSeparator4.Visible = true;
+            toolStripSeparator5.Visible = true;
+            toolStripSeparator6.Visible = true;
+            toolStripSeparator7.Visible = true;
+
+            onToolStripMenuItem4.Checked = false;
+            columnsToolStripMenuItem1.Enabled = true;
+            offToolStripMenuItem5.Checked = true;
+            toolStrip1.Hide();
+
+            onToolStripMenuItem7.Checked = true;
+            offToolStripMenuItem8.Checked = false;
+
+            textBox.ContextMenuStrip = contextMenuStrip1;
         }
 
         public void GetSettings()
@@ -87,6 +114,7 @@ namespace Notepad
             statusBarPanel1.BorderStyle = Properties.Settings.Default.statusBarColumns;
             statusBarPanel2.BorderStyle = Properties.Settings.Default.statusBarColumns;
             statusBarPanel3.BorderStyle = Properties.Settings.Default.statusBarColumns;
+            statusBarPanel4.BorderStyle = Properties.Settings.Default.statusBarColumns;
 
             onToolStripMenuItem2.Checked = Properties.Settings.Default.statusBar;
 
@@ -100,6 +128,7 @@ namespace Notepad
                 characterCounterToolStripMenuItem.Enabled = true;
                 fontToolStripMenuItem2.Enabled = true;
                 columnsToolStripMenuItem.Enabled = true;
+                capsTrackerToolStripMenuItem.Enabled = true;
             }
 
             else
@@ -112,6 +141,7 @@ namespace Notepad
                 characterCounterToolStripMenuItem.Enabled = false;
                 fontToolStripMenuItem2.Enabled = false;
                 columnsToolStripMenuItem.Enabled = false;
+                capsTrackerToolStripMenuItem.Enabled = false;
             }
 
             hourClockToolStripMenuItem.Checked = Properties.Settings.Default.twelveHours;
@@ -391,6 +421,98 @@ namespace Notepad
                 colorModeToolStripMenuItem1.Checked = false;
                 followTextBoxToolStripMenuItem.Checked = true;
             }
+
+            onToolStripMenuItem4.Checked = Properties.Settings.Default.toolStrip;
+
+            if (onToolStripMenuItem4.Checked == true)
+            {
+                onToolStripMenuItem4.Checked = true;
+                columnsToolStripMenuItem1.Enabled = true;
+                offToolStripMenuItem5.Checked = false;
+                toolStrip1.Show();
+            }
+
+            else
+            {
+                onToolStripMenuItem4.Checked = false;
+                columnsToolStripMenuItem1.Enabled = false;
+                offToolStripMenuItem5.Checked = true;
+                toolStrip1.Hide();
+            }
+
+            onToolStripMenuItem5.Checked = Properties.Settings.Default.toolColumnOn;
+
+            if (onToolStripMenuItem5.Checked == true)
+            {
+                onToolStripMenuItem5.Checked = true;
+                offToolStripMenuItem6.Checked = false;
+
+                toolStripSeparator1.Visible = true;
+                toolStripSeparator2.Visible = true;
+                toolStripSeparator3.Visible = true;
+                toolStripSeparator4.Visible = true;
+                toolStripSeparator5.Visible = true;
+                toolStripSeparator6.Visible = true;
+                toolStripSeparator7.Visible = true;
+            }
+
+            else
+            {
+                onToolStripMenuItem5.Checked = false;
+                offToolStripMenuItem6.Checked = true;
+
+                toolStripSeparator1.Visible = false;
+                toolStripSeparator2.Visible = false;
+                toolStripSeparator3.Visible = false;
+                toolStripSeparator4.Visible = false;
+                toolStripSeparator5.Visible = false;
+                toolStripSeparator6.Visible = false;
+                toolStripSeparator7.Visible = false;
+            }
+
+            onToolStripMenuItem6.Checked = Properties.Settings.Default.capsTracker;
+
+            if (onToolStripMenuItem6.Checked == true)
+            {
+                onToolStripMenuItem6.Checked = true;
+                offToolStripMenuItem7.Checked = false;
+
+                if (Control.IsKeyLocked(Keys.CapsLock))
+                {
+                    statusBarPanel4.Text = "CAPS ON";
+                }
+
+                else
+                {
+                    statusBarPanel4.Text = "caps off";
+                }
+            }
+
+            else
+            {
+                onToolStripMenuItem6.Checked = false;
+                offToolStripMenuItem7.Checked = true;
+
+                statusBarPanel4.Text = "";
+            }
+
+            onToolStripMenuItem7.Checked = Properties.Settings.Default.contextMenu;
+
+            if (onToolStripMenuItem7.Checked == true)
+            {
+                onToolStripMenuItem7.Checked = true;
+                offToolStripMenuItem8.Checked = false;
+
+                textBox.ContextMenuStrip = contextMenuStrip1;
+            }
+
+            else
+            {
+                onToolStripMenuItem7.Checked = false;
+                offToolStripMenuItem8.Checked = true;
+
+                textBox.ContextMenuStrip = new ContextMenuStrip();
+            }
         }
 
         public void SaveSettings()
@@ -408,6 +530,7 @@ namespace Notepad
             Properties.Settings.Default.statusBarColumns = statusBarPanel1.BorderStyle;
             Properties.Settings.Default.statusBarColumns = statusBarPanel2.BorderStyle;
             Properties.Settings.Default.statusBarColumns = statusBarPanel3.BorderStyle;
+            Properties.Settings.Default.statusBarColumns = statusBarPanel4.BorderStyle;
 
             Properties.Settings.Default.statusBar = onToolStripMenuItem2.Checked;
 
@@ -442,6 +565,14 @@ namespace Notepad
             Properties.Settings.Default.colorStrip = colorModeToolStripMenuItem1.Checked;
             Properties.Settings.Default.followTextBox = followTextBoxToolStripMenuItem.Checked;
 
+            Properties.Settings.Default.toolStrip = onToolStripMenuItem4.Checked;
+
+            Properties.Settings.Default.toolColumnOn = onToolStripMenuItem5.Checked;
+
+            Properties.Settings.Default.capsTracker = onToolStripMenuItem6.Checked;
+
+            Properties.Settings.Default.contextMenu = onToolStripMenuItem7.Checked;
+
             Properties.Settings.Default.Save();
         }
 
@@ -457,9 +588,16 @@ namespace Notepad
         private void textBox_TextChanged(object sender, EventArgs e)
         {
             isFileDirty = true;
+            undoToolStripMenuItem.Enabled = true;
+            toolStripButton7.Enabled = true;
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NewFile();
+        }
+
+        private void NewFile()
         {
             if (isFileDirty)
             {
@@ -487,6 +625,11 @@ namespace Notepad
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFile();
+        }
+
+        private void OpenFile()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Text Files (*.txt)|*.txt|Rich Text Format (*.rtf)|*.rtf";
@@ -675,7 +818,30 @@ namespace Notepad
 
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            UndoMethod();
+        }
+
+        private void UndoMethod()
+        {
             textBox.Undo();
+            redoToolStripMenuItem.Enabled = true;
+            toolStripButton7.Enabled = false;
+            toolStripButton8.Enabled = true;
+            undoToolStripMenuItem.Enabled = false;
+        }
+
+        private void redoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RedoMethod();
+        }
+
+        private void RedoMethod()
+        {
+            textBox.Redo();
+            redoToolStripMenuItem.Enabled = false;
+            toolStripButton7.Enabled = true;
+            toolStripButton8.Enabled = false;
+            undoToolStripMenuItem.Enabled = true;
         }
 
         private void copyToolStripMenuItem_Click(object sender, EventArgs e)
@@ -695,6 +861,11 @@ namespace Notepad
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            DeleteMethod();
+        }
+
+        private void DeleteMethod()
+        {
             textBox.SelectedText = string.Empty;
         }
 
@@ -705,10 +876,21 @@ namespace Notepad
 
         private void dateTimeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox.Text = System.DateTime.Now.ToString();
+            DateTimeMethod();
+        }
+
+        private void DateTimeMethod()
+        {
+            textBox.SelectedText = System.DateTime.Now.ToString();
+            textBox.SelectionStart = textBox.Text.Length;
         }
 
         private void fontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FontMenu();
+        }
+
+        private void FontMenu()
         {
             FontDialog op = new FontDialog();
             op.Font = textBox.Font;
@@ -718,18 +900,23 @@ namespace Notepad
 
         private void colorToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ColorMenu();
+        }
+
+        private void ColorMenu()
+        {
             ColorDialog op = new ColorDialog();
             op.Color = textBox.ForeColor;
             if (op.ShowDialog() == DialogResult.OK)
                 textBox.ForeColor = op.Color;
         }
 
-        private void pageSetupToolStripMenuItem_Click(object sender, EventArgs e)
+        private void printPreviewToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            pageSetupDialog1.ShowDialog();
+            PrintPreview();
         }
 
-        private void printPreviewToolStripMenuItem_Click(object sender, EventArgs e)
+        private void PrintPreview()
         {
             printPreviewDialog1.ShowDialog();
         }
@@ -740,6 +927,11 @@ namespace Notepad
         }
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PrintMenu();
+        }
+
+        private void PrintMenu()
         {
             if (printDialog1.ShowDialog() == DialogResult.OK)
                 printDocument1.Print();
@@ -763,15 +955,30 @@ namespace Notepad
 
         private void searchWithGoogleToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            GoogleMethod();
+        }
+
+        private void GoogleMethod()
+        {
             System.Diagnostics.Process.Start("https://www.google.com/search?q=" + textBox.SelectedText);
         }
 
         private void searchWithBingToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            BingMethod();
+        }
+
+        private void BingMethod()
+        {
             System.Diagnostics.Process.Start("https://www.bing.com/search?q=" + textBox.SelectedText);
         }
 
         private void searchWithDuckDuckGoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DuckDuckGoMethod();
+        }
+
+        private void DuckDuckGoMethod()
         {
             System.Diagnostics.Process.Start("https://duckduckgo.com/?q=" + textBox.SelectedText);
         }
@@ -893,7 +1100,7 @@ namespace Notepad
 
         private void gitHubReleasesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/ncyxie/Notepad-DOT-Beta/releases");
+            System.Diagnostics.Process.Start("https://github.com/ncyxie/Notepad-DOT/releases");
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -1039,6 +1246,7 @@ namespace Notepad
             characterCounterToolStripMenuItem.Enabled = false;
             fontToolStripMenuItem2.Enabled = false;
             columnsToolStripMenuItem.Enabled = false;
+            capsTrackerToolStripMenuItem.Enabled = false;
         }
 
         private void onToolStripMenuItem2_Click_1(object sender, EventArgs e)
@@ -1051,6 +1259,7 @@ namespace Notepad
             characterCounterToolStripMenuItem.Enabled = true;
             fontToolStripMenuItem2.Enabled = true;
             columnsToolStripMenuItem.Enabled = true;
+            capsTrackerToolStripMenuItem.Enabled = true;
         }
 
         private void timeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1213,6 +1422,7 @@ namespace Notepad
             statusBar1.Panels[0].BorderStyle = StatusBarPanelBorderStyle.Sunken;
             statusBar1.Panels[1].BorderStyle = StatusBarPanelBorderStyle.Sunken;
             statusBar1.Panels[2].BorderStyle = StatusBarPanelBorderStyle.Sunken;
+            statusBar1.Panels[3].BorderStyle = StatusBarPanelBorderStyle.Sunken;
         }
 
         private void offToolStripMenuItem4_Click(object sender, EventArgs e)
@@ -1222,9 +1432,15 @@ namespace Notepad
             statusBar1.Panels[0].BorderStyle = StatusBarPanelBorderStyle.None;
             statusBar1.Panels[1].BorderStyle = StatusBarPanelBorderStyle.None;
             statusBar1.Panels[2].BorderStyle = StatusBarPanelBorderStyle.None;
+            statusBar1.Panels[3].BorderStyle = StatusBarPanelBorderStyle.None;
         }
 
         private void findToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FindMethod();
+        }
+
+        private void FindMethod()
         {
             Find r = new Find();
             r.ShowDialog();
@@ -1238,10 +1454,14 @@ namespace Notepad
             {
                 MessageBox.Show("No results found", "Find", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
         }
 
         private void findNextToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FindNextMethod();
+        }
+
+        private void FindNextMethod()
         {
             if (FindText != "")
             {
@@ -1265,6 +1485,11 @@ namespace Notepad
 
         private void replaceToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ReplaceMethod();
+        }
+
+        private void ReplaceMethod()
+        {
             Replace r = new Replace();
             r.ShowDialog();
 
@@ -1286,10 +1511,14 @@ namespace Notepad
             {
                 MessageBox.Show("No results found", "Replace", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
         }
 
         private void replaceAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReplaceAllMethod();
+        }
+
+        private void ReplaceAllMethod()
         {
             if (ReplaceText != "")
             {
@@ -1300,6 +1529,368 @@ namespace Notepad
             {
                 MessageBox.Show("No results found", "Replace All", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void onToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            onToolStripMenuItem4.Checked = true;
+            offToolStripMenuItem5.Checked = false;
+            columnsToolStripMenuItem1.Enabled = true;
+            toolStrip1.Show();
+        }
+
+        private void offToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            onToolStripMenuItem4.Checked = false;
+            offToolStripMenuItem5.Checked = true;
+            columnsToolStripMenuItem1.Enabled = false;
+            toolStrip1.Hide();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            NewFile();
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            OpenFile();
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            SaveFileMenu();
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            SaveAsFileMenu();
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            PrintMenu();
+        }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            PrintPreview();
+        }
+
+        private void toolStripButton7_Click(object sender, EventArgs e)
+        {
+            UndoMethod();
+        }
+
+        private void toolStripButton8_Click(object sender, EventArgs e)
+        {
+            RedoMethod();
+        }
+
+        private void toolStripButton9_Click(object sender, EventArgs e)
+        {
+            textBox.Cut();
+        }
+
+        private void toolStripButton10_Click(object sender, EventArgs e)
+        {
+            textBox.Copy();
+        }
+
+        private void toolStripButton11_Click(object sender, EventArgs e)
+        {
+            textBox.Paste();
+        }
+
+        private void toolStripButton12_Click(object sender, EventArgs e)
+        {
+            DeleteMethod();
+        }
+
+        private void toolStripButton13_Click(object sender, EventArgs e)
+        {
+            FindMethod();
+        }
+
+        private void toolStripButton14_Click(object sender, EventArgs e)
+        {
+            FindNextMethod();
+        }
+
+        private void toolStripButton16_Click(object sender, EventArgs e)
+        {
+            ReplaceMethod();
+        }
+
+        private void toolStripButton17_Click(object sender, EventArgs e)
+        {
+            ReplaceAllMethod();
+        }
+
+        private void toolStripButton18_Click(object sender, EventArgs e)
+        {
+            FontMenu();
+        }
+
+        private void toolStripButton19_Click(object sender, EventArgs e)
+        {
+            ColorMenu();
+        }
+
+        private void toolStripButton20_Click(object sender, EventArgs e)
+        {
+            textBox.SelectAll();
+        }
+
+        private void toolStripButton21_Click(object sender, EventArgs e)
+        {
+            DateTimeMethod();
+        }
+
+        private void columnsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void onToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            onToolStripMenuItem5.Checked = true;
+            offToolStripMenuItem6.Checked = false;
+
+            toolStripSeparator1.Visible = true;
+            toolStripSeparator2.Visible = true;
+            toolStripSeparator3.Visible = true;
+            toolStripSeparator4.Visible = true;
+            toolStripSeparator5.Visible = true;
+            toolStripSeparator6.Visible = true;
+            toolStripSeparator7.Visible = true;
+        }
+
+        private void offToolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            onToolStripMenuItem5.Checked = false;
+            offToolStripMenuItem6.Checked = true;
+
+            toolStripSeparator1.Visible = false;
+            toolStripSeparator2.Visible = false;
+            toolStripSeparator3.Visible = false;
+            toolStripSeparator4.Visible = false;
+            toolStripSeparator5.Visible = false;
+            toolStripSeparator6.Visible = false;
+            toolStripSeparator7.Visible = false;
+        }
+
+        private void textBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (Control.IsKeyLocked(Keys.CapsLock))
+            {
+                statusBarPanel4.Text = "CAPS ON";
+            }
+
+            else
+            {
+                statusBarPanel4.Text = "caps off";
+            }
+        }
+
+        private void capsTrackerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void onToolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            onToolStripMenuItem6.Checked = true;
+            offToolStripMenuItem7.Checked = false;
+
+            if (Control.IsKeyLocked(Keys.CapsLock))
+            {
+                statusBarPanel4.Text = "CAPS ON";
+            }
+
+            else
+            {
+                statusBarPanel4.Text = "caps off";
+            }
+        }
+
+        private void offToolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            onToolStripMenuItem6.Checked = false;
+            offToolStripMenuItem7.Checked = true;
+
+            statusBarPanel4.Text = "";
+        }
+
+        private void regularToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Regular();
+        }
+
+        private void Regular()
+        {
+            textBox.SelectionFont = new Font(textBox.Font, FontStyle.Regular);
+        }
+
+        private void boldToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Bold();
+        }
+
+        private void Bold()
+        {
+            textBox.SelectionFont = new Font(textBox.Font, FontStyle.Bold);
+        }
+
+        private void italicToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Italic();
+        }
+
+        private void Italic()
+        {
+            textBox.SelectionFont = new Font(textBox.Font, FontStyle.Italic);
+        }
+
+        private void underlineToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Underline();
+        }
+
+        private void Underline()
+        {
+            textBox.SelectionFont = new Font(textBox.Font, FontStyle.Underline);
+        }
+
+        private void strikeoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Strikeout();
+        }
+
+        private void Strikeout()
+        {
+            textBox.SelectionFont = new Font(textBox.Font, FontStyle.Strikeout);
+        }
+
+        private void toolStripButton15_Click(object sender, EventArgs e)
+        {
+            Bold();
+        }
+
+        private void toolStripButton22_Click(object sender, EventArgs e)
+        {
+            Italic();
+        }
+
+        private void toolStripButton23_Click(object sender, EventArgs e)
+        {
+            Underline();
+        }
+
+        private void toolStripButton24_Click(object sender, EventArgs e)
+        {
+            Strikeout();
+        }
+
+        private void toolStripButton25_Click(object sender, EventArgs e)
+        {
+            Regular();
+        }
+
+        private void undoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            UndoMethod();
+        }
+
+        private void redoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            RedoMethod();
+        }
+
+        private void cutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            textBox.Cut();
+        }
+
+        private void copyToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            textBox.Copy();
+        }
+
+        private void pasteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            textBox.Paste();
+        }
+
+        private void deleteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            DeleteMethod();
+        }
+
+        private void selectAllToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            textBox.SelectAll();
+        }
+
+        private void dateTimeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            DateTimeMethod();
+        }
+
+        private void regularToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Regular();
+        }
+
+        private void boldToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Bold();
+        }
+
+        private void italicToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Italic();
+        }
+
+        private void underlineToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Underline();
+        }
+
+        private void strikeoutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Strikeout();
+        }
+
+        private void searchWithGoogleToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GoogleMethod();
+        }
+
+        private void searchWithBingToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            BingMethod();
+        }
+
+        private void searchWithDuckDuckGoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            DuckDuckGoMethod();
+        }
+
+        private void onToolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            onToolStripMenuItem7.Checked = true;
+            offToolStripMenuItem8.Checked = false;
+
+            textBox.ContextMenuStrip = contextMenuStrip1;
+        }
+
+        private void offToolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            onToolStripMenuItem7.Checked = false;
+            offToolStripMenuItem8.Checked = true;
+
+            textBox.ContextMenuStrip = new ContextMenuStrip();
         }
     }
 }

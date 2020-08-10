@@ -17,11 +17,12 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -97,6 +98,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAbout.resx">
       <DependentUpon>frmAbout.cs</DependentUpon>
@@ -129,6 +131,65 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Notepad-DOT-134x196-ico.ico" />
+    <None Include="Resources\letter-r-icon-4472c4-72.ico" />
+    <None Include="Resources\Strike1.ico" />
+    <None Include="Resources\Underline1.ico" />
+    <None Include="Resources\Italic1.ico" />
+    <None Include="Resources\Bold1.ico" />
+    <None Include="Resources\Color1.ico" />
+    <None Include="Resources\Font1.ico" />
+    <None Include="Resources\FindPrevious1.ico" />
+    <None Include="Resources\FindNext1.ico" />
+    <None Include="Resources\Delete1.ico" />
+    <None Include="Resources\Paste1.ico" />
+    <None Include="Resources\Copy1.ico" />
+    <None Include="Resources\Cut1.ico" />
+    <None Include="Resources\Redo1.ico" />
+    <None Include="Resources\Undo1.ico" />
+    <None Include="Resources\SaveAs1.ico" />
+    <None Include="Resources\Save1.ico" />
+    <None Include="Resources\Open1.ico" />
+    <None Include="Resources\New1.ico" />
+    <None Include="Resources\Undo.ico" />
+    <None Include="Resources\Underline.ico" />
+    <None Include="Resources\Strike.ico" />
+    <None Include="Resources\SaveAs.ico" />
+    <None Include="Resources\Save.ico" />
+    <None Include="Resources\Redo.ico" />
+    <None Include="Resources\Paste.ico" />
+    <None Include="Resources\Open.ico" />
+    <None Include="Resources\New.ico" />
+    <None Include="Resources\Italic.ico" />
+    <None Include="Resources\Font.ico" />
+    <None Include="Resources\FindPrevious.ico" />
+    <None Include="Resources\FindNext.ico" />
+    <None Include="Resources\Delete.ico" />
+    <None Include="Resources\Cut.ico" />
+    <None Include="Resources\Copy.ico" />
+    <None Include="Resources\Color.ico" />
+    <None Include="Resources\Bold.ico" />
+    <None Include="Resources\DateTime_File.ico" />
+    <None Include="Resources\New_File1.ico" />
+    <None Include="Resources\Undo-File.ico" />
+    <None Include="Resources\SelectAll_File.ico" />
+    <None Include="Resources\SaveAs_File.ico" />
+    <None Include="Resources\Save_File.ico" />
+    <None Include="Resources\ReplaceAll_File.ico" />
+    <None Include="Resources\Replace_File.ico" />
+    <None Include="Resources\Redo-File.ico" />
+    <None Include="Resources\PrintPreview_File.ico" />
+    <None Include="Resources\Print_File.ico" />
+    <None Include="Resources\Paste_File.ico" />
+    <None Include="Resources\Open_File.ico" />
+    <None Include="Resources\New_File.ico" />
+    <None Include="Resources\FontColor_File.ico" />
+    <None Include="Resources\Font_File.ico" />
+    <None Include="Resources\FindPrevious_File.ico" />
+    <None Include="Resources\FindNext_File.ico" />
+    <None Include="Resources\Find_File.ico" />
+    <None Include="Resources\Delete_File.ico" />
+    <None Include="Resources\Cut_File.ico" />
+    <None Include="Resources\Copy_File.ico" />
     <None Include="Resources\ncyxie_avatar_59x59.jpg" />
     <None Include="Resources\ncyxie_avatar.jpg" />
     <None Include="Resources\ncyxie_avatar.bmp" />
