@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +52,7 @@
             // btnOK
             // 
             this.btnOK.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(110, 255);
+            this.btnOK.Location = new System.Drawing.Point(110, 295);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(103, 33);
             this.btnOK.TabIndex = 1;
@@ -78,7 +79,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(152, 64);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Version: 2.1.0-Stable\r\nMade by ncyxie.\r\nThanks to XeZrunner.\r\nThanks to zero9178." +
+            this.label1.Text = "Version: 2.1.1-Stable\r\nMade by ncyxie.\r\nThanks to XeZrunner.\r\nThanks to zero9178." +
     "";
             // 
             // pictureBox1
@@ -101,11 +102,23 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Thanks to Oxygen Team, Papirus Dev. \r\nTeam, VisualPharm and Saki for icons.";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.label3.Location = new System.Drawing.Point(13, 250);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(253, 32);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Application developed by using .NET \r\nFramework WinForms.";
+            // 
             // frmAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 301);
+            this.ClientSize = new System.Drawing.Size(314, 341);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -134,5 +147,6 @@
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

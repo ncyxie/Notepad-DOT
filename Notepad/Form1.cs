@@ -1500,12 +1500,20 @@ namespace Notepad
                 if (MatchCase == true)
                 {
                     d = textBox.Find(FindText, RichTextBoxFinds.MatchCase);
-                    textBox.SelectedText = ReplaceText;
+
+                    if (textBox.SelectedText != "")
+                    {
+                        textBox.SelectedText = ReplaceText;
+                    }
                 }
                 else
                 {
                     d = textBox.Find(FindText, RichTextBoxFinds.None);
-                    textBox.SelectedText = ReplaceText;
+
+                    if (textBox.SelectedText != "")
+                    {
+                        textBox.SelectedText = ReplaceText;
+                    }
                 }
             }
 
@@ -1513,6 +1521,7 @@ namespace Notepad
             {
                 MessageBox.Show("No results found", "Replace", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
         }
 
         private void replaceAllToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1522,7 +1531,7 @@ namespace Notepad
 
         private void ReplaceAllMethod()
         {
-            if (ReplaceText != "")
+            if (textBox.SelectedText != "")
             {
                 textBox.Text = textBox.Text.Replace(FindText, ReplaceText);
             }
@@ -1687,14 +1696,17 @@ namespace Notepad
 
         private void textBox_KeyDown(object sender, KeyEventArgs e)
         {
-            if (Control.IsKeyLocked(Keys.CapsLock))
+            if (onToolStripMenuItem6.Checked == true)
             {
-                statusBarPanel4.Text = "CAPS ON";
-            }
+                if (Control.IsKeyLocked(Keys.CapsLock))
+                {
+                    statusBarPanel4.Text = "CAPS ON";
+                }
 
-            else
-            {
-                statusBarPanel4.Text = "caps off";
+                else
+                {
+                    statusBarPanel4.Text = "caps off";
+                }
             }
         }
 
