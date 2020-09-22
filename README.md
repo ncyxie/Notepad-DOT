@@ -8,6 +8,8 @@
 
 > ***https://github.com/ncyxie/Notepad-DOT/releases/***
 
+Feel free to submit your ideas for Notepad DOT (you can contact with me on Telegram or Discord).
+
 ## Introduction
 
 **Notepad DOT** is an open source, lightweight and customisable text editor.
