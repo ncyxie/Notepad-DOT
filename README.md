@@ -1,4 +1,4 @@
-*Last updated: 2020/09/22*
+*Last updated: 2020/09/25*
 
 # Notepad DOT
 
@@ -9,6 +9,8 @@
 > ***https://github.com/ncyxie/Notepad-DOT/releases/***
 
 Feel free to submit your ideas for Notepad DOT (you can contact with me on Telegram or Discord).
+
+Thinking of v2.2.0-Stable update.. :)
 
 ## Introduction
 
