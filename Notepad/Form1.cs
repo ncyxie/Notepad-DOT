@@ -98,6 +98,13 @@ namespace Notepad
             offToolStripMenuItem8.Checked = false;
 
             textBox.ContextMenuStrip = contextMenuStrip1;
+
+            followStripMenuFontToolStripMenuItem.Checked = false;
+            followStatusBarFontToolStripMenuItem1.Checked = false;
+            followTextBoxFontToolStripMenuItem.Checked = false;
+            followStatusBarFontToolStripMenuItem.Checked = false;
+            followTextBoxFontToolStripMenuItem1.Checked = false;
+            followStripMenuFontToolStripMenuItem1.Checked = false;
         }
 
         public void GetSettings()
@@ -121,26 +128,30 @@ namespace Notepad
             {
                 onToolStripMenuItem2.Checked = true;
                 offToolStripMenuItem3.Checked = false;
-                statusBar1.Show();
                 timeToolStripMenuItem.Enabled = true;
                 wordCounterToolStripMenuItem.Enabled = true;
                 characterCounterToolStripMenuItem.Enabled = true;
                 fontToolStripMenuItem2.Enabled = true;
                 columnsToolStripMenuItem.Enabled = true;
                 capsTrackerToolStripMenuItem.Enabled = true;
+                followTextBoxFontToolStripMenuItem1.Enabled = true;
+                followStripMenuFontToolStripMenuItem1.Enabled = true;
+                statusBar1.Show();
             }
 
             else
             {
                 onToolStripMenuItem2.Checked = false;
                 offToolStripMenuItem3.Checked = true;
-                statusBar1.Hide();
                 timeToolStripMenuItem.Enabled = false;
                 wordCounterToolStripMenuItem.Enabled = false;
                 characterCounterToolStripMenuItem.Enabled = false;
                 fontToolStripMenuItem2.Enabled = false;
                 columnsToolStripMenuItem.Enabled = false;
                 capsTrackerToolStripMenuItem.Enabled = false;
+                followTextBoxFontToolStripMenuItem1.Enabled = false;
+                followStripMenuFontToolStripMenuItem1.Enabled = false;
+                statusBar1.Hide();
             }
 
             hourClockToolStripMenuItem.Checked = Properties.Settings.Default.twelveHours;
@@ -269,6 +280,8 @@ namespace Notepad
             oliveModeToolStripMenuItem.Checked = Properties.Settings.Default.oliveMode;
             colorModeToolStripMenuItem.Checked = Properties.Settings.Default.colorMode;
             followStripMenuToolStripMenuItem.Checked = Properties.Settings.Default.followStrip;
+            followContextMenuToolStripMenuItem1.Checked = Properties.Settings.Default.followContextTextBox;
+            followToolbarToolStripMenuItem1.Checked = Properties.Settings.Default.followToolbarTextBox;
 
             if (lightModeToolStripMenuItem.Checked == true)
             {
@@ -279,6 +292,8 @@ namespace Notepad
                 pinkModeToolStripMenuItem.Checked = false;
                 colorModeToolStripMenuItem.Checked = false;
                 followStripMenuToolStripMenuItem.Checked = false;
+                followContextMenuToolStripMenuItem1.Checked = false;
+                followToolbarToolStripMenuItem1.Checked = false;
 
             }
             else if (darkModeToolStripMenuItem.Checked == true)
@@ -290,6 +305,8 @@ namespace Notepad
                 pinkModeToolStripMenuItem.Checked = false;
                 colorModeToolStripMenuItem.Checked = false;
                 followStripMenuToolStripMenuItem.Checked = false;
+                followContextMenuToolStripMenuItem1.Checked = false;
+                followToolbarToolStripMenuItem1.Checked = false;
             }
             else if (blueModeToolStripMenuItem.Checked == true)
             {
@@ -300,6 +317,8 @@ namespace Notepad
                 pinkModeToolStripMenuItem.Checked = false;
                 colorModeToolStripMenuItem.Checked = false;
                 followStripMenuToolStripMenuItem.Checked = false;
+                followContextMenuToolStripMenuItem1.Checked = false;
+                followToolbarToolStripMenuItem1.Checked = false;
             }
             else if (pinkModeToolStripMenuItem.Checked == true)
             {
@@ -310,6 +329,8 @@ namespace Notepad
                 pinkModeToolStripMenuItem.Checked = true;
                 colorModeToolStripMenuItem.Checked = false;
                 followStripMenuToolStripMenuItem.Checked = false;
+                followContextMenuToolStripMenuItem1.Checked = false;
+                followToolbarToolStripMenuItem1.Checked = false;
             }
             else if (oliveModeToolStripMenuItem.Checked == true)
             {
@@ -320,6 +341,8 @@ namespace Notepad
                 pinkModeToolStripMenuItem.Checked = false;
                 colorModeToolStripMenuItem.Checked = false;
                 followStripMenuToolStripMenuItem.Checked = false;
+                followContextMenuToolStripMenuItem1.Checked = false;
+                followToolbarToolStripMenuItem1.Checked = false;
             }
             else if (colorModeToolStripMenuItem.Checked == true)
             {
@@ -330,6 +353,8 @@ namespace Notepad
                 pinkModeToolStripMenuItem.Checked = false;
                 colorModeToolStripMenuItem.Checked = true;
                 followStripMenuToolStripMenuItem.Checked = false;
+                followContextMenuToolStripMenuItem1.Checked = false;
+                followToolbarToolStripMenuItem1.Checked = false;
             }
             else if (followStripMenuToolStripMenuItem.Checked == true)
             {
@@ -340,7 +365,34 @@ namespace Notepad
                 pinkModeToolStripMenuItem.Checked = false;
                 colorModeToolStripMenuItem.Checked = false;
                 followStripMenuToolStripMenuItem.Checked = true;
+                followContextMenuToolStripMenuItem1.Checked = false;
+                followToolbarToolStripMenuItem1.Checked = false;
             }
+            else if (followContextMenuToolStripMenuItem1.Checked == true)
+            {
+                darkModeToolStripMenuItem.Checked = false;
+                lightModeToolStripMenuItem.Checked = false;
+                blueModeToolStripMenuItem.Checked = false;
+                oliveModeToolStripMenuItem.Checked = false;
+                pinkModeToolStripMenuItem.Checked = false;
+                colorModeToolStripMenuItem.Checked = false;
+                followStripMenuToolStripMenuItem.Checked = false;
+                followContextMenuToolStripMenuItem1.Checked = true;
+                followToolbarToolStripMenuItem1.Checked = false;
+            }
+            else if (followToolbarToolStripMenuItem1.Checked == true)
+            {
+                darkModeToolStripMenuItem.Checked = false;
+                lightModeToolStripMenuItem.Checked = false;
+                blueModeToolStripMenuItem.Checked = false;
+                oliveModeToolStripMenuItem.Checked = false;
+                pinkModeToolStripMenuItem.Checked = false;
+                colorModeToolStripMenuItem.Checked = false;
+                followStripMenuToolStripMenuItem.Checked = false;
+                followContextMenuToolStripMenuItem1.Checked = false;
+                followToolbarToolStripMenuItem1.Checked = true;
+            }
+
 
             lightModeToolStripMenuItem1.Checked = Properties.Settings.Default.lightStrip;
             darkModeToolStripMenuItem1.Checked = Properties.Settings.Default.darkStrip;
@@ -349,6 +401,8 @@ namespace Notepad
             oliveModeToolStripMenuItem1.Checked = Properties.Settings.Default.oliveStrip;
             colorModeToolStripMenuItem1.Checked = Properties.Settings.Default.colorStrip;
             followTextBoxToolStripMenuItem.Checked = Properties.Settings.Default.followTextBox;
+            followContextMenuToolStripMenuItem2.Checked = Properties.Settings.Default.followContextStripMenu;
+            followToolbarToolStripMenuItem2.Checked = Properties.Settings.Default.followToolbarStripMenu;
 
             if (lightModeToolStripMenuItem1.Checked == true)
             {
@@ -359,6 +413,8 @@ namespace Notepad
                 pinkModeToolStripMenuItem1.Checked = false;
                 colorModeToolStripMenuItem1.Checked = false;
                 followTextBoxToolStripMenuItem.Checked = false;
+                followContextMenuToolStripMenuItem2.Checked = false;
+                followToolbarToolStripMenuItem2.Checked = false;
             }
             else if (darkModeToolStripMenuItem1.Checked == true)
             {
@@ -369,6 +425,8 @@ namespace Notepad
                 pinkModeToolStripMenuItem1.Checked = false;
                 colorModeToolStripMenuItem1.Checked = false;
                 followTextBoxToolStripMenuItem.Checked = false;
+                followContextMenuToolStripMenuItem2.Checked = false;
+                followToolbarToolStripMenuItem2.Checked = false;
             }
             else if (blueModeToolStripMenuItem1.Checked == true)
             {
@@ -379,6 +437,8 @@ namespace Notepad
                 pinkModeToolStripMenuItem1.Checked = false;
                 colorModeToolStripMenuItem1.Checked = false;
                 followTextBoxToolStripMenuItem.Checked = false;
+                followContextMenuToolStripMenuItem2.Checked = false;
+                followToolbarToolStripMenuItem2.Checked = false;
             }
             else if (pinkModeToolStripMenuItem1.Checked == true)
             {
@@ -389,6 +449,8 @@ namespace Notepad
                 pinkModeToolStripMenuItem1.Checked = true;
                 colorModeToolStripMenuItem1.Checked = false;
                 followTextBoxToolStripMenuItem.Checked = false;
+                followContextMenuToolStripMenuItem2.Checked = false;
+                followToolbarToolStripMenuItem2.Checked = false;
             }
             else if (oliveModeToolStripMenuItem1.Checked == true)
             {
@@ -399,6 +461,8 @@ namespace Notepad
                 pinkModeToolStripMenuItem1.Checked = false;
                 colorModeToolStripMenuItem1.Checked = false;
                 followTextBoxToolStripMenuItem.Checked = false;
+                followContextMenuToolStripMenuItem2.Checked = false;
+                followToolbarToolStripMenuItem2.Checked = false;
             }
             else if (colorModeToolStripMenuItem1.Checked == true)
             {
@@ -409,6 +473,8 @@ namespace Notepad
                 pinkModeToolStripMenuItem1.Checked = false;
                 colorModeToolStripMenuItem1.Checked = true;
                 followTextBoxToolStripMenuItem.Checked = false;
+                followContextMenuToolStripMenuItem2.Checked = false;
+                followToolbarToolStripMenuItem2.Checked = false;
             }
             else if (followTextBoxToolStripMenuItem.Checked == true)
             {
@@ -419,6 +485,32 @@ namespace Notepad
                 pinkModeToolStripMenuItem1.Checked = false;
                 colorModeToolStripMenuItem1.Checked = false;
                 followTextBoxToolStripMenuItem.Checked = true;
+                followContextMenuToolStripMenuItem2.Checked = false;
+                followToolbarToolStripMenuItem2.Checked = false;
+            }
+            else if (followContextMenuToolStripMenuItem2.Checked == true)
+            {
+                darkModeToolStripMenuItem1.Checked = false;
+                lightModeToolStripMenuItem1.Checked = false;
+                blueModeToolStripMenuItem1.Checked = false;
+                oliveModeToolStripMenuItem1.Checked = false;
+                pinkModeToolStripMenuItem1.Checked = false;
+                colorModeToolStripMenuItem1.Checked = false;
+                followTextBoxToolStripMenuItem.Checked = false;
+                followContextMenuToolStripMenuItem2.Checked = true;
+                followToolbarToolStripMenuItem2.Checked = false;
+            }
+            else if (followToolbarToolStripMenuItem2.Checked == true)
+            {
+                darkModeToolStripMenuItem1.Checked = false;
+                lightModeToolStripMenuItem1.Checked = false;
+                blueModeToolStripMenuItem1.Checked = false;
+                oliveModeToolStripMenuItem1.Checked = false;
+                pinkModeToolStripMenuItem1.Checked = false;
+                colorModeToolStripMenuItem1.Checked = false;
+                followTextBoxToolStripMenuItem.Checked = false;
+                followContextMenuToolStripMenuItem2.Checked = false;
+                followToolbarToolStripMenuItem2.Checked = true;
             }
 
             onToolStripMenuItem4.Checked = Properties.Settings.Default.toolStrip;
@@ -426,6 +518,7 @@ namespace Notepad
             if (onToolStripMenuItem4.Checked == true)
             {
                 onToolStripMenuItem4.Checked = true;
+                appearanceToolStripMenuItem2.Enabled = true;
                 columnsToolStripMenuItem1.Enabled = true;
                 offToolStripMenuItem5.Checked = false;
                 toolStrip1.Show();
@@ -434,6 +527,7 @@ namespace Notepad
             else
             {
                 onToolStripMenuItem4.Checked = false;
+                appearanceToolStripMenuItem2.Enabled = false;
                 columnsToolStripMenuItem1.Enabled = false;
                 offToolStripMenuItem5.Checked = true;
                 toolStrip1.Hide();
@@ -499,6 +593,7 @@ namespace Notepad
             {
                 onToolStripMenuItem7.Checked = true;
                 offToolStripMenuItem8.Checked = false;
+                appearanceToolStripMenuItem.Enabled = true;
 
                 textBox.ContextMenuStrip = contextMenuStrip1;
             }
@@ -507,8 +602,405 @@ namespace Notepad
             {
                 onToolStripMenuItem7.Checked = false;
                 offToolStripMenuItem8.Checked = true;
+                appearanceToolStripMenuItem.Enabled = false;
 
                 textBox.ContextMenuStrip = new ContextMenuStrip();
+            }
+
+            followStripMenuFontToolStripMenuItem.Checked = Properties.Settings.Default.textBoxFollowStripMenu;
+
+            if (followStripMenuFontToolStripMenuItem.Checked == true)
+            {
+                followStripMenuFontToolStripMenuItem.Checked = true;
+                followStatusBarFontToolStripMenuItem1.Checked = false;
+            }
+
+            else
+            {
+                followStripMenuFontToolStripMenuItem.Checked = false;
+            }
+
+            followStatusBarFontToolStripMenuItem1.Checked = Properties.Settings.Default.textBoxFollowStatusBar;
+
+            if (followStatusBarFontToolStripMenuItem1.Checked == true)
+            {
+                followStripMenuFontToolStripMenuItem.Checked = false;
+                followStatusBarFontToolStripMenuItem1.Checked = true;
+            }
+
+            else
+            {
+                followStatusBarFontToolStripMenuItem1.Checked = false;
+            }
+
+            followTextBoxFontToolStripMenuItem.Checked = Properties.Settings.Default.stripMenuFollowTextBox;
+
+            if (followTextBoxFontToolStripMenuItem.Checked == true)
+            {
+                followTextBoxFontToolStripMenuItem.Checked = true;
+                followStatusBarFontToolStripMenuItem.Checked = false;
+            }
+
+            else
+            {
+                followTextBoxFontToolStripMenuItem.Checked = false;
+            }
+
+            followStatusBarFontToolStripMenuItem.Checked = Properties.Settings.Default.stripMenuFollowStatusBar;
+
+            if (followStatusBarFontToolStripMenuItem.Checked == true)
+            {
+                followTextBoxFontToolStripMenuItem.Checked = false;
+                followStatusBarFontToolStripMenuItem.Checked = true;
+            }
+
+            else
+            {
+                followStatusBarFontToolStripMenuItem.Checked = false;
+            }
+
+
+            followTextBoxFontToolStripMenuItem1.Checked = Properties.Settings.Default.statusBarFollowTextBox;
+
+            if (followTextBoxFontToolStripMenuItem1.Checked == true)
+            {
+                followTextBoxFontToolStripMenuItem1.Checked = true;
+                followStripMenuFontToolStripMenuItem1.Checked = false;
+            }
+
+            else
+            {
+                followTextBoxFontToolStripMenuItem1.Checked = false;
+            }
+
+            followStripMenuFontToolStripMenuItem1.Checked = Properties.Settings.Default.statusBarFollowStripMenu;
+
+            if (followStripMenuFontToolStripMenuItem1.Checked == true)
+            {
+                followTextBoxFontToolStripMenuItem1.Checked = false;
+                followStripMenuFontToolStripMenuItem1.Checked = true;
+            }
+
+            else
+            {
+                followStripMenuFontToolStripMenuItem1.Checked = false;
+            }
+
+            lightModeToolStripMenuItem2.Checked = Properties.Settings.Default.lightContext;
+            darkModeToolStripMenuItem2.Checked = Properties.Settings.Default.darkContext;
+            blueModeToolStripMenuItem2.Checked = Properties.Settings.Default.blueContext;
+            pinkModeToolStripMenuItem2.Checked = Properties.Settings.Default.pinkContext;
+            oliveModeToolStripMenuItem2.Checked = Properties.Settings.Default.oliveContext;
+            colorModeToolStripMenuItem2.Checked = Properties.Settings.Default.colorContext;
+            followTextBoxToolStripMenuItem1.Checked = Properties.Settings.Default.followTextBoxContext;
+            followStripMenuToolStripMenuItem1.Checked = Properties.Settings.Default.followStripMenuContext;
+            followToolbarToolStripMenuItem.Checked = Properties.Settings.Default.followToolbarContext;
+
+            if (lightModeToolStripMenuItem2.Checked == true)
+            {
+                lightModeToolStripMenuItem2.Checked = true;
+                darkModeToolStripMenuItem2.Checked = false;
+                blueModeToolStripMenuItem2.Checked = false;
+                pinkModeToolStripMenuItem2.Checked = false;
+                oliveModeToolStripMenuItem2.Checked = false;
+                colorModeToolStripMenuItem2.Checked = false;
+                followTextBoxToolStripMenuItem1.Checked = false;
+                followStripMenuToolStripMenuItem1.Checked = false;
+                followToolbarToolStripMenuItem.Checked = false;
+
+                contextMenuStrip1.BackColor = Color.White;
+                contextMenuStrip1.ForeColor = Color.Black;
+            }
+            else if (darkModeToolStripMenuItem2.Checked == true)
+            {
+                lightModeToolStripMenuItem2.Checked = false;
+                darkModeToolStripMenuItem2.Checked = true;
+                blueModeToolStripMenuItem2.Checked = false;
+                pinkModeToolStripMenuItem2.Checked = false;
+                oliveModeToolStripMenuItem2.Checked = false;
+                colorModeToolStripMenuItem2.Checked = false;
+                followTextBoxToolStripMenuItem1.Checked = false;
+                followStripMenuToolStripMenuItem1.Checked = false;
+                followToolbarToolStripMenuItem.Checked = false;
+
+                contextMenuStrip1.BackColor = Color.FromArgb(30, 30, 30);
+                contextMenuStrip1.ForeColor = Color.White;
+            }
+            else if (blueModeToolStripMenuItem2.Checked == true)
+            {
+                lightModeToolStripMenuItem2.Checked = false;
+                darkModeToolStripMenuItem2.Checked = false;
+                blueModeToolStripMenuItem2.Checked = true;
+                pinkModeToolStripMenuItem2.Checked = false;
+                oliveModeToolStripMenuItem2.Checked = false;
+                colorModeToolStripMenuItem2.Checked = false;
+                followTextBoxToolStripMenuItem1.Checked = false;
+                followStripMenuToolStripMenuItem1.Checked = false;
+                followToolbarToolStripMenuItem.Checked = false;
+
+                contextMenuStrip1.BackColor = Color.FromArgb(0, 103, 179);
+                contextMenuStrip1.ForeColor = Color.White;
+            }
+            else if (pinkModeToolStripMenuItem2.Checked == true)
+            {
+                lightModeToolStripMenuItem2.Checked = false;
+                darkModeToolStripMenuItem2.Checked = false;
+                blueModeToolStripMenuItem2.Checked = false;
+                pinkModeToolStripMenuItem2.Checked = true;
+                oliveModeToolStripMenuItem2.Checked = false;
+                colorModeToolStripMenuItem2.Checked = false;
+                followTextBoxToolStripMenuItem1.Checked = false;
+                followStripMenuToolStripMenuItem1.Checked = false;
+                followToolbarToolStripMenuItem.Checked = false;
+
+                contextMenuStrip1.BackColor = Color.FromArgb(255, 192, 203);
+                contextMenuStrip1.ForeColor = Color.Black;
+            }
+            else if (oliveModeToolStripMenuItem2.Checked == true)
+            {
+                lightModeToolStripMenuItem2.Checked = false;
+                darkModeToolStripMenuItem2.Checked = false;
+                blueModeToolStripMenuItem2.Checked = false;
+                pinkModeToolStripMenuItem2.Checked = false;
+                oliveModeToolStripMenuItem2.Checked = true;
+                colorModeToolStripMenuItem2.Checked = false;
+                followTextBoxToolStripMenuItem1.Checked = false;
+                followStripMenuToolStripMenuItem1.Checked = false;
+                followToolbarToolStripMenuItem.Checked = false;
+
+                contextMenuStrip1.BackColor = Color.FromArgb(107, 142, 35);
+                contextMenuStrip1.ForeColor = Color.White;
+            }
+            else if (colorModeToolStripMenuItem2.Checked == true)
+            {
+                lightModeToolStripMenuItem2.Checked = false;
+                darkModeToolStripMenuItem2.Checked = false;
+                blueModeToolStripMenuItem2.Checked = false;
+                pinkModeToolStripMenuItem2.Checked = false;
+                oliveModeToolStripMenuItem2.Checked = false;
+                colorModeToolStripMenuItem2.Checked = true;
+                followTextBoxToolStripMenuItem1.Checked = false;
+                followStripMenuToolStripMenuItem1.Checked = false;
+                followToolbarToolStripMenuItem.Checked = false;
+
+                ColorDialog MyDialog = new ColorDialog();
+
+                MyDialog.Color = contextMenuStrip1.BackColor;
+
+                ColorDialog op = new ColorDialog();
+
+                op.Color = contextMenuStrip1.BackColor;
+                if (MyDialog.ShowDialog() == DialogResult.OK)
+                    contextMenuStrip1.BackColor = MyDialog.Color;
+            }
+            else if (followTextBoxToolStripMenuItem1.Checked == true)
+            {
+                lightModeToolStripMenuItem2.Checked = false;
+                darkModeToolStripMenuItem2.Checked = false;
+                blueModeToolStripMenuItem2.Checked = false;
+                pinkModeToolStripMenuItem2.Checked = false;
+                oliveModeToolStripMenuItem2.Checked = false;
+                colorModeToolStripMenuItem2.Checked = false;
+                followTextBoxToolStripMenuItem1.Checked = true;
+                followStripMenuToolStripMenuItem1.Checked = false;
+                followToolbarToolStripMenuItem.Checked = false;
+
+                contextMenuStrip1.BackColor = textBox.BackColor;
+                contextMenuStrip1.ForeColor = textBox.ForeColor;
+            }
+            else if (followStripMenuToolStripMenuItem1.Checked == true)
+            {
+                lightModeToolStripMenuItem2.Checked = false;
+                darkModeToolStripMenuItem2.Checked = false;
+                blueModeToolStripMenuItem2.Checked = false;
+                pinkModeToolStripMenuItem2.Checked = false;
+                oliveModeToolStripMenuItem2.Checked = false;
+                colorModeToolStripMenuItem2.Checked = false;
+                followTextBoxToolStripMenuItem1.Checked = false;
+                followStripMenuToolStripMenuItem1.Checked = true;
+                followToolbarToolStripMenuItem.Checked = false;
+
+                contextMenuStrip1.BackColor = menuStrip1.BackColor;
+                contextMenuStrip1.ForeColor = menuStrip1.ForeColor;
+            }
+            else if (followToolbarToolStripMenuItem.Checked == true)
+            {
+                lightModeToolStripMenuItem2.Checked = false;
+                darkModeToolStripMenuItem2.Checked = false;
+                blueModeToolStripMenuItem2.Checked = false;
+                pinkModeToolStripMenuItem2.Checked = false;
+                oliveModeToolStripMenuItem2.Checked = false;
+                colorModeToolStripMenuItem2.Checked = false;
+                followTextBoxToolStripMenuItem1.Checked = false;
+                followStripMenuToolStripMenuItem1.Checked = false;
+                followToolbarToolStripMenuItem.Checked = true;
+
+                contextMenuStrip1.BackColor = toolStrip1.BackColor;
+                contextMenuStrip1.ForeColor = toolStrip1.ForeColor;
+            }
+
+            lightModeToolStripMenuItem3.Checked = Properties.Settings.Default.lightToolbar;
+            darkModeToolStripMenuItem3.Checked = Properties.Settings.Default.darkToolbar;
+            blueModeToolStripMenuItem3.Checked = Properties.Settings.Default.blueToolbar;
+            pinkModeToolStripMenuItem3.Checked = Properties.Settings.Default.pinkToolbar;
+            oliveModeToolStripMenuItem3.Checked = Properties.Settings.Default.oliveToolbar;
+            colorModeToolStripMenuItem3.Checked = Properties.Settings.Default.colorToolbar;
+            followTextBoxToolStripMenuItem2.Checked = Properties.Settings.Default.followTextBoxToolbar;
+            followStripMenuToolStripMenuItem2.Checked = Properties.Settings.Default.followStripMenuToolbar;
+            followContextMenuToolStripMenuItem.Checked = Properties.Settings.Default.followContextToolbar;
+
+            if (lightModeToolStripMenuItem3.Checked == true)
+            {
+                lightModeToolStripMenuItem3.Checked = true;
+                darkModeToolStripMenuItem3.Checked = false;
+                blueModeToolStripMenuItem3.Checked = false;
+                pinkModeToolStripMenuItem3.Checked = false;
+                oliveModeToolStripMenuItem3.Checked = false;
+                colorModeToolStripMenuItem3.Checked = false;
+                followTextBoxToolStripMenuItem2.Checked = false;
+                followStripMenuToolStripMenuItem2.Checked = false;
+                followContextMenuToolStripMenuItem.Checked = false;
+
+                toolStrip1.BackColor = Color.White;
+                toolStripContainer1.TopToolStripPanel.BackColor = Color.White;
+                toolStrip1.ForeColor = Color.Black;
+            }
+            else if (darkModeToolStripMenuItem3.Checked == true)
+            {
+                lightModeToolStripMenuItem3.Checked = false;
+                darkModeToolStripMenuItem3.Checked = true;
+                blueModeToolStripMenuItem3.Checked = false;
+                pinkModeToolStripMenuItem3.Checked = false;
+                oliveModeToolStripMenuItem3.Checked = false;
+                colorModeToolStripMenuItem3.Checked = false;
+                followTextBoxToolStripMenuItem2.Checked = false;
+                followStripMenuToolStripMenuItem2.Checked = false;
+                followContextMenuToolStripMenuItem.Checked = false;
+
+                toolStrip1.BackColor = Color.FromArgb(30, 30, 30);
+                toolStripContainer1.TopToolStripPanel.BackColor = Color.FromArgb(30, 30, 30);
+                toolStrip1.ForeColor = Color.White;
+            }
+            else if (blueModeToolStripMenuItem3.Checked == true)
+            {
+                lightModeToolStripMenuItem3.Checked = false;
+                darkModeToolStripMenuItem3.Checked = false;
+                blueModeToolStripMenuItem3.Checked = true;
+                pinkModeToolStripMenuItem3.Checked = false;
+                oliveModeToolStripMenuItem3.Checked = false;
+                colorModeToolStripMenuItem3.Checked = false;
+                followTextBoxToolStripMenuItem2.Checked = false;
+                followStripMenuToolStripMenuItem2.Checked = false;
+                followContextMenuToolStripMenuItem.Checked = false;
+
+                toolStrip1.BackColor = Color.FromArgb(0, 103, 179);
+                toolStripContainer1.TopToolStripPanel.BackColor = Color.FromArgb(0, 103, 179);
+                toolStrip1.ForeColor = Color.White;
+            }
+            else if (pinkModeToolStripMenuItem3.Checked == true)
+            {
+                lightModeToolStripMenuItem3.Checked = false;
+                darkModeToolStripMenuItem3.Checked = false;
+                blueModeToolStripMenuItem3.Checked = false;
+                pinkModeToolStripMenuItem3.Checked = true;
+                oliveModeToolStripMenuItem3.Checked = false;
+                colorModeToolStripMenuItem3.Checked = false;
+                followTextBoxToolStripMenuItem2.Checked = false;
+                followStripMenuToolStripMenuItem2.Checked = false;
+                followContextMenuToolStripMenuItem.Checked = false;
+
+                toolStrip1.BackColor = Color.FromArgb(255, 192, 203);
+                toolStripContainer1.TopToolStripPanel.BackColor = Color.FromArgb(255, 192, 203);
+                toolStrip1.ForeColor = Color.Black;
+            }
+            else if (oliveModeToolStripMenuItem3.Checked == true)
+            {
+                lightModeToolStripMenuItem3.Checked = false;
+                darkModeToolStripMenuItem3.Checked = false;
+                blueModeToolStripMenuItem3.Checked = false;
+                pinkModeToolStripMenuItem3.Checked = false;
+                oliveModeToolStripMenuItem3.Checked = true;
+                colorModeToolStripMenuItem3.Checked = false;
+                followTextBoxToolStripMenuItem2.Checked = false;
+                followStripMenuToolStripMenuItem2.Checked = false;
+                followContextMenuToolStripMenuItem.Checked = false;
+
+                toolStrip1.BackColor = Color.FromArgb(107, 142, 35);
+                toolStripContainer1.TopToolStripPanel.BackColor = Color.FromArgb(107, 142, 35);
+                toolStrip1.ForeColor = Color.White;
+            }
+            else if (colorModeToolStripMenuItem3.Checked == true)
+            {
+                lightModeToolStripMenuItem3.Checked = false;
+                darkModeToolStripMenuItem3.Checked = false;
+                blueModeToolStripMenuItem3.Checked = false;
+                pinkModeToolStripMenuItem3.Checked = false;
+                oliveModeToolStripMenuItem3.Checked = false;
+                colorModeToolStripMenuItem3.Checked = true;
+                followTextBoxToolStripMenuItem2.Checked = false;
+                followStripMenuToolStripMenuItem2.Checked = false;
+                followContextMenuToolStripMenuItem.Checked = false;
+
+                ColorDialog MyDialog = new ColorDialog();
+
+                MyDialog.Color = toolStrip1.BackColor;
+                MyDialog.Color = toolStripContainer1.TopToolStripPanel.BackColor;
+
+                ColorDialog op = new ColorDialog();
+
+                op.Color = toolStrip1.BackColor;
+                op.Color = toolStripContainer1.TopToolStripPanel.BackColor;
+                if (MyDialog.ShowDialog() == DialogResult.OK)
+                    toolStrip1.BackColor = MyDialog.Color;
+                toolStripContainer1.TopToolStripPanel.BackColor = MyDialog.Color;
+            }
+            else if (followTextBoxToolStripMenuItem2.Checked == true)
+            {
+                lightModeToolStripMenuItem3.Checked = false;
+                darkModeToolStripMenuItem3.Checked = false;
+                blueModeToolStripMenuItem3.Checked = false;
+                pinkModeToolStripMenuItem3.Checked = false;
+                oliveModeToolStripMenuItem3.Checked = false;
+                colorModeToolStripMenuItem3.Checked = false;
+                followTextBoxToolStripMenuItem2.Checked = true;
+                followStripMenuToolStripMenuItem2.Checked = false;
+                followContextMenuToolStripMenuItem.Checked = false;
+
+                toolStrip1.BackColor = textBox.BackColor;
+                toolStrip1.ForeColor = textBox.ForeColor;
+                toolStripContainer1.TopToolStripPanel.BackColor = textBox.BackColor;
+            }
+            else if (followStripMenuToolStripMenuItem2.Checked == true)
+            {
+                lightModeToolStripMenuItem3.Checked = false;
+                darkModeToolStripMenuItem3.Checked = false;
+                blueModeToolStripMenuItem3.Checked = false;
+                pinkModeToolStripMenuItem3.Checked = false;
+                oliveModeToolStripMenuItem3.Checked = false;
+                colorModeToolStripMenuItem3.Checked = false;
+                followTextBoxToolStripMenuItem2.Checked = false;
+                followStripMenuToolStripMenuItem2.Checked = true;
+                followContextMenuToolStripMenuItem.Checked = false;
+
+                toolStrip1.BackColor = menuStrip1.BackColor;
+                toolStrip1.ForeColor = menuStrip1.ForeColor;
+                toolStripContainer1.TopToolStripPanel.BackColor = menuStrip1.BackColor;
+            }
+            else if (followContextMenuToolStripMenuItem.Checked == true)
+            {
+                lightModeToolStripMenuItem3.Checked = false;
+                darkModeToolStripMenuItem3.Checked = false;
+                blueModeToolStripMenuItem3.Checked = false;
+                pinkModeToolStripMenuItem3.Checked = false;
+                oliveModeToolStripMenuItem3.Checked = false;
+                colorModeToolStripMenuItem3.Checked = false;
+                followTextBoxToolStripMenuItem2.Checked = false;
+                followStripMenuToolStripMenuItem2.Checked = false;
+                followContextMenuToolStripMenuItem.Checked = true;
+
+                toolStrip1.BackColor = contextMenuStrip1.BackColor;
+                toolStrip1.ForeColor = contextMenuStrip1.ForeColor;
+                toolStripContainer1.TopToolStripPanel.BackColor = contextMenuStrip1.BackColor;
             }
         }
 
@@ -553,6 +1045,8 @@ namespace Notepad
             Properties.Settings.Default.oliveMode = oliveModeToolStripMenuItem.Checked;
             Properties.Settings.Default.colorMode = colorModeToolStripMenuItem.Checked;
             Properties.Settings.Default.followStrip = followStripMenuToolStripMenuItem.Checked;
+            Properties.Settings.Default.followContextTextBox = followContextMenuToolStripMenuItem1.Checked;
+            Properties.Settings.Default.followToolbarTextBox = followToolbarToolStripMenuItem1.Checked;
 
             Properties.Settings.Default.lightStrip = lightModeToolStripMenuItem1.Checked;
             Properties.Settings.Default.darkStrip = darkModeToolStripMenuItem1.Checked;
@@ -561,6 +1055,8 @@ namespace Notepad
             Properties.Settings.Default.oliveStrip = oliveModeToolStripMenuItem1.Checked;
             Properties.Settings.Default.colorStrip = colorModeToolStripMenuItem1.Checked;
             Properties.Settings.Default.followTextBox = followTextBoxToolStripMenuItem.Checked;
+            Properties.Settings.Default.followContextStripMenu = followContextMenuToolStripMenuItem2.Checked;
+            Properties.Settings.Default.followToolbarStripMenu = followToolbarToolStripMenuItem2.Checked;
 
             Properties.Settings.Default.toolStrip = onToolStripMenuItem4.Checked;
 
@@ -569,6 +1065,33 @@ namespace Notepad
             Properties.Settings.Default.capsTracker = onToolStripMenuItem6.Checked;
 
             Properties.Settings.Default.contextMenu = onToolStripMenuItem7.Checked;
+
+            Properties.Settings.Default.textBoxFollowStripMenu = followStripMenuFontToolStripMenuItem.Checked;
+            Properties.Settings.Default.textBoxFollowStatusBar = followStatusBarFontToolStripMenuItem1.Checked;
+            Properties.Settings.Default.stripMenuFollowTextBox = followTextBoxFontToolStripMenuItem.Checked;
+            Properties.Settings.Default.stripMenuFollowStatusBar = followStatusBarFontToolStripMenuItem.Checked;
+            Properties.Settings.Default.statusBarFollowTextBox = followTextBoxFontToolStripMenuItem1.Checked;
+            Properties.Settings.Default.statusBarFollowStripMenu = followStripMenuFontToolStripMenuItem1.Checked;
+
+            Properties.Settings.Default.lightContext = lightModeToolStripMenuItem2.Checked;
+            Properties.Settings.Default.darkContext = darkModeToolStripMenuItem2.Checked;
+            Properties.Settings.Default.blueContext = blueModeToolStripMenuItem2.Checked;
+            Properties.Settings.Default.pinkContext = pinkModeToolStripMenuItem2.Checked;
+            Properties.Settings.Default.oliveContext = oliveModeToolStripMenuItem2.Checked;
+            Properties.Settings.Default.colorContext = colorModeToolStripMenuItem2.Checked;
+            Properties.Settings.Default.followTextBoxContext = followTextBoxToolStripMenuItem1.Checked;
+            Properties.Settings.Default.followStripMenuContext = followStripMenuToolStripMenuItem1.Checked;
+            Properties.Settings.Default.followToolbarContext = followToolbarToolStripMenuItem.Checked;
+
+            Properties.Settings.Default.lightToolbar = lightModeToolStripMenuItem3.Checked;
+            Properties.Settings.Default.darkToolbar = darkModeToolStripMenuItem3.Checked;
+            Properties.Settings.Default.blueToolbar = blueModeToolStripMenuItem3.Checked;
+            Properties.Settings.Default.pinkToolbar = pinkModeToolStripMenuItem3.Checked;
+            Properties.Settings.Default.oliveToolbar = oliveModeToolStripMenuItem3.Checked;
+            Properties.Settings.Default.colorToolbar = colorModeToolStripMenuItem3.Checked;
+            Properties.Settings.Default.followTextBoxToolbar = followTextBoxToolStripMenuItem2.Checked;
+            Properties.Settings.Default.followStripMenuToolbar = followStripMenuToolStripMenuItem2.Checked;
+            Properties.Settings.Default.followContextToolbar = followContextMenuToolStripMenuItem.Checked;
 
             Properties.Settings.Default.Save();
         }
@@ -898,6 +1421,8 @@ namespace Notepad
             op.Font = textBox.Font;
             if (op.ShowDialog() == DialogResult.OK)
                 textBox.Font = op.Font;
+            followStripMenuFontToolStripMenuItem.Checked = false;
+            followStatusBarFontToolStripMenuItem1.Checked = false;
         }
 
         private void colorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -925,7 +1450,7 @@ namespace Notepad
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString(this.textBox.Text, this.textBox.Font, Brushes.Black, new PointF(25, 25));
+            e.Graphics.DrawString(textBox.Text, textBox.Font, Brushes.Black, new PointF(20, 20));
         }
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
@@ -994,11 +1519,13 @@ namespace Notepad
             pinkModeToolStripMenuItem.Checked = false;
             colorModeToolStripMenuItem.Checked = false;
             followStripMenuToolStripMenuItem.Checked = false;
+            followContextMenuToolStripMenuItem1.Checked = false;
+            followToolbarToolStripMenuItem1.Checked = false;
 
             Properties.Settings.Default.Theme = "light";
 
-            this.textBox.BackColor = Color.White;
-            this.textBox.ForeColor = Color.Black;
+            textBox.BackColor = Color.White;
+            textBox.ForeColor = Color.Black;
         }
 
         private void darkModeToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -1010,11 +1537,13 @@ namespace Notepad
             pinkModeToolStripMenuItem.Checked = false;
             colorModeToolStripMenuItem.Checked = false;
             followStripMenuToolStripMenuItem.Checked = false;
+            followContextMenuToolStripMenuItem1.Checked = false;
+            followToolbarToolStripMenuItem1.Checked = false;
 
             Properties.Settings.Default.Theme = "dark";
 
-            this.textBox.BackColor = Color.FromArgb(30, 30, 30);
-            this.textBox.ForeColor = Color.White;
+            textBox.BackColor = Color.FromArgb(30, 30, 30);
+            textBox.ForeColor = Color.White;
         }
 
         private void blueModeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1026,11 +1555,13 @@ namespace Notepad
             pinkModeToolStripMenuItem.Checked = false;
             colorModeToolStripMenuItem.Checked = false;
             followStripMenuToolStripMenuItem.Checked = false;
+            followContextMenuToolStripMenuItem1.Checked = false;
+            followToolbarToolStripMenuItem1.Checked = false;
 
             Properties.Settings.Default.Theme = "blue";
 
-            this.textBox.BackColor = Color.FromArgb(0, 103, 179);
-            this.textBox.ForeColor = Color.White;
+            textBox.BackColor = Color.FromArgb(0, 103, 179);
+            textBox.ForeColor = Color.White;
         }
 
         private void oliveModeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1042,11 +1573,13 @@ namespace Notepad
             pinkModeToolStripMenuItem.Checked = false;
             colorModeToolStripMenuItem.Checked = false;
             followStripMenuToolStripMenuItem.Checked = false;
+            followContextMenuToolStripMenuItem1.Checked = false;
+            followToolbarToolStripMenuItem1.Checked = false;
 
             Properties.Settings.Default.Theme = "olive";
 
-            this.textBox.BackColor = Color.FromArgb(107, 142, 35);
-            this.textBox.ForeColor = Color.White;
+            textBox.BackColor = Color.FromArgb(107, 142, 35);
+            textBox.ForeColor = Color.White;
         }
 
         private void pinkModeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1058,11 +1591,13 @@ namespace Notepad
             pinkModeToolStripMenuItem.Checked = true;
             colorModeToolStripMenuItem.Checked = false;
             followStripMenuToolStripMenuItem.Checked = false;
+            followContextMenuToolStripMenuItem1.Checked = false;
+            followToolbarToolStripMenuItem1.Checked = false;
 
             Properties.Settings.Default.Theme = "pink";
 
-            this.textBox.BackColor = Color.FromArgb(255, 192, 203);
-            this.textBox.ForeColor = Color.Black;
+            textBox.BackColor = Color.FromArgb(255, 192, 203);
+            textBox.ForeColor = Color.Black;
         }
         private void colorModeToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
@@ -1073,6 +1608,8 @@ namespace Notepad
             pinkModeToolStripMenuItem.Checked = false;
             colorModeToolStripMenuItem.Checked = true;
             followStripMenuToolStripMenuItem.Checked = false;
+            followContextMenuToolStripMenuItem1.Checked = false;
+            followToolbarToolStripMenuItem1.Checked = false;
 
             Properties.Settings.Default.Theme = "color";
 
@@ -1096,8 +1633,42 @@ namespace Notepad
             pinkModeToolStripMenuItem.Checked = false;
             colorModeToolStripMenuItem.Checked = false;
             followStripMenuToolStripMenuItem.Checked = true;
+            followContextMenuToolStripMenuItem1.Checked = false;
+            followToolbarToolStripMenuItem1.Checked = false;
 
             textBox.BackColor = menuStrip1.BackColor;
+            textBox.ForeColor = menuStrip1.ForeColor;
+        }
+
+        private void followContextMenuToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            darkModeToolStripMenuItem.Checked = false;
+            lightModeToolStripMenuItem.Checked = false;
+            blueModeToolStripMenuItem.Checked = false;
+            oliveModeToolStripMenuItem.Checked = false;
+            pinkModeToolStripMenuItem.Checked = false;
+            colorModeToolStripMenuItem.Checked = false;
+            followStripMenuToolStripMenuItem.Checked = false;
+            followContextMenuToolStripMenuItem1.Checked = true;
+            followToolbarToolStripMenuItem1.Checked = false;
+
+            textBox.BackColor = contextMenuStrip1.BackColor;
+            textBox.ForeColor = contextMenuStrip1.ForeColor;
+        }
+
+        private void followToolbarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            darkModeToolStripMenuItem.Checked = false;
+            lightModeToolStripMenuItem.Checked = false;
+            blueModeToolStripMenuItem.Checked = false;
+            oliveModeToolStripMenuItem.Checked = false;
+            pinkModeToolStripMenuItem.Checked = false;
+            colorModeToolStripMenuItem.Checked = false;
+            followStripMenuToolStripMenuItem.Checked = false;
+            followContextMenuToolStripMenuItem1.Checked = false;
+            followToolbarToolStripMenuItem1.Checked = true;
+
+            textBox.BackColor = toolStrip1.BackColor;
         }
 
         private void gitHubReleasesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1242,26 +1813,30 @@ namespace Notepad
         {
             offToolStripMenuItem3.Checked = true;
             onToolStripMenuItem2.Checked = false;
-            statusBar1.Hide();
             timeToolStripMenuItem.Enabled = false;
             wordCounterToolStripMenuItem.Enabled = false;
             characterCounterToolStripMenuItem.Enabled = false;
             fontToolStripMenuItem2.Enabled = false;
             columnsToolStripMenuItem.Enabled = false;
             capsTrackerToolStripMenuItem.Enabled = false;
+            followTextBoxFontToolStripMenuItem1.Enabled = false;
+            followStripMenuFontToolStripMenuItem1.Enabled = false;
+            statusBar1.Hide();
         }
 
         private void onToolStripMenuItem2_Click_1(object sender, EventArgs e)
         {
             offToolStripMenuItem3.Checked = false;
             onToolStripMenuItem2.Checked = true;
-            statusBar1.Show();
             timeToolStripMenuItem.Enabled = true;
             wordCounterToolStripMenuItem.Enabled = true;
             characterCounterToolStripMenuItem.Enabled = true;
             fontToolStripMenuItem2.Enabled = true;
             columnsToolStripMenuItem.Enabled = true;
             capsTrackerToolStripMenuItem.Enabled = true;
+            followTextBoxFontToolStripMenuItem1.Enabled = true;
+            followStripMenuFontToolStripMenuItem1.Enabled = true;
+            statusBar1.Show();
         }
 
         private void timeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1287,6 +1862,8 @@ namespace Notepad
             op.MaxSize = 24;
             if (op.ShowDialog() == DialogResult.OK)
                 menuStrip1.Font = op.Font;
+            followTextBoxFontToolStripMenuItem.Checked = false;
+            followStatusBarFontToolStripMenuItem.Checked = false;
         }
 
         private void fontColorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1306,6 +1883,8 @@ namespace Notepad
             pinkModeToolStripMenuItem1.Checked = false;
             colorModeToolStripMenuItem1.Checked = false;
             followTextBoxToolStripMenuItem.Checked = false;
+            followContextMenuToolStripMenuItem2.Checked = false;
+            followToolbarToolStripMenuItem2.Checked = false;
 
             menuStrip1.BackColor = Color.White;
             menuStrip1.ForeColor = Color.Black;
@@ -1320,6 +1899,8 @@ namespace Notepad
             pinkModeToolStripMenuItem1.Checked = false;
             colorModeToolStripMenuItem1.Checked = false;
             followTextBoxToolStripMenuItem.Checked = false;
+            followContextMenuToolStripMenuItem2.Checked = false;
+            followToolbarToolStripMenuItem2.Checked = false;
 
             menuStrip1.BackColor = Color.FromArgb(30, 30, 30);
             menuStrip1.ForeColor = Color.White;
@@ -1334,6 +1915,8 @@ namespace Notepad
             pinkModeToolStripMenuItem1.Checked = false;
             colorModeToolStripMenuItem1.Checked = false;
             followTextBoxToolStripMenuItem.Checked = false;
+            followContextMenuToolStripMenuItem2.Checked = false;
+            followToolbarToolStripMenuItem2.Checked = false;
 
             menuStrip1.BackColor = Color.FromArgb(0, 103, 179);
             menuStrip1.ForeColor = Color.White;
@@ -1348,6 +1931,8 @@ namespace Notepad
             pinkModeToolStripMenuItem1.Checked = true;
             colorModeToolStripMenuItem1.Checked = false;
             followTextBoxToolStripMenuItem.Checked = false;
+            followContextMenuToolStripMenuItem2.Checked = false;
+            followToolbarToolStripMenuItem2.Checked = false;
 
             menuStrip1.BackColor = Color.FromArgb(255, 192, 203);
             menuStrip1.ForeColor = Color.Black;
@@ -1362,6 +1947,8 @@ namespace Notepad
             pinkModeToolStripMenuItem1.Checked = false;
             colorModeToolStripMenuItem1.Checked = false;
             followTextBoxToolStripMenuItem.Checked = false;
+            followContextMenuToolStripMenuItem2.Checked = false;
+            followToolbarToolStripMenuItem2.Checked = false;
 
             menuStrip1.BackColor = Color.FromArgb(107, 142, 35);
             menuStrip1.ForeColor = Color.White;
@@ -1376,6 +1963,8 @@ namespace Notepad
             pinkModeToolStripMenuItem1.Checked = false;
             colorModeToolStripMenuItem1.Checked = true;
             followTextBoxToolStripMenuItem.Checked = false;
+            followContextMenuToolStripMenuItem2.Checked = false;
+            followToolbarToolStripMenuItem2.Checked = false;
 
             ColorDialog MyDialog = new ColorDialog();
 
@@ -1398,8 +1987,42 @@ namespace Notepad
             pinkModeToolStripMenuItem1.Checked = false;
             colorModeToolStripMenuItem1.Checked = false;
             followTextBoxToolStripMenuItem.Checked = true;
+            followContextMenuToolStripMenuItem2.Checked = false;
+            followToolbarToolStripMenuItem2.Checked = false;
 
             menuStrip1.BackColor = textBox.BackColor;
+            menuStrip1.ForeColor = textBox.ForeColor;
+        }
+
+        private void followContextMenuToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            darkModeToolStripMenuItem1.Checked = false;
+            lightModeToolStripMenuItem1.Checked = false;
+            blueModeToolStripMenuItem1.Checked = false;
+            oliveModeToolStripMenuItem1.Checked = false;
+            pinkModeToolStripMenuItem1.Checked = false;
+            colorModeToolStripMenuItem1.Checked = false;
+            followTextBoxToolStripMenuItem.Checked = false;
+            followContextMenuToolStripMenuItem2.Checked = true;
+            followToolbarToolStripMenuItem2.Checked = false;
+
+            menuStrip1.BackColor = contextMenuStrip1.BackColor;
+            menuStrip1.ForeColor = contextMenuStrip1.ForeColor;
+        }
+
+        private void followToolbarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            darkModeToolStripMenuItem1.Checked = false;
+            lightModeToolStripMenuItem1.Checked = false;
+            blueModeToolStripMenuItem1.Checked = false;
+            oliveModeToolStripMenuItem1.Checked = false;
+            pinkModeToolStripMenuItem1.Checked = false;
+            colorModeToolStripMenuItem1.Checked = false;
+            followTextBoxToolStripMenuItem.Checked = false;
+            followContextMenuToolStripMenuItem2.Checked = false;
+            followToolbarToolStripMenuItem2.Checked = true;
+
+            menuStrip1.BackColor = toolStrip1.BackColor;
         }
 
         private void fontToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -1410,6 +2033,8 @@ namespace Notepad
             op.MaxSize = 16;
             if (op.ShowDialog() == DialogResult.OK)
                 statusBar1.Font = op.Font;
+            followTextBoxFontToolStripMenuItem1.Checked = false;
+            followStripMenuFontToolStripMenuItem1.Checked = false;
         }
 
         private void columnsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1546,6 +2171,7 @@ namespace Notepad
         {
             onToolStripMenuItem4.Checked = true;
             offToolStripMenuItem5.Checked = false;
+            appearanceToolStripMenuItem2.Enabled = true;
             columnsToolStripMenuItem1.Enabled = true;
             toolStrip1.Show();
         }
@@ -1554,6 +2180,7 @@ namespace Notepad
         {
             onToolStripMenuItem4.Checked = false;
             offToolStripMenuItem5.Checked = true;
+            appearanceToolStripMenuItem2.Enabled = false;
             columnsToolStripMenuItem1.Enabled = false;
             toolStrip1.Hide();
         }
@@ -1798,6 +2425,7 @@ namespace Notepad
         {
             onToolStripMenuItem7.Checked = true;
             offToolStripMenuItem8.Checked = false;
+            appearanceToolStripMenuItem.Enabled = true;
 
             textBox.ContextMenuStrip = contextMenuStrip1;
         }
@@ -1806,8 +2434,407 @@ namespace Notepad
         {
             onToolStripMenuItem7.Checked = false;
             offToolStripMenuItem8.Checked = true;
+            appearanceToolStripMenuItem.Enabled = false;
 
             textBox.ContextMenuStrip = new ContextMenuStrip();
+        }
+
+        private void followStripMenuFontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            followStripMenuFontToolStripMenuItem.Checked = true;
+            followStatusBarFontToolStripMenuItem1.Checked = false;
+
+            textBox.Font = menuStrip1.Font;
+        }
+
+        private void followStatusBarFontToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            followStripMenuFontToolStripMenuItem.Checked = false;
+            followStatusBarFontToolStripMenuItem1.Checked = true;
+
+            textBox.Font = statusBar1.Font;
+        }
+
+        private void followTextBoxFontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            followTextBoxFontToolStripMenuItem.Checked = true;
+            followStatusBarFontToolStripMenuItem.Checked = false;
+
+            if (textBox.Font.Size == 8.25 || textBox.Font.Size == 9 || textBox.Font.Size == 9.75 || textBox.Font.Size == 11.25 || textBox.Font.Size == 12 || textBox.Font.Size == 14.25 || textBox.Font.Size == 15.75 || textBox.Font.Size == 18 || textBox.Font.Size == 20.25 || textBox.Font.Size == 21.75 || textBox.Font.Size == 24)
+            {
+                menuStrip1.Font = textBox.Font;
+            }
+
+            else
+            {
+                followTextBoxFontToolStripMenuItem.Checked = false;
+                MessageBox.Show("Task failed, your textBox Font Size is too large for stripMenu (max. font size 24).", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
+
+        private void followStatusBarFontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            followTextBoxFontToolStripMenuItem.Checked = false;
+            followStatusBarFontToolStripMenuItem.Checked = true;
+
+            if (textBox.Font.Size == 8.25 || textBox.Font.Size == 9 || textBox.Font.Size == 9.75 || textBox.Font.Size == 11.25 || textBox.Font.Size == 12 || textBox.Font.Size == 14.25 || textBox.Font.Size == 15.75 || textBox.Font.Size == 18 || textBox.Font.Size == 20.25 || textBox.Font.Size == 21.75 || textBox.Font.Size == 24)
+            {
+                menuStrip1.Font = statusBar1.Font;
+            }
+
+            else
+            {
+                followStatusBarFontToolStripMenuItem.Checked = false;
+                MessageBox.Show("Task failed, your statusBar Font Size is too large for stripMenu (max. font size 24).", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void followTextBoxFontToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            followTextBoxFontToolStripMenuItem1.Checked = true;
+            followStripMenuFontToolStripMenuItem1.Checked = false;
+
+            if (textBox.Font.Size == 8.25 || textBox.Font.Size == 9 || textBox.Font.Size == 9.75 || textBox.Font.Size == 11.25 || textBox.Font.Size == 12 || textBox.Font.Size == 14.25 || textBox.Font.Size == 15.75)
+            {
+                statusBar1.Font = textBox.Font;
+            }
+
+            else
+            {
+                followTextBoxFontToolStripMenuItem1.Checked = false;
+                MessageBox.Show("Task failed, your textBox Font Size is too large for statusBar (max. font size 16).", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void followStripMenuFontToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            followTextBoxFontToolStripMenuItem1.Checked = false;
+            followStripMenuFontToolStripMenuItem1.Checked = true;
+
+            if (textBox.Font.Size == 8.25 || textBox.Font.Size == 9 || textBox.Font.Size == 9.75 || textBox.Font.Size == 11.25 || textBox.Font.Size == 12 || textBox.Font.Size == 14.25 || textBox.Font.Size == 15.75)
+            {
+                statusBar1.Font = menuStrip1.Font;
+            }
+
+            else
+            {
+                followStripMenuFontToolStripMenuItem1.Checked = false;
+                MessageBox.Show("Task failed, your stripMenu Font Size is too large for statusBar (max. font size 16).", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void lightModeToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem2.Checked = true;
+            darkModeToolStripMenuItem.Checked = false;
+            blueModeToolStripMenuItem2.Checked = false;
+            pinkModeToolStripMenuItem2.Checked = false;
+            oliveModeToolStripMenuItem2.Checked = false;
+            colorModeToolStripMenuItem2.Checked = false;
+            followTextBoxToolStripMenuItem1.Checked = false;
+            followStripMenuToolStripMenuItem1.Checked = false;
+            followToolbarToolStripMenuItem.Checked = false;
+
+            contextMenuStrip1.BackColor = Color.White;
+            contextMenuStrip1.ForeColor = Color.Black;
+        }
+
+        private void darkModeToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem2.Checked = false;
+            darkModeToolStripMenuItem.Checked = true;
+            blueModeToolStripMenuItem2.Checked = false;
+            pinkModeToolStripMenuItem2.Checked = false;
+            oliveModeToolStripMenuItem2.Checked = false;
+            colorModeToolStripMenuItem2.Checked = false;
+            followTextBoxToolStripMenuItem1.Checked = false;
+            followStripMenuToolStripMenuItem1.Checked = false;
+            followToolbarToolStripMenuItem.Checked = false;
+
+            contextMenuStrip1.BackColor = Color.FromArgb(30, 30, 30);
+            contextMenuStrip1.ForeColor = Color.White;
+        }
+
+        private void blueModeToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem2.Checked = false;
+            darkModeToolStripMenuItem.Checked = false;
+            blueModeToolStripMenuItem2.Checked = true;
+            pinkModeToolStripMenuItem2.Checked = false;
+            oliveModeToolStripMenuItem2.Checked = false;
+            colorModeToolStripMenuItem2.Checked = false;
+            followTextBoxToolStripMenuItem1.Checked = false;
+            followStripMenuToolStripMenuItem1.Checked = false;
+            followToolbarToolStripMenuItem.Checked = false;
+
+            contextMenuStrip1.BackColor = Color.FromArgb(0, 103, 179);
+            contextMenuStrip1.ForeColor = Color.White;
+        }
+
+        private void pinkModeToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem2.Checked = false;
+            darkModeToolStripMenuItem.Checked = false;
+            blueModeToolStripMenuItem2.Checked = false;
+            pinkModeToolStripMenuItem2.Checked = true;
+            oliveModeToolStripMenuItem2.Checked = false;
+            colorModeToolStripMenuItem2.Checked = false;
+            followTextBoxToolStripMenuItem1.Checked = false;
+            followStripMenuToolStripMenuItem1.Checked = false;
+            followToolbarToolStripMenuItem.Checked = false;
+
+            contextMenuStrip1.BackColor = Color.FromArgb(255, 192, 203);
+            contextMenuStrip1.ForeColor = Color.Black;
+        }
+
+        private void oliveModeToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem2.Checked = false;
+            darkModeToolStripMenuItem.Checked = false;
+            blueModeToolStripMenuItem2.Checked = false;
+            pinkModeToolStripMenuItem2.Checked = false;
+            oliveModeToolStripMenuItem2.Checked = true;
+            colorModeToolStripMenuItem2.Checked = false;
+            followTextBoxToolStripMenuItem1.Checked = false;
+            followStripMenuToolStripMenuItem1.Checked = false;
+            followToolbarToolStripMenuItem.Checked = false;
+
+            contextMenuStrip1.BackColor = Color.FromArgb(107, 142, 35);
+            contextMenuStrip1.ForeColor = Color.White;
+        }
+
+        private void colorModeToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem2.Checked = false;
+            darkModeToolStripMenuItem.Checked = false;
+            blueModeToolStripMenuItem2.Checked = false;
+            pinkModeToolStripMenuItem2.Checked = false;
+            oliveModeToolStripMenuItem2.Checked = false;
+            colorModeToolStripMenuItem2.Checked = true;
+            followTextBoxToolStripMenuItem1.Checked = false;
+            followStripMenuToolStripMenuItem1.Checked = false;
+            followToolbarToolStripMenuItem.Checked = false;
+
+            ColorDialog MyDialog = new ColorDialog();
+
+            MyDialog.Color = contextMenuStrip1.BackColor;
+
+            ColorDialog op = new ColorDialog();
+
+            op.Color = contextMenuStrip1.BackColor;
+            if (MyDialog.ShowDialog() == DialogResult.OK)
+                contextMenuStrip1.BackColor = MyDialog.Color;
+        }
+
+        private void followTextBoxToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem2.Checked = false;
+            darkModeToolStripMenuItem.Checked = false;
+            blueModeToolStripMenuItem2.Checked = false;
+            pinkModeToolStripMenuItem2.Checked = false;
+            oliveModeToolStripMenuItem2.Checked = false;
+            colorModeToolStripMenuItem2.Checked = false;
+            followTextBoxToolStripMenuItem1.Checked = true;
+            followStripMenuToolStripMenuItem1.Checked = false;
+            followToolbarToolStripMenuItem.Checked = false;
+
+            contextMenuStrip1.BackColor = textBox.BackColor;
+            contextMenuStrip1.ForeColor = textBox.ForeColor;
+        }
+
+        private void followStripMenuToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem2.Checked = false;
+            darkModeToolStripMenuItem.Checked = false;
+            blueModeToolStripMenuItem2.Checked = false;
+            pinkModeToolStripMenuItem2.Checked = false;
+            oliveModeToolStripMenuItem2.Checked = false;
+            colorModeToolStripMenuItem2.Checked = false;
+            followTextBoxToolStripMenuItem1.Checked = false;
+            followStripMenuToolStripMenuItem1.Checked = true;
+            followToolbarToolStripMenuItem.Checked = false;
+
+            contextMenuStrip1.BackColor = menuStrip1.BackColor;
+            contextMenuStrip1.ForeColor = menuStrip1.ForeColor;
+        }
+
+        private void followToolbarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem2.Checked = false;
+            darkModeToolStripMenuItem.Checked = false;
+            blueModeToolStripMenuItem2.Checked = false;
+            pinkModeToolStripMenuItem2.Checked = false;
+            oliveModeToolStripMenuItem2.Checked = false;
+            colorModeToolStripMenuItem2.Checked = false;
+            followTextBoxToolStripMenuItem1.Checked = false;
+            followStripMenuToolStripMenuItem1.Checked = false;
+            followToolbarToolStripMenuItem.Checked = true;
+
+            contextMenuStrip1.BackColor = toolStrip1.BackColor;
+            contextMenuStrip1.ForeColor = toolStrip1.ForeColor;
+        }
+
+        private void lightModeToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem3.Checked = true;
+            darkModeToolStripMenuItem3.Checked = false;
+            blueModeToolStripMenuItem3.Checked = false;
+            pinkModeToolStripMenuItem3.Checked = false;
+            oliveModeToolStripMenuItem3.Checked = false;
+            colorModeToolStripMenuItem3.Checked = false;
+            followTextBoxToolStripMenuItem2.Checked = false;
+            followStripMenuToolStripMenuItem2.Checked = false;
+            followContextMenuToolStripMenuItem.Checked = false;
+
+            toolStrip1.BackColor = Color.White;
+            toolStripContainer1.TopToolStripPanel.BackColor = Color.White;
+            toolStrip1.ForeColor = Color.Black;
+        }
+
+        private void darkModeToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem3.Checked = false;
+            darkModeToolStripMenuItem3.Checked = true;
+            blueModeToolStripMenuItem3.Checked = false;
+            pinkModeToolStripMenuItem3.Checked = false;
+            oliveModeToolStripMenuItem3.Checked = false;
+            colorModeToolStripMenuItem3.Checked = false;
+            followTextBoxToolStripMenuItem2.Checked = false;
+            followStripMenuToolStripMenuItem2.Checked = false;
+            followContextMenuToolStripMenuItem.Checked = false;
+
+            toolStrip1.BackColor = Color.FromArgb(30, 30, 30);
+            toolStripContainer1.TopToolStripPanel.BackColor = Color.FromArgb(30, 30, 30);
+            toolStrip1.ForeColor = Color.White;
+        }
+
+        private void blueModeToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem3.Checked = false;
+            darkModeToolStripMenuItem3.Checked = false;
+            blueModeToolStripMenuItem3.Checked = true;
+            pinkModeToolStripMenuItem3.Checked = false;
+            oliveModeToolStripMenuItem3.Checked = false;
+            colorModeToolStripMenuItem3.Checked = false;
+            followTextBoxToolStripMenuItem2.Checked = false;
+            followStripMenuToolStripMenuItem2.Checked = false;
+            followContextMenuToolStripMenuItem.Checked = false;
+
+            toolStrip1.BackColor = Color.FromArgb(0, 103, 179);
+            toolStripContainer1.TopToolStripPanel.BackColor = Color.FromArgb(0, 103, 179);
+            toolStrip1.ForeColor = Color.White;
+        }
+
+        private void pinkModeToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem3.Checked = false;
+            darkModeToolStripMenuItem3.Checked = false;
+            blueModeToolStripMenuItem3.Checked = false;
+            pinkModeToolStripMenuItem3.Checked = true;
+            oliveModeToolStripMenuItem3.Checked = false;
+            colorModeToolStripMenuItem3.Checked = false;
+            followTextBoxToolStripMenuItem2.Checked = false;
+            followStripMenuToolStripMenuItem2.Checked = false;
+            followContextMenuToolStripMenuItem.Checked = false;
+
+            toolStrip1.BackColor = Color.FromArgb(255, 192, 203);
+            toolStripContainer1.TopToolStripPanel.BackColor = Color.FromArgb(255, 192, 203);
+            toolStrip1.ForeColor = Color.Black;
+        }
+
+        private void oliveModeToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem3.Checked = false;
+            darkModeToolStripMenuItem3.Checked = false;
+            blueModeToolStripMenuItem3.Checked = false;
+            pinkModeToolStripMenuItem3.Checked = false;
+            oliveModeToolStripMenuItem3.Checked = true;
+            colorModeToolStripMenuItem3.Checked = false;
+            followTextBoxToolStripMenuItem2.Checked = false;
+            followStripMenuToolStripMenuItem2.Checked = false;
+            followContextMenuToolStripMenuItem.Checked = false;
+
+            toolStrip1.BackColor = Color.FromArgb(107, 142, 35);
+            toolStripContainer1.TopToolStripPanel.BackColor = Color.FromArgb(107, 142, 35);
+            toolStrip1.ForeColor = Color.White;
+        }
+
+        private void colorModeToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem3.Checked = false;
+            darkModeToolStripMenuItem3.Checked = false;
+            blueModeToolStripMenuItem3.Checked = false;
+            pinkModeToolStripMenuItem3.Checked = false;
+            oliveModeToolStripMenuItem3.Checked = false;
+            colorModeToolStripMenuItem3.Checked = true;
+            followTextBoxToolStripMenuItem2.Checked = false;
+            followStripMenuToolStripMenuItem2.Checked = false;
+            followContextMenuToolStripMenuItem.Checked = false;
+
+            ColorDialog MyDialog = new ColorDialog();
+
+            MyDialog.Color = toolStrip1.BackColor;
+            MyDialog.Color = toolStripContainer1.TopToolStripPanel.BackColor;
+
+            ColorDialog op = new ColorDialog();
+
+            op.Color = toolStrip1.BackColor;
+            op.Color = toolStripContainer1.TopToolStripPanel.BackColor;
+            if (MyDialog.ShowDialog() == DialogResult.OK)
+                toolStrip1.BackColor = MyDialog.Color;
+            toolStripContainer1.TopToolStripPanel.BackColor = MyDialog.Color;
+        }
+
+        private void followTextBoxToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem3.Checked = false;
+            darkModeToolStripMenuItem3.Checked = false;
+            blueModeToolStripMenuItem3.Checked = false;
+            pinkModeToolStripMenuItem3.Checked = false;
+            oliveModeToolStripMenuItem3.Checked = false;
+            colorModeToolStripMenuItem3.Checked = false;
+            followTextBoxToolStripMenuItem2.Checked = true;
+            followStripMenuToolStripMenuItem2.Checked = false;
+            followContextMenuToolStripMenuItem.Checked = false;
+
+            toolStrip1.BackColor = textBox.BackColor;
+            toolStrip1.ForeColor = textBox.ForeColor;
+            toolStripContainer1.TopToolStripPanel.BackColor = textBox.BackColor;
+        }
+
+        private void followStripMenuToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem3.Checked = false;
+            darkModeToolStripMenuItem3.Checked = false;
+            blueModeToolStripMenuItem3.Checked = false;
+            pinkModeToolStripMenuItem3.Checked = false;
+            oliveModeToolStripMenuItem3.Checked = false;
+            colorModeToolStripMenuItem3.Checked = false;
+            followTextBoxToolStripMenuItem2.Checked = false;
+            followStripMenuToolStripMenuItem2.Checked = true;
+            followContextMenuToolStripMenuItem.Checked = false;
+
+            toolStrip1.BackColor = menuStrip1.BackColor;
+            toolStrip1.ForeColor = menuStrip1.ForeColor;
+            toolStripContainer1.TopToolStripPanel.BackColor = menuStrip1.BackColor;
+        }
+
+        private void followContextMenuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lightModeToolStripMenuItem3.Checked = false;
+            darkModeToolStripMenuItem3.Checked = false;
+            blueModeToolStripMenuItem3.Checked = false;
+            pinkModeToolStripMenuItem3.Checked = false;
+            oliveModeToolStripMenuItem3.Checked = false;
+            colorModeToolStripMenuItem3.Checked = false;
+            followTextBoxToolStripMenuItem2.Checked = false;
+            followStripMenuToolStripMenuItem2.Checked = false;
+            followContextMenuToolStripMenuItem.Checked = true;
+
+            toolStrip1.BackColor = contextMenuStrip1.BackColor;
+            toolStrip1.ForeColor = contextMenuStrip1.ForeColor;
+            toolStripContainer1.TopToolStripPanel.BackColor = contextMenuStrip1.BackColor;
         }
     }
 }

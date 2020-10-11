@@ -52,7 +52,7 @@
             // btnOK
             // 
             this.btnOK.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(110, 295);
+            this.btnOK.Location = new System.Drawing.Point(110, 312);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(103, 33);
             this.btnOK.TabIndex = 1;
@@ -77,15 +77,15 @@
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.label1.Location = new System.Drawing.Point(13, 140);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 64);
+            this.label1.Size = new System.Drawing.Size(160, 80);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Version: 2.1.1-Stable\r\nMade by ncyxie.\r\nThanks to XeZrunner.\r\nThanks to zero9178." +
-    "";
+            this.label1.Text = "Version: 2.2.0-Stable\r\nBuild date: 11/10/2020\r\nMade by ncyxie.\r\nThanks to XeZrunn" +
+    "er.\r\nThanks to zero9178.";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Notepad.Properties.Resources.Notepad_DOT_134x196;
-            this.pictureBox1.Location = new System.Drawing.Point(168, 7);
+            this.pictureBox1.Location = new System.Drawing.Point(184, 13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(134, 194);
             this.pictureBox1.TabIndex = 6;
@@ -96,7 +96,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.label2.Location = new System.Drawing.Point(13, 209);
+            this.label2.Location = new System.Drawing.Point(13, 226);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(266, 32);
             this.label2.TabIndex = 7;
@@ -107,7 +107,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.label3.Location = new System.Drawing.Point(13, 250);
+            this.label3.Location = new System.Drawing.Point(13, 265);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(253, 32);
             this.label3.TabIndex = 8;
@@ -117,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 341);
+            this.ClientSize = new System.Drawing.Size(334, 364);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

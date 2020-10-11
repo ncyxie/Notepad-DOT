@@ -507,5 +507,341 @@ namespace Notepad.Properties {
                 this["contextMenu"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool textBoxFollowStripMenu {
+            get {
+                return ((bool)(this["textBoxFollowStripMenu"]));
+            }
+            set {
+                this["textBoxFollowStripMenu"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool textBoxFollowStatusBar {
+            get {
+                return ((bool)(this["textBoxFollowStatusBar"]));
+            }
+            set {
+                this["textBoxFollowStatusBar"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool stripMenuFollowTextBox {
+            get {
+                return ((bool)(this["stripMenuFollowTextBox"]));
+            }
+            set {
+                this["stripMenuFollowTextBox"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool stripMenuFollowStatusBar {
+            get {
+                return ((bool)(this["stripMenuFollowStatusBar"]));
+            }
+            set {
+                this["stripMenuFollowStatusBar"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool statusBarFollowTextBox {
+            get {
+                return ((bool)(this["statusBarFollowTextBox"]));
+            }
+            set {
+                this["statusBarFollowTextBox"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool statusBarFollowStripMenu {
+            get {
+                return ((bool)(this["statusBarFollowStripMenu"]));
+            }
+            set {
+                this["statusBarFollowStripMenu"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool lightContext {
+            get {
+                return ((bool)(this["lightContext"]));
+            }
+            set {
+                this["lightContext"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool darkContext {
+            get {
+                return ((bool)(this["darkContext"]));
+            }
+            set {
+                this["darkContext"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool blueContext {
+            get {
+                return ((bool)(this["blueContext"]));
+            }
+            set {
+                this["blueContext"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool pinkContext {
+            get {
+                return ((bool)(this["pinkContext"]));
+            }
+            set {
+                this["pinkContext"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool oliveContext {
+            get {
+                return ((bool)(this["oliveContext"]));
+            }
+            set {
+                this["oliveContext"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool colorContext {
+            get {
+                return ((bool)(this["colorContext"]));
+            }
+            set {
+                this["colorContext"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followTextBoxContext {
+            get {
+                return ((bool)(this["followTextBoxContext"]));
+            }
+            set {
+                this["followTextBoxContext"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followStripMenuContext {
+            get {
+                return ((bool)(this["followStripMenuContext"]));
+            }
+            set {
+                this["followStripMenuContext"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followToolbarContext {
+            get {
+                return ((bool)(this["followToolbarContext"]));
+            }
+            set {
+                this["followToolbarContext"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool lightToolbar {
+            get {
+                return ((bool)(this["lightToolbar"]));
+            }
+            set {
+                this["lightToolbar"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool darkToolbar {
+            get {
+                return ((bool)(this["darkToolbar"]));
+            }
+            set {
+                this["darkToolbar"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool blueToolbar {
+            get {
+                return ((bool)(this["blueToolbar"]));
+            }
+            set {
+                this["blueToolbar"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool pinkToolbar {
+            get {
+                return ((bool)(this["pinkToolbar"]));
+            }
+            set {
+                this["pinkToolbar"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool oliveToolbar {
+            get {
+                return ((bool)(this["oliveToolbar"]));
+            }
+            set {
+                this["oliveToolbar"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool colorToolbar {
+            get {
+                return ((bool)(this["colorToolbar"]));
+            }
+            set {
+                this["colorToolbar"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followTextBoxToolbar {
+            get {
+                return ((bool)(this["followTextBoxToolbar"]));
+            }
+            set {
+                this["followTextBoxToolbar"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followStripMenuToolbar {
+            get {
+                return ((bool)(this["followStripMenuToolbar"]));
+            }
+            set {
+                this["followStripMenuToolbar"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followContextToolbar {
+            get {
+                return ((bool)(this["followContextToolbar"]));
+            }
+            set {
+                this["followContextToolbar"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followContextTextBox {
+            get {
+                return ((bool)(this["followContextTextBox"]));
+            }
+            set {
+                this["followContextTextBox"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followToolbarTextBox {
+            get {
+                return ((bool)(this["followToolbarTextBox"]));
+            }
+            set {
+                this["followToolbarTextBox"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followContextStripMenu {
+            get {
+                return ((bool)(this["followContextStripMenu"]));
+            }
+            set {
+                this["followContextStripMenu"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followToolbarStripMenu {
+            get {
+                return ((bool)(this["followToolbarStripMenu"]));
+            }
+            set {
+                this["followToolbarStripMenu"] = value;
+            }
+        }
     }
 }
