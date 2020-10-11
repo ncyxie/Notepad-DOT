@@ -1,8 +1,18 @@
+*Last updated: 2020/10/10*
+
 # Notepad DOT
 
 ## Latest News
 
- **v2.1.0-STABLE UPDATE IS OFFICIALLY OUT NOW!**
+**V2.1.1-STABLE HOTFIX UPDATE IS OFFICIALLY OUT NOW!**
+
+> ***https://github.com/ncyxie/Notepad-DOT/releases/***
+
+Feel free to submit your ideas for Notepad DOT (you can contact with me on Telegram or Discord).
+
+v2.2.0-Stable update spoiler: Appearence Modes for Toolbar and Context Menu is coming. :)
+
+**Expect Notepad DOT v2.2.0-Stable update at weekend. (If everything goes according to plan). :D**
 
 ## Introduction
 
@@ -32,6 +42,11 @@ Think wisely before choosing between those two. :)
 Since you are here, you just need to enter [Issues](https://github.com/ncyxie/Notepad-Dot/issues/) page in
 strip menu above, or click on blue **Issues** text.
 
+## Updates
+
+You can expect me to publish application updates at Friday, Saturday or Sunday. Normally, other days I am not publishing application updates.
+Also, notice that, before updating application, delete it and then you are good to go to install updated application version.
+
 ## FAQ
 
 1. **Why did you decided to make a notepad?**
@@ -50,7 +65,7 @@ but you are free to modify it, and make run on your desired OS.
 4. **What are this Notepad system requirements?**
 
 No special requirements are needed, even junk PC can run this application, 
-but make sure you run Windows OS (minimum 7, but 8.1 or higher recommended).
+but make sure you run Windows OS (minimum 7, but 10 is recommended).
 
 5. **Is this Notepad a virus?**
 
