@@ -12,7 +12,7 @@
 
 *Workaround: Set dark mode or any color for Text Box or Strip Menu and use follow function for Context Menu.*
 
-***Note: v2.2.1-Stable update will be delayed due to my upcoming exams.***
+***Note: v2.2.1-Stable update is delayed due to my upcoming exams.***
 
 ## Introduction
 
