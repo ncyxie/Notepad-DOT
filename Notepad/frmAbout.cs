@@ -41,7 +41,6 @@ namespace Notepad
                 this.ForeColor = Color.Black;
                 btnOK.ForeColor = Color.Black;
             }
-
         }
 
         private void btnOK_Click(object sender, EventArgs e)
@@ -51,12 +50,10 @@ namespace Notepad
 
         private void About_Load(object sender, EventArgs e)
         {
-
         }
 
         private void lblProductName_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

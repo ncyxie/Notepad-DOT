@@ -6,6 +6,7 @@ namespace Notepad
     public partial class Replace : Form
     {
         public Notepad Notepad;
+
         public Replace()
         {
             InitializeComponent();
