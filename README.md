@@ -1,4 +1,4 @@
-*Last updated: 2020/10/27*
+*Last updated: 2020/10/28*
 
 # Notepad DOT
 
@@ -8,7 +8,7 @@
 
 > ***https://github.com/ncyxie/Notepad-DOT/releases/***
 
-Report bugs by using [Issues](https://github.com/ncyxie/Notepad-Dot/issues/) page in GitHub.
+Report application bugs by using [Issues](https://github.com/ncyxie/Notepad-Dot/issues/) page in GitHub or contacting with me on Telegram or Discord.
 
 ## Introduction
 
