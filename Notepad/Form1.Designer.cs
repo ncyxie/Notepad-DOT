@@ -222,6 +222,7 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton18 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton19 = new System.Windows.Forms.ToolStripButton();
+            this.followToolbarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).BeginInit();
@@ -878,7 +879,8 @@
             this.colorModeToolStripMenuItem2,
             this.toolStripMenuItem22,
             this.followTextBoxToolStripMenuItem1,
-            this.followStripMenuToolStripMenuItem1});
+            this.followStripMenuToolStripMenuItem1,
+            this.followToolbarToolStripMenuItem});
             this.appearanceToolStripMenuItem.Name = "appearanceToolStripMenuItem";
             this.appearanceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.appearanceToolStripMenuItem.Text = "&Appearance";
@@ -1845,6 +1847,13 @@
             this.toolStripButton19.ToolTipText = "Color";
             this.toolStripButton19.Click += new System.EventHandler(this.toolStripButton19_Click);
             // 
+            // followToolbarToolStripMenuItem
+            // 
+            this.followToolbarToolStripMenuItem.Name = "followToolbarToolStripMenuItem";
+            this.followToolbarToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.followToolbarToolStripMenuItem.Text = "&Follow Toolbar";
+            this.followToolbarToolStripMenuItem.Click += new System.EventHandler(this.followToolbarToolStripMenuItem_Click_1);
+            // 
             // Notepad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2072,6 +2081,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem21;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem22;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem23;
+        private System.Windows.Forms.ToolStripMenuItem followToolbarToolStripMenuItem;
     }
 }
 

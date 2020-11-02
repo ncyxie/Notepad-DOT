@@ -843,5 +843,27 @@ namespace Notepad.Properties {
                 this["followToolbarStripMenu"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Drawing.Color contextMenuBackColor {
+            get {
+                return ((global::System.Drawing.Color)(this["contextMenuBackColor"]));
+            }
+            set {
+                this["contextMenuBackColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Drawing.Color contextMenuForeColor {
+            get {
+                return ((global::System.Drawing.Color)(this["contextMenuForeColor"]));
+            }
+            set {
+                this["contextMenuForeColor"] = value;
+            }
+        }
     }
 }
