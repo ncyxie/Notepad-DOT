@@ -1,16 +1,16 @@
-*Last updated: 2020/10/23*
+*Last updated: 2020/11/01*
 
 # Notepad DOT
 
 ## Latest News
 
-**V2.2.0-STABLE FEATURE UPDATE IS OFFICIALLY OUT NOW!**
+**V2.2.1-STABLE HOTFIX UPDATE IS OFFICIALLY OUT NOW!**
 
-> *https://github.com/ncyxie/Notepad-DOT/releases/*
+> ***https://github.com/ncyxie/Notepad-DOT/releases/***
 
-**Some people already noticed dark mode and follow Toolbar for Context Menu doesn't save into config (each Notepad DOT open you have to reapply dark mode or follow Toolbar for Context Menu). This issue will be fixed in next Notepad DOT v2.2.1-Stable hotfix update release.**
+Report application bugs by using [Issues](https://github.com/ncyxie/Notepad-Dot/issues/) page in GitHub or contacting with me on Telegram or Discord.
 
-*Workaround: Set dark mode or any color for Text Box or Strip Menu and use follow function for Context Menu.*
+Function ideas are also appreciated. :)
 
 ## Introduction
 
