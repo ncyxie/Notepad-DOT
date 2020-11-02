@@ -1,4 +1,4 @@
-*Last updated: 2020/11/01*
+*Last updated: 2020/11/02*
 
 # Notepad DOT
 
@@ -37,8 +37,7 @@ Think wisely before choosing between those two. :)
 
 ## Bug reports
 
-Since you are here, you just need to enter [Issues](https://github.com/ncyxie/Notepad-Dot/issues/) page in
-strip menu above, or click on blue **Issues** text.
+Since you are here, you just need to enter [Issues](https://github.com/ncyxie/Notepad-Dot/issues/) page in GitHub, or contacting with me using Discord or Telegram.
 
 ## Updates
 
