@@ -1433,7 +1433,7 @@ namespace Notepad
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawString(textBox.Text, textBox.Font, Brushes.Black, new PointF(20, 20));
+            e.Graphics.DrawString(textBox.Text, textBox.Font, Brushes.Black, new PointF(30, 30));
         }
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
