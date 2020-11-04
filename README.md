@@ -1,8 +1,8 @@
-*Last updated: 2020/11/02*
+*Last updated: 2020/11/04*
 
 # Notepad DOT
 
-## Latest News
+## Latest Information
 
 Report application bugs by using [Issues](https://github.com/ncyxie/Notepad-Dot/issues/) page in GitHub or contacting with me on Telegram or Discord.
 
