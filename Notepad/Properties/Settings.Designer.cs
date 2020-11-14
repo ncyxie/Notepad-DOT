@@ -12,7 +12,7 @@ namespace Notepad.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.7.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -37,6 +37,7 @@ namespace Notepad.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Montserrat, 9.75pt")]
         public global::System.Drawing.Font Font {
             get {
                 return ((global::System.Drawing.Font)(this["Font"]));
@@ -81,6 +82,7 @@ namespace Notepad.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Montserrat, 9.75pt")]
         public global::System.Drawing.Font menuStripFont {
             get {
                 return ((global::System.Drawing.Font)(this["menuStripFont"]));
@@ -115,6 +117,7 @@ namespace Notepad.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Montserrat, 9.75pt")]
         public global::System.Drawing.Font statusBarFont {
             get {
                 return ((global::System.Drawing.Font)(this["statusBarFont"]));
@@ -863,6 +866,101 @@ namespace Notepad.Properties {
             }
             set {
                 this["contextMenuForeColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followTextBoxContextFont {
+            get {
+                return ((bool)(this["followTextBoxContextFont"]));
+            }
+            set {
+                this["followTextBoxContextFont"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followStripMenuContextFont {
+            get {
+                return ((bool)(this["followStripMenuContextFont"]));
+            }
+            set {
+                this["followStripMenuContextFont"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followStatusBarContextFont {
+            get {
+                return ((bool)(this["followStatusBarContextFont"]));
+            }
+            set {
+                this["followStatusBarContextFont"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Montserrat, 9.75pt")]
+        public global::System.Drawing.Font contextFont {
+            get {
+                return ((global::System.Drawing.Font)(this["contextFont"]));
+            }
+            set {
+                this["contextFont"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Drawing.Color contextColor {
+            get {
+                return ((global::System.Drawing.Color)(this["contextColor"]));
+            }
+            set {
+                this["contextColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followContextTextBoxFont {
+            get {
+                return ((bool)(this["followContextTextBoxFont"]));
+            }
+            set {
+                this["followContextTextBoxFont"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followContextStripMenuFont {
+            get {
+                return ((bool)(this["followContextStripMenuFont"]));
+            }
+            set {
+                this["followContextStripMenuFont"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followContextStatusBarFont {
+            get {
+                return ((bool)(this["followContextStatusBarFont"]));
+            }
+            set {
+                this["followContextStatusBarFont"] = value;
             }
         }
     }

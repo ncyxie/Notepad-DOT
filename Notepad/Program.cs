@@ -21,10 +21,14 @@ namespace Notepad
                 try
                 {
                     if (Path.GetExtension(path) == ".txt")
+                    {
                         notepad.textBox.LoadFile(path, RichTextBoxStreamType.PlainText);
-
-                    if (Path.GetExtension(path) == ".rtf")
-                        notepad.textBox.LoadFile(path, RichTextBoxStreamType.RichText);
+                    }
+                    else if (Path.GetExtension(path) != ".txt")
+                    {
+                        notepad.textBox.LoadFile(path, RichTextBoxStreamType.PlainText);
+                        MessageBox.Show("WARNING: You just opened file with Notepad DOT unsupported file format. Your file text may look corrupted or incorrectly displayed. Use this file with Notepad DOT at your own risk.", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
 
                     notepad.Text = Path.GetFileName(path) + " - Notepad DOT";
 

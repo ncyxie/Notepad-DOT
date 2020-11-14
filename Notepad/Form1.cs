@@ -102,7 +102,6 @@ namespace Notepad
             followTextBoxFontToolStripMenuItem.Checked = false;
             followStatusBarFontToolStripMenuItem.Checked = false;
             followTextBoxFontToolStripMenuItem1.Checked = false;
-            followStripMenuFontToolStripMenuItem1.Checked = false;
         }
 
         public void GetSettings()
@@ -115,6 +114,8 @@ namespace Notepad
             menuStrip1.ForeColor = Properties.Settings.Default.menuStripColor;
             textBox.ScrollBars = Properties.Settings.Default.scrollBars;
             statusBar1.Font = Properties.Settings.Default.statusBarFont;
+            contextMenuStrip1.Font = Properties.Settings.Default.contextFont;
+            contextMenuStrip1.ForeColor = Properties.Settings.Default.contextColor;
             statusBarPanel1.BorderStyle = Properties.Settings.Default.statusBarColumns;
             statusBarPanel2.BorderStyle = Properties.Settings.Default.statusBarColumns;
             statusBarPanel3.BorderStyle = Properties.Settings.Default.statusBarColumns;
@@ -134,6 +135,7 @@ namespace Notepad
                 capsTrackerToolStripMenuItem.Enabled = true;
                 followTextBoxFontToolStripMenuItem1.Enabled = true;
                 followStripMenuFontToolStripMenuItem1.Enabled = true;
+                followContextMenuFontToolStripMenuItem2.Enabled = true;
                 statusBar1.Show();
             }
             else
@@ -148,6 +150,7 @@ namespace Notepad
                 capsTrackerToolStripMenuItem.Enabled = false;
                 followTextBoxFontToolStripMenuItem1.Enabled = false;
                 followStripMenuFontToolStripMenuItem1.Enabled = false;
+                followContextMenuFontToolStripMenuItem2.Enabled = false;
                 statusBar1.Hide();
             }
 
@@ -580,6 +583,11 @@ namespace Notepad
                 onToolStripMenuItem7.Checked = true;
                 offToolStripMenuItem8.Checked = false;
                 appearanceToolStripMenuItem.Enabled = true;
+                fontToolStripMenuItem3.Enabled = true;
+                followTextBoxFontToolStripMenuItem2.Enabled = true;
+                followStripMenuFontToolStripMenuItem2.Enabled = true;
+                followStatusBarFontToolStripMenuItem2.Enabled = true;
+                fontColorToolStripMenuItem1.Enabled = true;
 
                 textBox.ContextMenuStrip = contextMenuStrip1;
             }
@@ -588,6 +596,11 @@ namespace Notepad
                 onToolStripMenuItem7.Checked = false;
                 offToolStripMenuItem8.Checked = true;
                 appearanceToolStripMenuItem.Enabled = false;
+                fontToolStripMenuItem3.Enabled = false;
+                followTextBoxFontToolStripMenuItem2.Enabled = false;
+                followStripMenuFontToolStripMenuItem2.Enabled = false;
+                followStatusBarFontToolStripMenuItem2.Enabled = false;
+                fontColorToolStripMenuItem1.Enabled = false;
 
                 textBox.ContextMenuStrip = new ContextMenuStrip();
             }
@@ -598,6 +611,7 @@ namespace Notepad
             {
                 followStripMenuFontToolStripMenuItem.Checked = true;
                 followStatusBarFontToolStripMenuItem1.Checked = false;
+                followContextMenuFontToolStripMenuItem1.Checked = false;
             }
             else
             {
@@ -610,10 +624,24 @@ namespace Notepad
             {
                 followStripMenuFontToolStripMenuItem.Checked = false;
                 followStatusBarFontToolStripMenuItem1.Checked = true;
+                followContextMenuFontToolStripMenuItem1.Checked = false;
             }
             else
             {
                 followStatusBarFontToolStripMenuItem1.Checked = false;
+            }
+
+            followContextMenuFontToolStripMenuItem1.Checked = Properties.Settings.Default.followContextTextBoxFont;
+
+            if (followContextMenuFontToolStripMenuItem1.Checked == true)
+            {
+                followStripMenuFontToolStripMenuItem.Checked = false;
+                followStatusBarFontToolStripMenuItem1.Checked = false;
+                followContextMenuFontToolStripMenuItem1.Checked = true;
+            }
+            else
+            {
+                followContextMenuFontToolStripMenuItem1.Checked = false;
             }
 
             followTextBoxFontToolStripMenuItem.Checked = Properties.Settings.Default.stripMenuFollowTextBox;
@@ -622,6 +650,7 @@ namespace Notepad
             {
                 followTextBoxFontToolStripMenuItem.Checked = true;
                 followStatusBarFontToolStripMenuItem.Checked = false;
+                followContextMenuFontToolStripMenuItem.Checked = false;
             }
             else
             {
@@ -634,10 +663,24 @@ namespace Notepad
             {
                 followTextBoxFontToolStripMenuItem.Checked = false;
                 followStatusBarFontToolStripMenuItem.Checked = true;
+                followContextMenuFontToolStripMenuItem.Checked = false;
             }
             else
             {
                 followStatusBarFontToolStripMenuItem.Checked = false;
+            }
+
+            followContextMenuFontToolStripMenuItem.Checked = Properties.Settings.Default.followContextStripMenuFont;
+
+            if (followContextMenuFontToolStripMenuItem.Checked == true)
+            {
+                followTextBoxFontToolStripMenuItem.Checked = false;
+                followStatusBarFontToolStripMenuItem.Checked = false;
+                followContextMenuFontToolStripMenuItem.Checked = true;
+            }
+            else
+            {
+                followContextMenuFontToolStripMenuItem.Checked = false;
             }
 
             followTextBoxFontToolStripMenuItem1.Checked = Properties.Settings.Default.statusBarFollowTextBox;
@@ -646,6 +689,7 @@ namespace Notepad
             {
                 followTextBoxFontToolStripMenuItem1.Checked = true;
                 followStripMenuFontToolStripMenuItem1.Checked = false;
+                followContextMenuFontToolStripMenuItem2.Checked = false;
             }
             else
             {
@@ -658,10 +702,24 @@ namespace Notepad
             {
                 followTextBoxFontToolStripMenuItem1.Checked = false;
                 followStripMenuFontToolStripMenuItem1.Checked = true;
+                followContextMenuFontToolStripMenuItem2.Checked = false;
             }
             else
             {
                 followStripMenuFontToolStripMenuItem1.Checked = false;
+            }
+
+            followContextMenuFontToolStripMenuItem2.Checked = Properties.Settings.Default.followContextStatusBarFont;
+
+            if (followContextMenuFontToolStripMenuItem2.Checked == true)
+            {
+                followTextBoxFontToolStripMenuItem1.Checked = false;
+                followStripMenuFontToolStripMenuItem1.Checked = false;
+                followContextMenuFontToolStripMenuItem2.Checked = true;
+            }
+            else
+            {
+                followContextMenuFontToolStripMenuItem2.Checked = false;
             }
 
             lightModeToolStripMenuItem2.Checked = Properties.Settings.Default.lightContext;
@@ -983,6 +1041,43 @@ namespace Notepad
 
             contextMenuStrip1.BackColor = Properties.Settings.Default.contextMenuBackColor;
             contextMenuStrip1.ForeColor = Properties.Settings.Default.contextMenuForeColor;
+
+            followTextBoxFontToolStripMenuItem2.Checked = Properties.Settings.Default.followTextBoxContextFont;
+            followStripMenuFontToolStripMenuItem2.Checked = Properties.Settings.Default.followStripMenuContextFont;
+            followStatusBarFontToolStripMenuItem2.Checked = Properties.Settings.Default.followStatusBarContextFont;
+
+            if (followTextBoxFontToolStripMenuItem2.Checked == true)
+            {
+                followTextBoxFontToolStripMenuItem2.Checked = true;
+                followStripMenuFontToolStripMenuItem2.Checked = false;
+                followStatusBarFontToolStripMenuItem2.Checked = false;
+            }
+            else
+            {
+                followTextBoxFontToolStripMenuItem2.Checked = false;
+            }
+
+            if (followStripMenuFontToolStripMenuItem2.Checked == true)
+            {
+                followTextBoxFontToolStripMenuItem2.Checked = false;
+                followStripMenuFontToolStripMenuItem2.Checked = true;
+                followStatusBarFontToolStripMenuItem2.Checked = false;
+            }
+            else
+            {
+                followStripMenuFontToolStripMenuItem2.Checked = false;
+            }
+
+            if (followStatusBarFontToolStripMenuItem2.Checked == true)
+            {
+                followTextBoxFontToolStripMenuItem2.Checked = false;
+                followStripMenuFontToolStripMenuItem2.Checked = false;
+                followStatusBarFontToolStripMenuItem2.Checked = true;
+            }
+            else
+            {
+                followStatusBarFontToolStripMenuItem2.Checked = false;
+            }
         }
 
         public void SaveSettings()
@@ -997,6 +1092,8 @@ namespace Notepad
             Properties.Settings.Default.menuStripColor = menuStrip1.ForeColor;
             Properties.Settings.Default.scrollBars = textBox.ScrollBars;
             Properties.Settings.Default.statusBarFont = statusBar1.Font;
+            Properties.Settings.Default.contextFont = contextMenuStrip1.Font;
+            Properties.Settings.Default.contextColor = contextMenuStrip1.ForeColor;
             Properties.Settings.Default.statusBarColumns = statusBarPanel1.BorderStyle;
             Properties.Settings.Default.statusBarColumns = statusBarPanel2.BorderStyle;
             Properties.Settings.Default.statusBarColumns = statusBarPanel3.BorderStyle;
@@ -1077,6 +1174,14 @@ namespace Notepad
             Properties.Settings.Default.contextMenuBackColor = contextMenuStrip1.BackColor;
             Properties.Settings.Default.contextMenuForeColor = contextMenuStrip1.ForeColor;
 
+            Properties.Settings.Default.followTextBoxContextFont = followTextBoxFontToolStripMenuItem2.Checked;
+            Properties.Settings.Default.followStripMenuContextFont = followStripMenuFontToolStripMenuItem2.Checked;
+            Properties.Settings.Default.followStatusBarContextFont = followStatusBarFontToolStripMenuItem2.Checked;
+
+            Properties.Settings.Default.followContextTextBoxFont = followContextMenuFontToolStripMenuItem1.Checked;
+            Properties.Settings.Default.followContextStripMenuFont = followContextMenuFontToolStripMenuItem.Checked;
+            Properties.Settings.Default.followContextStatusBarFont = followContextMenuFontToolStripMenuItem2.Checked;
+
             Properties.Settings.Default.Save();
         }
 
@@ -1143,17 +1248,21 @@ namespace Notepad
         private void OpenFile()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Text Files (*.txt)|*.txt|Rich Text Format (*.rtf)|*.rtf";
+            openFileDialog.Filter = "Text Documents (*.txt)|*.txt|All files (*.*)|*.*";
 
             DialogResult result = openFileDialog.ShowDialog();
 
             if (result == DialogResult.OK)
             {
                 if (Path.GetExtension(openFileDialog.FileName) == ".txt")
+                {
                     textBox.LoadFile(openFileDialog.FileName, RichTextBoxStreamType.PlainText);
-
-                if (Path.GetExtension(openFileDialog.FileName) == ".rtf")
-                    textBox.LoadFile(openFileDialog.FileName, RichTextBoxStreamType.RichText);
+                }
+                else if (Path.GetExtension(openFileDialog.FileName) != ".txt")
+                {
+                    textBox.LoadFile(openFileDialog.FileName, RichTextBoxStreamType.PlainText);
+                    MessageBox.Show("WARNING: You just opened file with Notepad DOT unsupported file format. Your file text may look corrupted or incorrectly displayed. Use this file with Notepad DOT at your own risk.", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
 
                 this.Text = Path.GetFileName(openFileDialog.FileName) + " - Notepad DOT";
 
@@ -1177,11 +1286,10 @@ namespace Notepad
         {
             if (isFileAlreadySaved)
             {
-                if (Path.GetExtension(currentOpenFileName) == ".rtf")
-                    textBox.SaveFile(currentOpenFileName, RichTextBoxStreamType.RichText);
-
-                if (Path.GetExtension(currentOpenFileName) == ".txt")
+                if (Path.GetExtension(currentOpenFileName) == ".txt" || Path.GetExtension(currentOpenFileName) != ".txt")
+                {
                     textBox.SaveFile(currentOpenFileName, RichTextBoxStreamType.PlainText);
+                }
 
                 isFileDirty = false;
             }
@@ -1213,17 +1321,16 @@ namespace Notepad
         private void SaveAsFileMenu()
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "Text Files (*.txt)|*.txt|Rich Text Format (*.rtf)|*.rtf";
+            saveFileDialog.Filter = "Text Documents (*.txt)|*.txt|All files (*.*)|*.*";
 
             DialogResult result = saveFileDialog.ShowDialog();
 
             if (result == DialogResult.OK)
             {
-                if (Path.GetExtension(saveFileDialog.FileName) == ".txt")
+                if (Path.GetExtension(saveFileDialog.FileName) == ".txt" || Path.GetExtension(saveFileDialog.FileName) != ".txt")
+                {
                     textBox.SaveFile(saveFileDialog.FileName, RichTextBoxStreamType.PlainText);
-
-                if (Path.GetExtension(saveFileDialog.FileName) == ".rtf")
-                    textBox.SaveFile(saveFileDialog.FileName, RichTextBoxStreamType.RichText);
+                }
 
                 this.Text = Path.GetFileName(saveFileDialog.FileName) + " - Notepad DOT";
 
@@ -1406,6 +1513,7 @@ namespace Notepad
                 textBox.Font = op.Font;
             followStripMenuFontToolStripMenuItem.Checked = false;
             followStatusBarFontToolStripMenuItem1.Checked = false;
+            followContextMenuFontToolStripMenuItem1.Checked = false;
         }
 
         private void colorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1804,6 +1912,7 @@ namespace Notepad
             capsTrackerToolStripMenuItem.Enabled = false;
             followTextBoxFontToolStripMenuItem1.Enabled = false;
             followStripMenuFontToolStripMenuItem1.Enabled = false;
+            followContextMenuFontToolStripMenuItem2.Enabled = false;
             statusBar1.Hide();
         }
 
@@ -1819,6 +1928,7 @@ namespace Notepad
             capsTrackerToolStripMenuItem.Enabled = true;
             followTextBoxFontToolStripMenuItem1.Enabled = true;
             followStripMenuFontToolStripMenuItem1.Enabled = true;
+            followContextMenuFontToolStripMenuItem2.Enabled = true;
             statusBar1.Show();
         }
 
@@ -1844,6 +1954,7 @@ namespace Notepad
                 menuStrip1.Font = op.Font;
             followTextBoxFontToolStripMenuItem.Checked = false;
             followStatusBarFontToolStripMenuItem.Checked = false;
+            followContextMenuFontToolStripMenuItem.Checked = false;
         }
 
         private void fontColorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -2014,6 +2125,7 @@ namespace Notepad
                 statusBar1.Font = op.Font;
             followTextBoxFontToolStripMenuItem1.Checked = false;
             followStripMenuFontToolStripMenuItem1.Checked = false;
+            followContextMenuFontToolStripMenuItem2.Checked = false;
         }
 
         private void columnsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -2397,6 +2509,11 @@ namespace Notepad
             onToolStripMenuItem7.Checked = true;
             offToolStripMenuItem8.Checked = false;
             appearanceToolStripMenuItem.Enabled = true;
+            fontToolStripMenuItem3.Enabled = true;
+            followTextBoxFontToolStripMenuItem2.Enabled = true;
+            followStripMenuFontToolStripMenuItem2.Enabled = true;
+            followStatusBarFontToolStripMenuItem2.Enabled = true;
+            fontColorToolStripMenuItem1.Enabled = true;
 
             textBox.ContextMenuStrip = contextMenuStrip1;
         }
@@ -2406,6 +2523,11 @@ namespace Notepad
             onToolStripMenuItem7.Checked = false;
             offToolStripMenuItem8.Checked = true;
             appearanceToolStripMenuItem.Enabled = false;
+            fontToolStripMenuItem3.Enabled = false;
+            followTextBoxFontToolStripMenuItem2.Enabled = false;
+            followStripMenuFontToolStripMenuItem2.Enabled = false;
+            followStatusBarFontToolStripMenuItem2.Enabled = false;
+            fontColorToolStripMenuItem1.Enabled = false;
 
             textBox.ContextMenuStrip = new ContextMenuStrip();
         }
@@ -2414,6 +2536,7 @@ namespace Notepad
         {
             followStripMenuFontToolStripMenuItem.Checked = true;
             followStatusBarFontToolStripMenuItem1.Checked = false;
+            followContextMenuFontToolStripMenuItem1.Checked = false;
 
             textBox.Font = menuStrip1.Font;
         }
@@ -2422,14 +2545,25 @@ namespace Notepad
         {
             followStripMenuFontToolStripMenuItem.Checked = false;
             followStatusBarFontToolStripMenuItem1.Checked = true;
+            followContextMenuFontToolStripMenuItem1.Checked = false;
 
             textBox.Font = statusBar1.Font;
+        }
+
+        private void followContextMenuFontToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            followStripMenuFontToolStripMenuItem.Checked = false;
+            followStatusBarFontToolStripMenuItem1.Checked = false;
+            followContextMenuFontToolStripMenuItem1.Checked = true;
+
+            textBox.Font = contextMenuStrip1.Font;
         }
 
         private void followTextBoxFontToolStripMenuItem_Click(object sender, EventArgs e)
         {
             followTextBoxFontToolStripMenuItem.Checked = true;
             followStatusBarFontToolStripMenuItem.Checked = false;
+            followContextMenuFontToolStripMenuItem.Checked = false;
 
             if (textBox.Font.Size == 8.25 || textBox.Font.Size == 9 || textBox.Font.Size == 9.75 || textBox.Font.Size == 11.25 || textBox.Font.Size == 12 || textBox.Font.Size == 14.25 || textBox.Font.Size == 15.75 || textBox.Font.Size == 18 || textBox.Font.Size == 20.25 || textBox.Font.Size == 21.75 || textBox.Font.Size == 24)
             {
@@ -2438,7 +2572,7 @@ namespace Notepad
             else
             {
                 followTextBoxFontToolStripMenuItem.Checked = false;
-                MessageBox.Show("Task failed, your textBox Font Size is too large for stripMenu (max. font size 24).", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Task failed, your Text Box Font Size is too large for stripMenu (max. font size 24).", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -2446,15 +2580,25 @@ namespace Notepad
         {
             followTextBoxFontToolStripMenuItem.Checked = false;
             followStatusBarFontToolStripMenuItem.Checked = true;
+            followContextMenuFontToolStripMenuItem.Checked = false;
 
-            if (textBox.Font.Size == 8.25 || textBox.Font.Size == 9 || textBox.Font.Size == 9.75 || textBox.Font.Size == 11.25 || textBox.Font.Size == 12 || textBox.Font.Size == 14.25 || textBox.Font.Size == 15.75 || textBox.Font.Size == 18 || textBox.Font.Size == 20.25 || textBox.Font.Size == 21.75 || textBox.Font.Size == 24)
+            menuStrip1.Font = statusBar1.Font;
+        }
+
+        private void followContextMenuFontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            followTextBoxFontToolStripMenuItem.Checked = false;
+            followStatusBarFontToolStripMenuItem.Checked = false;
+            followContextMenuFontToolStripMenuItem.Checked = true;
+
+            if (contextMenuStrip1.Font.Size == 8.25 || contextMenuStrip1.Font.Size == 9 || contextMenuStrip1.Font.Size == 9.75 || contextMenuStrip1.Font.Size == 11.25 || contextMenuStrip1.Font.Size == 12 || contextMenuStrip1.Font.Size == 14.25 || contextMenuStrip1.Font.Size == 15.75 || contextMenuStrip1.Font.Size == 18 || contextMenuStrip1.Font.Size == 20.25 || contextMenuStrip1.Font.Size == 21.75 || contextMenuStrip1.Font.Size == 24)
             {
-                menuStrip1.Font = statusBar1.Font;
+                menuStrip1.Font = contextMenuStrip1.Font;
             }
             else
             {
-                followStatusBarFontToolStripMenuItem.Checked = false;
-                MessageBox.Show("Task failed, your statusBar Font Size is too large for stripMenu (max. font size 24).", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                followContextMenuFontToolStripMenuItem.Checked = false;
+                MessageBox.Show("Task failed, your Status Bar Font Size is too large for stripMenu (max. font size 24).", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -2462,6 +2606,7 @@ namespace Notepad
         {
             followTextBoxFontToolStripMenuItem1.Checked = true;
             followStripMenuFontToolStripMenuItem1.Checked = false;
+            followContextMenuFontToolStripMenuItem2.Checked = false;
 
             if (textBox.Font.Size == 8.25 || textBox.Font.Size == 9 || textBox.Font.Size == 9.75 || textBox.Font.Size == 11.25 || textBox.Font.Size == 12 || textBox.Font.Size == 14.25 || textBox.Font.Size == 15.75)
             {
@@ -2470,7 +2615,7 @@ namespace Notepad
             else
             {
                 followTextBoxFontToolStripMenuItem1.Checked = false;
-                MessageBox.Show("Task failed, your textBox Font Size is too large for statusBar (max. font size 16).", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Task failed, your Text Box Font Size is too large for statusBar (max. font size 16).", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -2478,15 +2623,33 @@ namespace Notepad
         {
             followTextBoxFontToolStripMenuItem1.Checked = false;
             followStripMenuFontToolStripMenuItem1.Checked = true;
+            followContextMenuFontToolStripMenuItem2.Checked = false;
 
-            if (textBox.Font.Size == 8.25 || textBox.Font.Size == 9 || textBox.Font.Size == 9.75 || textBox.Font.Size == 11.25 || textBox.Font.Size == 12 || textBox.Font.Size == 14.25 || textBox.Font.Size == 15.75)
+            if (menuStrip1.Font.Size == 8.25 || menuStrip1.Font.Size == 9 || menuStrip1.Font.Size == 9.75 || menuStrip1.Font.Size == 11.25 || menuStrip1.Font.Size == 12 || menuStrip1.Font.Size == 14.25 || menuStrip1.Font.Size == 15.75)
             {
                 statusBar1.Font = menuStrip1.Font;
             }
             else
             {
                 followStripMenuFontToolStripMenuItem1.Checked = false;
-                MessageBox.Show("Task failed, your stripMenu Font Size is too large for statusBar (max. font size 16).", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Task failed, your Strip Menu Font Size is too large for statusBar (max. font size 16).", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void followContextMenuFontToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            followTextBoxFontToolStripMenuItem1.Checked = false;
+            followStripMenuFontToolStripMenuItem1.Checked = false;
+            followContextMenuFontToolStripMenuItem2.Checked = true;
+
+            if (contextMenuStrip1.Font.Size == 8.25 || contextMenuStrip1.Font.Size == 9 || contextMenuStrip1.Font.Size == 9.75 || contextMenuStrip1.Font.Size == 11.25 || contextMenuStrip1.Font.Size == 12 || contextMenuStrip1.Font.Size == 14.25 || contextMenuStrip1.Font.Size == 15.75)
+            {
+                statusBar1.Font = contextMenuStrip1.Font;
+            }
+            else
+            {
+                followContextMenuFontToolStripMenuItem2.Checked = false;
+                MessageBox.Show("Task failed, your Context Menu Font Size is too large for statusBar (max. font size 16).", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -2801,6 +2964,67 @@ namespace Notepad
             toolStrip1.BackColor = contextMenuStrip1.BackColor;
             toolStrip1.ForeColor = contextMenuStrip1.ForeColor;
             toolStripContainer1.TopToolStripPanel.BackColor = contextMenuStrip1.BackColor;
+        }
+
+        private void fontToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            FontDialog op = new FontDialog();
+            op.Font = contextMenuStrip1.Font;
+            op.MinSize = 8;
+            op.MaxSize = 18;
+            if (op.ShowDialog() == DialogResult.OK)
+                contextMenuStrip1.Font = op.Font;
+        }
+
+        private void fontColorToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ColorDialog op = new ColorDialog();
+            op.Color = contextMenuStrip1.ForeColor;
+            if (op.ShowDialog() == DialogResult.OK)
+                contextMenuStrip1.ForeColor = op.Color;
+        }
+
+        private void followTextBoxFontToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            followTextBoxFontToolStripMenuItem2.Checked = true;
+            followStripMenuFontToolStripMenuItem2.Checked = false;
+            followStatusBarFontToolStripMenuItem2.Checked = false;
+
+            if (textBox.Font.Size == 8.25 || textBox.Font.Size == 9 || textBox.Font.Size == 9.75 || textBox.Font.Size == 11.25 || textBox.Font.Size == 12 || textBox.Font.Size == 14.25 || textBox.Font.Size == 15.75 || textBox.Font.Size == 18)
+            {
+                contextMenuStrip1.Font = textBox.Font;
+            }
+            else
+            {
+                followTextBoxFontToolStripMenuItem2.Checked = false;
+                MessageBox.Show("Task failed, your Text Box Font Size is too large for Context Menu (max. font size 18).", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void followStripMenuFontToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            followTextBoxFontToolStripMenuItem2.Checked = false;
+            followStripMenuFontToolStripMenuItem2.Checked = true;
+            followStatusBarFontToolStripMenuItem2.Checked = false;
+
+            if (menuStrip1.Font.Size == 8.25 || menuStrip1.Font.Size == 9 || menuStrip1.Font.Size == 9.75 || menuStrip1.Font.Size == 11.25 || menuStrip1.Font.Size == 12 || menuStrip1.Font.Size == 14.25 || menuStrip1.Font.Size == 15.75 || menuStrip1.Font.Size == 18)
+            {
+                contextMenuStrip1.Font = menuStrip1.Font;
+            }
+            else
+            {
+                followStripMenuFontToolStripMenuItem2.Checked = false;
+                MessageBox.Show("Task failed, your Strip Menu Font Size is too large for Context Menu (max. font size 18).", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void followStatusBarFontToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            followTextBoxFontToolStripMenuItem2.Checked = false;
+            followStripMenuFontToolStripMenuItem2.Checked = false;
+            followStatusBarFontToolStripMenuItem2.Checked = true;
+
+            contextMenuStrip1.Font = statusBar1.Font;
         }
     }
 }

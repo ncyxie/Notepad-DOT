@@ -41,18 +41,18 @@
             // lblProductName
             // 
             this.lblProductName.AutoSize = true;
-            this.lblProductName.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.lblProductName.Location = new System.Drawing.Point(12, 18);
+            this.lblProductName.Font = new System.Drawing.Font("Montserrat", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductName.Location = new System.Drawing.Point(12, 16);
             this.lblProductName.Name = "lblProductName";
-            this.lblProductName.Size = new System.Drawing.Size(142, 24);
+            this.lblProductName.Size = new System.Drawing.Size(174, 24);
             this.lblProductName.TabIndex = 0;
             this.lblProductName.Text = "NOTEPAD DOT";
             this.lblProductName.Click += new System.EventHandler(this.lblProductName_Click);
             // 
             // btnOK
             // 
-            this.btnOK.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(110, 312);
+            this.btnOK.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOK.Location = new System.Drawing.Point(110, 317);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(103, 33);
             this.btnOK.TabIndex = 1;
@@ -63,10 +63,10 @@
             // lblProductVersion
             // 
             this.lblProductVersion.AutoSize = true;
-            this.lblProductVersion.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.lblProductVersion.Location = new System.Drawing.Point(12, 51);
+            this.lblProductVersion.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductVersion.Location = new System.Drawing.Point(12, 46);
             this.lblProductVersion.Name = "lblProductVersion";
-            this.lblProductVersion.Size = new System.Drawing.Size(137, 80);
+            this.lblProductVersion.Size = new System.Drawing.Size(159, 92);
             this.lblProductVersion.TabIndex = 2;
             this.lblProductVersion.Text = "A open source,\r\nlightweight and\r\ncustomisable \r\ntext editor. \r\n";
             // 
@@ -74,18 +74,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.label1.Location = new System.Drawing.Point(13, 140);
+            this.label1.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 145);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 80);
+            this.label1.Size = new System.Drawing.Size(156, 80);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Version: 2.2.1-Stable\r\nBuild date: 27/10/2020\r\nMade by ncyxie.\r\nThanks to XeZrunn" +
+            this.label1.Text = "Version: 2.3.0-Stable\r\nBuild date: 14/11/2020\r\nMade by ncyxie.\r\nThanks to XeZrunn" +
     "er.\r\nThanks to zero9178.";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Notepad.Properties.Resources.Notepad_DOT_134x196;
-            this.pictureBox1.Location = new System.Drawing.Point(184, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(189, 13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(134, 194);
             this.pictureBox1.TabIndex = 6;
@@ -95,10 +95,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.label2.Location = new System.Drawing.Point(13, 226);
+            this.label2.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(13, 231);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(266, 32);
+            this.label2.Size = new System.Drawing.Size(262, 32);
             this.label2.TabIndex = 7;
             this.label2.Text = "Thanks to Oxygen Team, Papirus Dev. \r\nTeam, VisualPharm and Saki for icons.";
             // 
@@ -106,10 +106,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.label3.Location = new System.Drawing.Point(13, 265);
+            this.label3.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(13, 270);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(253, 32);
+            this.label3.Size = new System.Drawing.Size(258, 32);
             this.label3.TabIndex = 8;
             this.label3.Text = "Application developed by using .NET \r\nFramework WinForms.";
             // 
@@ -117,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 364);
+            this.ClientSize = new System.Drawing.Size(339, 369);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
