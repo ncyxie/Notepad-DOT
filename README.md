@@ -1,4 +1,4 @@
-*Last updated: 2020/11/12*
+*Last updated: 2020/11/14*
 
 # Notepad DOT
 
