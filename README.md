@@ -1,16 +1,12 @@
-*Last updated: 2020/11/01*
+*Last updated: 2020/11/12*
 
 # Notepad DOT
 
-## Latest News
+## Latest Information
 
-**V2.2.1-STABLE HOTFIX UPDATE IS OFFICIALLY OUT NOW!**
+**As .NET 5 just got released, I will try to port Notepad DOT from .NET Framework.** I am not sure if I will succeed, but I will give it a try and see if stuff is stable enough for a release.
 
-> ***https://github.com/ncyxie/Notepad-DOT/releases/***
-
-Report application bugs by using [Issues](https://github.com/ncyxie/Notepad-Dot/issues/) page in GitHub or contacting with me on Telegram or Discord.
-
-Function ideas are also appreciated. :)
+***Note this: upcoming v2.3.0-Stable should come out in few days and it will still be based on .NET Framework, because it is stable for the application right now.***
 
 ## Introduction
 
@@ -37,8 +33,7 @@ Think wisely before choosing between those two. :)
 
 ## Bug reports
 
-Since you are here, you just need to enter [Issues](https://github.com/ncyxie/Notepad-Dot/issues/) page in
-strip menu above, or click on blue **Issues** text.
+Since you are here, you just need to enter [Issues](https://github.com/ncyxie/Notepad-Dot/issues/) page in GitHub, or contact with me using Discord or Telegram.
 
 ## Updates
 
