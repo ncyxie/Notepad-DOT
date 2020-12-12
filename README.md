@@ -1,12 +1,10 @@
-*Last updated: 2020/11/12*
+*Last updated: 2020/12/05*
 
 # Notepad DOT
 
 ## Latest Information
 
-**As .NET 5 just got released, I will try to port Notepad DOT from .NET Framework.** I am not sure if I will succeed, but I will give it a try and see if stuff is stable enough for a release.
-
-***Note this: upcoming v2.3.0-Stable should come out in few days and it will still be based on .NET Framework, because it is stable for the application right now.***
+Need ideas for next Notepad DOT update. Suggest your ideas on [Telegram](https://t.me/ncyxie) or Discord (ncyxie#0290).
 
 ## Introduction
 
