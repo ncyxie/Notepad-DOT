@@ -41,9 +41,6 @@
     <ApplicationIcon>Notepad-DOT-134x196-ico.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />

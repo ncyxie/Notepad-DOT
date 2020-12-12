@@ -6,7 +6,7 @@
       <Value Profile="(Default)">light</Value>
     </Setting>
     <Setting Name="Font" Type="System.Drawing.Font" Scope="User">
-      <Value Profile="(Default)">Montserrat, 9.75pt</Value>
+      <Value Profile="(Default)">Segoe UI, 9.75pt</Value>
     </Setting>
     <Setting Name="Color" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)" />
@@ -18,7 +18,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="menuStripFont" Type="System.Drawing.Font" Scope="User">
-      <Value Profile="(Default)">Montserrat, 9.75pt</Value>
+      <Value Profile="(Default)">Segoe UI, 9.75pt</Value>
     </Setting>
     <Setting Name="menuStripColor" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)" />
@@ -27,7 +27,7 @@
       <Value Profile="(Default)">Vertical</Value>
     </Setting>
     <Setting Name="statusBarFont" Type="System.Drawing.Font" Scope="User">
-      <Value Profile="(Default)">Montserrat, 9.75pt</Value>
+      <Value Profile="(Default)">Segoe UI, 9.75pt</Value>
     </Setting>
     <Setting Name="statusBarColumns" Type="System.Windows.Forms.StatusBarPanelBorderStyle" Scope="User">
       <Value Profile="(Default)">None</Value>

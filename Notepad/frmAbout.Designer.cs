@@ -41,18 +41,18 @@
             // lblProductName
             // 
             this.lblProductName.AutoSize = true;
-            this.lblProductName.Font = new System.Drawing.Font("Montserrat", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.lblProductName.Location = new System.Drawing.Point(12, 16);
             this.lblProductName.Name = "lblProductName";
-            this.lblProductName.Size = new System.Drawing.Size(174, 24);
+            this.lblProductName.Size = new System.Drawing.Size(158, 30);
             this.lblProductName.TabIndex = 0;
             this.lblProductName.Text = "NOTEPAD DOT";
             this.lblProductName.Click += new System.EventHandler(this.lblProductName_Click);
             // 
             // btnOK
             // 
-            this.btnOK.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(110, 317);
+            this.btnOK.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOK.Location = new System.Drawing.Point(110, 322);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(103, 33);
             this.btnOK.TabIndex = 1;
@@ -63,23 +63,23 @@
             // lblProductVersion
             // 
             this.lblProductVersion.AutoSize = true;
-            this.lblProductVersion.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProductVersion.Location = new System.Drawing.Point(12, 46);
+            this.lblProductVersion.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.lblProductVersion.Location = new System.Drawing.Point(12, 47);
             this.lblProductVersion.Name = "lblProductVersion";
-            this.lblProductVersion.Size = new System.Drawing.Size(159, 92);
+            this.lblProductVersion.Size = new System.Drawing.Size(134, 92);
             this.lblProductVersion.TabIndex = 2;
-            this.lblProductVersion.Text = "A open source,\r\nlightweight and\r\ncustomisable \r\ntext editor. \r\n";
+            this.lblProductVersion.Text = "A open source,\r\nlightweight and\r\ncustomizable \r\ntext editor. \r\n";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.label1.Location = new System.Drawing.Point(13, 145);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 80);
+            this.label1.Size = new System.Drawing.Size(138, 85);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Version: 2.3.0-Stable\r\nBuild date: 14/11/2020\r\nMade by ncyxie.\r\nThanks to XeZrunn" +
+            this.label1.Text = "Version: 2.4.0-Stable\r\nBuild date: 12/12/2020\r\nMade by ncyxie.\r\nThanks to xezrunn" +
     "er.\r\nThanks to zero9178.";
             // 
             // pictureBox1
@@ -95,10 +95,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 231);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.label2.Location = new System.Drawing.Point(13, 236);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(262, 32);
+            this.label2.Size = new System.Drawing.Size(240, 34);
             this.label2.TabIndex = 7;
             this.label2.Text = "Thanks to Oxygen Team, Papirus Dev. \r\nTeam, VisualPharm and Saki for icons.";
             // 
@@ -106,10 +106,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 270);
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(13, 275);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(258, 32);
+            this.label3.Size = new System.Drawing.Size(234, 34);
             this.label3.TabIndex = 8;
             this.label3.Text = "Application developed by using .NET \r\nFramework WinForms.";
             // 
@@ -117,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(339, 369);
+            this.ClientSize = new System.Drawing.Size(339, 374);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -130,6 +130,7 @@
             this.MinimizeBox = false;
             this.Name = "frmAbout";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "About";
             this.Load += new System.EventHandler(this.About_Load);

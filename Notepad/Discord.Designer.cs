@@ -38,10 +38,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 9);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(41, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(259, 38);
+            this.label1.Size = new System.Drawing.Size(237, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "Need my support/help?\r\nContact with me using Discord!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -49,16 +49,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.label2.Location = new System.Drawing.Point(88, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(205, 19);
+            this.label2.Size = new System.Drawing.Size(182, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Discord Tag: ncyxie#0290";
             // 
             // btnOK
             // 
-            this.btnOK.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOK.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.Location = new System.Drawing.Point(104, 138);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(103, 33);
@@ -90,6 +90,7 @@
             this.MinimizeBox = false;
             this.Name = "Discord";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Discord Support";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

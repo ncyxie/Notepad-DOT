@@ -64,6 +64,7 @@ namespace Notepad
             capsTrackerToolStripMenuItem.Enabled = false;
 
             bothToolStripMenuItem.Checked = true;
+            textBox.ScrollBars = RichTextBoxScrollBars.Both;
             textBox.WordWrap = false;
 
             statusBar1.AutoSize = true;
@@ -102,6 +103,8 @@ namespace Notepad
             followTextBoxFontToolStripMenuItem.Checked = false;
             followStatusBarFontToolStripMenuItem.Checked = false;
             followTextBoxFontToolStripMenuItem1.Checked = false;
+
+            textBox.AcceptsTab = true;
         }
 
         public void GetSettings()
@@ -1591,6 +1594,16 @@ namespace Notepad
             System.Diagnostics.Process.Start("https://www.bing.com/search?q=" + textBox.SelectedText);
         }
 
+        private void searchWithYahooToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            YahooMethod();
+        }
+
+        private void YahooMethod()
+        {
+            System.Diagnostics.Process.Start("https://search.yahoo.com/search?p=" + textBox.SelectedText);
+        }
+
         private void searchWithDuckDuckGoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DuckDuckGoMethod();
@@ -2497,6 +2510,11 @@ namespace Notepad
         private void searchWithBingToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             BingMethod();
+        }
+
+        private void searchWithYahooToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            YahooMethod();
         }
 
         private void searchWithDuckDuckGoToolStripMenuItem1_Click(object sender, EventArgs e)
