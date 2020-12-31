@@ -6,7 +6,7 @@
 
 Notepad DOT v2.4.1-Stable in development. Expect update release in few days.
 
-**HAPPY NEW 2021 YEAR!**
+**HAPPY NEW 2021 YEAR! :)**
 
 ## Introduction
 
