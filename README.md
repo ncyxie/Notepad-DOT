@@ -1,14 +1,16 @@
-*Last updated: 2020/12/05*
+*Last updated: 02/01/2021*
 
 # Notepad DOT
 
 ## Latest Information
 
-Need ideas for next Notepad DOT update. Suggest your ideas on [Telegram](https://t.me/ncyxie) or Discord (ncyxie#0290).
+Notepad DOT v2.4.1-Stable in development. Expect update release in few days.
+
+**HAPPY NEW 2021 YEAR! :)**
 
 ## Introduction
 
-**Notepad DOT** is an open source, lightweight and customisable text editor.
+**Notepad DOT** is an open source, lightweight and customizable text editor.
 It has all basic notepad functions and more customisation junk. 
 It is for everyday life, from newbies to advanced users. 
 Since it is open source, you can modify it and even make it better.
