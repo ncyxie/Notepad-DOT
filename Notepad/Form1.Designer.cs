@@ -669,7 +669,7 @@
             this.followContextMenuToolStripMenuItem1,
             this.followToolbarToolStripMenuItem1});
             this.preferencesToolStripMenuItem.Name = "preferencesToolStripMenuItem";
-            this.preferencesToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.preferencesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.preferencesToolStripMenuItem.Text = "&Appearance";
             // 
             // lightModeToolStripMenuItem
@@ -758,7 +758,7 @@
             this.toolStripMenuItem8,
             this.appearanceToolStripMenuItem1});
             this.stripMenuToolStripMenuItem.Name = "stripMenuToolStripMenuItem";
-            this.stripMenuToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.stripMenuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.stripMenuToolStripMenuItem.Text = "&Strip Menu";
             // 
             // fontToolStripMenuItem1
@@ -912,7 +912,7 @@
             this.toolStripMenuItem24,
             this.appearanceToolStripMenuItem});
             this.contextMenuToolStripMenuItem.Name = "contextMenuToolStripMenuItem";
-            this.contextMenuToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.contextMenuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.contextMenuToolStripMenuItem.Text = "&Context Menu";
             // 
             // onToolStripMenuItem7
@@ -1089,7 +1089,7 @@
             this.characterCounterToolStripMenuItem,
             this.capsTrackerToolStripMenuItem});
             this.statusBarToolStripMenuItem.Name = "statusBarToolStripMenuItem";
-            this.statusBarToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.statusBarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.statusBarToolStripMenuItem.Text = "&Status Bar";
             // 
             // onToolStripMenuItem2
@@ -1292,7 +1292,7 @@
             this.toolStripMenuItem29,
             this.appearanceToolStripMenuItem2});
             this.toolbarToolStripMenuItem.Name = "toolbarToolStripMenuItem";
-            this.toolbarToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.toolbarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.toolbarToolStripMenuItem.Text = "&Toolbar";
             // 
             // onToolStripMenuItem4
@@ -1442,7 +1442,7 @@
             this.bothToolStripMenuItem,
             this.noneToolStripMenuItem});
             this.scrollBarsToolStripMenuItem.Name = "scrollBarsToolStripMenuItem";
-            this.scrollBarsToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.scrollBarsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.scrollBarsToolStripMenuItem.Text = "&Scroll Bars";
             // 
             // verticalToolStripMenuItem
@@ -1703,6 +1703,7 @@
             // toolStrip1
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripButton26,
@@ -1733,7 +1734,7 @@
             this.toolStripButton19});
             this.toolStrip1.Location = new System.Drawing.Point(3, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(531, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(522, 25);
             this.toolStrip1.TabIndex = 0;
             // 
             // toolStripButton1

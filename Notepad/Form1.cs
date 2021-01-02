@@ -1269,6 +1269,9 @@ namespace Notepad
 
                 this.Text = Path.GetFileName(openFileDialog.FileName) + " - Notepad DOT";
 
+                textBox.SelectionStart = textBox.Text.Length;
+                textBox.SelectionLength = 0;
+
                 isFileAlreadySaved = true;
                 isFileDirty = false;
                 currentOpenFileName = openFileDialog.FileName;
@@ -1464,17 +1467,42 @@ namespace Notepad
 
         private void copyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox.Copy();
+            CopyMethod();
+        }
+
+        private void CopyMethod()
+        {
+            if (textBox.SelectionLength > 0)
+            {
+                Clipboard.SetText(textBox.SelectedText);
+            }
         }
 
         private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox.Paste();
+            PasteMethod();
+        }
+
+        private void PasteMethod()
+        {
+            if (Clipboard.ContainsText())
+            {
+                textBox.SelectedText = Clipboard.GetText();
+            }
         }
 
         private void cutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox.Cut();
+            CutMethod();
+        }
+
+        private void CutMethod()
+        {
+            if (textBox.SelectionLength > 0)
+            {
+                Clipboard.SetText(textBox.SelectedText);
+                textBox.SelectedText = "";
+            }
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -2245,6 +2273,7 @@ namespace Notepad
 
             if (d < 0)
             {
+                FindText = "";
                 MessageBox.Show("No results found", "Replace", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
@@ -2260,6 +2289,7 @@ namespace Notepad
             {
                 textBox.Text = textBox.Text.Replace(FindText, ReplaceText);
                 textBox.SelectionStart = textBox.Text.Length;
+                FindText = "";
             }
             else
             {
@@ -2332,17 +2362,17 @@ namespace Notepad
 
         private void toolStripButton9_Click(object sender, EventArgs e)
         {
-            textBox.Cut();
+            CutMethod();
         }
 
         private void toolStripButton10_Click(object sender, EventArgs e)
         {
-            textBox.Copy();
+            CopyMethod();
         }
 
         private void toolStripButton11_Click(object sender, EventArgs e)
         {
-            textBox.Paste();
+            PasteMethod();
         }
 
         private void toolStripButton12_Click(object sender, EventArgs e)
@@ -2474,17 +2504,17 @@ namespace Notepad
 
         private void cutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            textBox.Cut();
+            CutMethod();
         }
 
         private void copyToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            textBox.Copy();
+            CopyMethod();
         }
 
         private void pasteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            textBox.Paste();
+            PasteMethod();
         }
 
         private void deleteToolStripMenuItem1_Click(object sender, EventArgs e)
