@@ -41,6 +41,7 @@
     <ApplicationIcon>Notepad-DOT-134x196-ico.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
@@ -128,15 +129,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Notepad-DOT-134x196-ico.ico" />
+    <None Include="Resources\GoTo.ico" />
     <None Include="Resources\NewWindow.ico" />
-    <None Include="Resources\letter-r-icon-4472c4-72.ico" />
-    <None Include="Resources\Strike1.ico" />
-    <None Include="Resources\Underline1.ico" />
-    <None Include="Resources\Italic1.ico" />
-    <None Include="Resources\Bold1.ico" />
     <None Include="Resources\Color1.ico" />
     <None Include="Resources\Font1.ico" />
-    <None Include="Resources\FindPrevious1.ico" />
     <None Include="Resources\FindNext1.ico" />
     <None Include="Resources\Delete1.ico" />
     <None Include="Resources\Paste1.ico" />
@@ -149,45 +145,25 @@
     <None Include="Resources\Open1.ico" />
     <None Include="Resources\New1.ico" />
     <None Include="Resources\Undo.ico" />
-    <None Include="Resources\Underline.ico" />
-    <None Include="Resources\Strike.ico" />
     <None Include="Resources\SaveAs.ico" />
     <None Include="Resources\Save.ico" />
     <None Include="Resources\Redo.ico" />
     <None Include="Resources\Paste.ico" />
     <None Include="Resources\Open.ico" />
     <None Include="Resources\New.ico" />
-    <None Include="Resources\Italic.ico" />
     <None Include="Resources\Font.ico" />
-    <None Include="Resources\FindPrevious.ico" />
     <None Include="Resources\FindNext.ico" />
     <None Include="Resources\Delete.ico" />
     <None Include="Resources\Cut.ico" />
     <None Include="Resources\Copy.ico" />
     <None Include="Resources\Color.ico" />
-    <None Include="Resources\Bold.ico" />
     <None Include="Resources\DateTime_File.ico" />
-    <None Include="Resources\New_File1.ico" />
-    <None Include="Resources\Undo-File.ico" />
     <None Include="Resources\SelectAll_File.ico" />
-    <None Include="Resources\SaveAs_File.ico" />
-    <None Include="Resources\Save_File.ico" />
     <None Include="Resources\ReplaceAll_File.ico" />
     <None Include="Resources\Replace_File.ico" />
-    <None Include="Resources\Redo-File.ico" />
     <None Include="Resources\PrintPreview_File.ico" />
     <None Include="Resources\Print_File.ico" />
-    <None Include="Resources\Paste_File.ico" />
-    <None Include="Resources\Open_File.ico" />
-    <None Include="Resources\New_File.ico" />
-    <None Include="Resources\FontColor_File.ico" />
-    <None Include="Resources\Font_File.ico" />
-    <None Include="Resources\FindPrevious_File.ico" />
-    <None Include="Resources\FindNext_File.ico" />
     <None Include="Resources\Find_File.ico" />
-    <None Include="Resources\Delete_File.ico" />
-    <None Include="Resources\Cut_File.ico" />
-    <None Include="Resources\Copy_File.ico" />
     <None Include="Resources\ncyxie_avatar_59x59.jpg" />
     <None Include="Resources\ncyxie_avatar.jpg" />
     <None Include="Resources\ncyxie_avatar.bmp" />

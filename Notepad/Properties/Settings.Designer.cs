@@ -963,5 +963,89 @@ namespace Notepad.Properties {
                 this["followContextStatusBarFont"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool textCursor {
+            get {
+                return ((bool)(this["textCursor"]));
+            }
+            set {
+                this["textCursor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followContextTextBoxColor {
+            get {
+                return ((bool)(this["followContextTextBoxColor"]));
+            }
+            set {
+                this["followContextTextBoxColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followContextStripMenuColor {
+            get {
+                return ((bool)(this["followContextStripMenuColor"]));
+            }
+            set {
+                this["followContextStripMenuColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followStripMenuTextBoxColor {
+            get {
+                return ((bool)(this["followStripMenuTextBoxColor"]));
+            }
+            set {
+                this["followStripMenuTextBoxColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followStripMenuContextColor {
+            get {
+                return ((bool)(this["followStripMenuContextColor"]));
+            }
+            set {
+                this["followStripMenuContextColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followTextBoxStripMenuColor {
+            get {
+                return ((bool)(this["followTextBoxStripMenuColor"]));
+            }
+            set {
+                this["followTextBoxStripMenuColor"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool followTextBoxContextColor {
+            get {
+                return ((bool)(this["followTextBoxContextColor"]));
+            }
+            set {
+                this["followTextBoxContextColor"] = value;
+            }
+        }
     }
 }
