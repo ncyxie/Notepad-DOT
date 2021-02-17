@@ -1,12 +1,10 @@
-*Last updated: 02/01/2021*
+*Last updated: 16/02/2021*
 
 # Notepad DOT
 
 ## Latest Information
 
-Notepad DOT v2.4.1-Stable in development. Expect update release in few days.
-
-**HAPPY NEW 2021 YEAR! :)**
+Notepad DOT v2.5.0-Stable Feature update coming soon.. :)
 
 ## Introduction
 
