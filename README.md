@@ -4,7 +4,7 @@
 
 ## Latest Information
 
-Notepad DOT v2.5.0-Stable Feature update have just been released. [Download it now.](https://github.com/ncyxie/Notepad-DOT/releases/tag/v2.5.0-Stable)
+Notepad DOT v2.6.0-Stable Rework update with many important fixes have just been released. [Download it now.](https://github.com/ncyxie/Notepad-DOT/releases/tag/v2.6.0-Stable)
 
 ## Introduction
 
