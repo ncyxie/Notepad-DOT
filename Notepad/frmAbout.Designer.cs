@@ -77,9 +77,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.label1.Location = new System.Drawing.Point(13, 145);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 85);
+            this.label1.Size = new System.Drawing.Size(140, 85);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Version: 2.5.0-Stable\r\nBuild date: 17/02/2021\r\nMade by ncyxie.\r\nThanks to xezrunn" +
+            this.label1.Text = "Version: 2.6.0-Stable\r\nBuild date: 06/03/2021\r\nMade by ncyxie.\r\nThanks to xezrunn" +
     "er.\r\nThanks to zero9178.";
             // 
             // pictureBox1

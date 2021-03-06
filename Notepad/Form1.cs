@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Globalization;
 using System.IO;
+using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -12,6 +13,8 @@ namespace Notepad
         public bool isFileAlreadySaved;
         public bool isFileDirty;
         public string currentOpenFileName;
+
+        public string fileText;
 
         private bool CanApplicationClose = false;
 
@@ -1307,18 +1310,30 @@ namespace Notepad
 
         private void Notepad_Load(object sender, EventArgs e)
         {
-            isFileAlreadySaved = false;
-            isFileDirty = false;
-            currentOpenFileName = "";
+            if (textBox.Text == "")
+            {
+                isFileAlreadySaved = false;
+                isFileDirty = false;
+                currentOpenFileName = "";
+            }
+            else
+            {
+                isFileAlreadySaved = true;
+                isFileDirty = false;
+            }
 
+            fileText = textBox.Text;
             GetSettings();
         }
 
         private void textBox_TextChanged(object sender, EventArgs e)
         {
-            isFileDirty = true;
-            undoToolStripMenuItem.Enabled = true;
-            toolStripButton7.Enabled = true;
+            if (textBox.Text != fileText)
+            {
+                isFileDirty = true;
+                undoToolStripMenuItem.Enabled = true;
+                toolStripButton7.Enabled = true;
+            }
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1374,24 +1389,23 @@ namespace Notepad
 
             if (result == DialogResult.OK)
             {
-                if (Path.GetExtension(openFileDialog.FileName) == ".txt")
+                currentOpenFileName = openFileDialog.FileName;
+                StreamReader sr = new StreamReader(currentOpenFileName, Encoding.UTF8);
+                textBox.Text = sr.ReadToEnd();
+                sr.Close();
+
+                if (Path.GetExtension(openFileDialog.FileName) != ".txt")
                 {
-                    textBox.LoadFile(openFileDialog.FileName, RichTextBoxStreamType.PlainText);
-                }
-                else if (Path.GetExtension(openFileDialog.FileName) != ".txt")
-                {
-                    textBox.LoadFile(openFileDialog.FileName, RichTextBoxStreamType.PlainText);
                     MessageBox.Show("WARNING: You just opened file with Notepad DOT unsupported file format. Your file text may look corrupted or incorrectly displayed. Use this file with Notepad DOT at your own risk.", "Notepad DOT", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
-                this.Text = Path.GetFileName(openFileDialog.FileName) + " - Notepad DOT";
+                Text = Path.GetFileName(openFileDialog.FileName) + " - Notepad DOT";
 
                 textBox.SelectionStart = textBox.Text.Length;
                 textBox.SelectionLength = 0;
 
                 isFileAlreadySaved = true;
                 isFileDirty = false;
-                currentOpenFileName = openFileDialog.FileName;
             }
         }
 
@@ -1405,13 +1419,13 @@ namespace Notepad
             SaveFileMenu();
         }
 
-        private void SaveFileMenu()
+        private async void SaveFileMenu()
         {
             if (isFileAlreadySaved)
             {
-                if (Path.GetExtension(currentOpenFileName) == ".txt" || Path.GetExtension(currentOpenFileName) != ".txt")
+                using (StreamWriter sw = new StreamWriter(currentOpenFileName))
                 {
-                    textBox.SaveFile(currentOpenFileName, RichTextBoxStreamType.PlainText);
+                    await sw.WriteLineAsync(textBox.Text);
                 }
 
                 isFileDirty = false;
@@ -1432,7 +1446,7 @@ namespace Notepad
         private void ClearScreen()
         {
             textBox.Clear();
-            this.Text = "Untitled - Notepad DOT";
+            Text = "Untitled - Notepad DOT";
             isFileDirty = false;
         }
 
@@ -1441,25 +1455,23 @@ namespace Notepad
             SaveAsFileMenu();
         }
 
-        private void SaveAsFileMenu()
+        private async void SaveAsFileMenu()
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "Text Documents (*.txt)|*.txt|All files (*.*)|*.*";
-
-            DialogResult result = saveFileDialog.ShowDialog();
-
-            if (result == DialogResult.OK)
+            using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Text Documents (*.txt)|*.txt|All files (*.*)|*.*", ValidateNames = true })
             {
-                if (Path.GetExtension(saveFileDialog.FileName) == ".txt" || Path.GetExtension(saveFileDialog.FileName) != ".txt")
+                if (sfd.ShowDialog() == DialogResult.OK)
                 {
-                    textBox.SaveFile(saveFileDialog.FileName, RichTextBoxStreamType.PlainText);
+                    using (StreamWriter sw = new StreamWriter(sfd.FileName))
+                    {
+                        await sw.WriteLineAsync(textBox.Text);
+                    }
+
+                    Text = Path.GetFileName(sfd.FileName) + " - Notepad DOT";
+
+                    isFileAlreadySaved = true;
+                    isFileDirty = false;
+                    currentOpenFileName = sfd.FileName;
                 }
-
-                this.Text = Path.GetFileName(saveFileDialog.FileName) + " - Notepad DOT";
-
-                isFileAlreadySaved = true;
-                isFileDirty = false;
-                currentOpenFileName = saveFileDialog.FileName;
             }
         }
 
@@ -1469,19 +1481,39 @@ namespace Notepad
             {
                 if (CanApplicationClose == false)
                 {
-                    DialogResult result = MessageBox.Show("Do you want to save text file or it's changes?", "Notepad DOT", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
-
-                    switch (result)
+                    if (isFileAlreadySaved)
                     {
-                        case DialogResult.Yes:
-                            SaveFileMenu();
-                            break;
+                        DialogResult result = MessageBox.Show("Do you want to save changes to " + currentOpenFileName + "?", "Notepad DOT", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
 
-                        case DialogResult.No:
-                            break;
+                        switch (result)
+                        {
+                            case DialogResult.Yes:
+                                SaveFileMenu();
+                                break;
 
-                        case DialogResult.Cancel:
-                            return;
+                            case DialogResult.No:
+                                break;
+
+                            case DialogResult.Cancel:
+                                return;
+                        }
+                    }
+                    else
+                    {
+                        DialogResult result = MessageBox.Show("Do you want to save changes to Untitled?", "Notepad DOT", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
+
+                        switch (result)
+                        {
+                            case DialogResult.Yes:
+                                SaveFileMenu();
+                                break;
+
+                            case DialogResult.No:
+                                break;
+
+                            case DialogResult.Cancel:
+                                return;
+                        }
                     }
                 }
             }
@@ -1531,19 +1563,39 @@ namespace Notepad
                 if (CanApplicationClose == false)
                 {
                     e.Cancel = true;
-                    DialogResult result = MessageBox.Show("Do you want to save text file or it's changes?", "Notepad DOT", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
-
-                    switch (result)
+                    if (isFileAlreadySaved)
                     {
-                        case DialogResult.Yes:
-                            SaveFileMenu();
-                            break;
+                        DialogResult result = MessageBox.Show("Do you want to save changes to " + currentOpenFileName + "?", "Notepad DOT", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
 
-                        case DialogResult.No:
-                            break;
+                        switch (result)
+                        {
+                            case DialogResult.Yes:
+                                SaveFileMenu();
+                                break;
 
-                        case DialogResult.Cancel:
-                            return;
+                            case DialogResult.No:
+                                break;
+
+                            case DialogResult.Cancel:
+                                return;
+                        }
+                    }
+                    else
+                    {
+                        DialogResult result = MessageBox.Show("Do you want to save changes to Untitled?", "Notepad DOT", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
+
+                        switch (result)
+                        {
+                            case DialogResult.Yes:
+                                SaveFileMenu();
+                                break;
+
+                            case DialogResult.No:
+                                break;
+
+                            case DialogResult.Cancel:
+                                return;
+                        }
                     }
                 }
             }

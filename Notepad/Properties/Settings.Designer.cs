@@ -907,7 +907,7 @@ namespace Notepad.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Montserrat, 9.75pt")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Segoe UI, 9.75pt")]
         public global::System.Drawing.Font contextFont {
             get {
                 return ((global::System.Drawing.Font)(this["contextFont"]));

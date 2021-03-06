@@ -225,7 +225,7 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="contextFont" Type="System.Drawing.Font" Scope="User">
-      <Value Profile="(Default)">Montserrat, 9.75pt</Value>
+      <Value Profile="(Default)">Segoe UI, 9.75pt</Value>
     </Setting>
     <Setting Name="contextColor" Type="System.Drawing.Color" Scope="User">
       <Value Profile="(Default)" />

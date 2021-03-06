@@ -950,7 +950,7 @@
             // 
             this.followTextBoxToolStripMenuItem.Name = "followTextBoxToolStripMenuItem";
             this.followTextBoxToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.followTextBoxToolStripMenuItem.Text = "&Follow textBox";
+            this.followTextBoxToolStripMenuItem.Text = "&Follow Text Box";
             this.followTextBoxToolStripMenuItem.Click += new System.EventHandler(this.followTextBoxToolStripMenuItem_Click);
             // 
             // followContextMenuToolStripMenuItem2
@@ -1145,7 +1145,7 @@
             // 
             this.followTextBoxToolStripMenuItem1.Name = "followTextBoxToolStripMenuItem1";
             this.followTextBoxToolStripMenuItem1.Size = new System.Drawing.Size(199, 22);
-            this.followTextBoxToolStripMenuItem1.Text = "&Follow textBox";
+            this.followTextBoxToolStripMenuItem1.Text = "&Follow Text Box";
             this.followTextBoxToolStripMenuItem1.Click += new System.EventHandler(this.followTextBoxToolStripMenuItem1_Click);
             // 
             // followStripMenuToolStripMenuItem1
@@ -1534,7 +1534,7 @@
             // 
             this.followTextBoxToolStripMenuItem2.Name = "followTextBoxToolStripMenuItem2";
             this.followTextBoxToolStripMenuItem2.Size = new System.Drawing.Size(199, 22);
-            this.followTextBoxToolStripMenuItem2.Text = "&Follow TextBox";
+            this.followTextBoxToolStripMenuItem2.Text = "&Follow Text Box";
             this.followTextBoxToolStripMenuItem2.Click += new System.EventHandler(this.followTextBoxToolStripMenuItem2_Click);
             // 
             // followStripMenuToolStripMenuItem2
@@ -1680,7 +1680,7 @@
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contextMenuStrip1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.undoToolStripMenuItem1,
             this.redoToolStripMenuItem1,
@@ -1861,7 +1861,7 @@
             this.toolStripButton19});
             this.toolStrip1.Location = new System.Drawing.Point(3, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(576, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(545, 25);
             this.toolStrip1.TabIndex = 0;
             // 
             // toolStripButton1
@@ -2107,6 +2107,7 @@
             this.toolStripButton15.Name = "toolStripButton15";
             this.toolStripButton15.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton15.Text = "toolStripButton15";
+            this.toolStripButton15.ToolTipText = "Go To...";
             this.toolStripButton15.Click += new System.EventHandler(this.toolStripButton15_Click);
             // 
             // toolStripSeparator5
