@@ -58,12 +58,11 @@ but you are free to modify it, and make run on your desired OS.
 No special requirements are needed, even junk PC can run this application, 
 but make sure you run Windows OS (minimum 7, but 10 is recommended).
 
-5. **Is this Notepad a virus?**
+5. **How different this Notepad is compared to Windows (default) notepad?**
 
-No, it is not even possible. But if you still get any kind of detection, 
-please add an exception to your anti-virus for `Notepad DOT.exe` or
-whatever you named Notepad DOT (or the folder it is in).
-If you still do not trust me, you can compile application yourself.
+It has almost every Windows (default) notepad functions, but Notepad DOT has some 
+extra good and useful goodies, which Windows (default) notepad doesn't have.
+I call it a Windows (default) notepad and Microsoft Word hybrid. :)
 
 ## Thanks to
 
