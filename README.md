@@ -58,7 +58,7 @@ but you are free to modify it, and make run on your desired OS.
 No special requirements are needed, even junk PC can run this application, 
 but make sure you run Windows OS (minimum 7, but 10 is recommended).
 
-5. **How different this Notepad is compared to Windows (default) notepad?**
+5. **How different is this Notepad compared to Windows (default) notepad?**
 
 It has almost every Windows (default) notepad functions, but Notepad DOT has some 
 extra good and useful goodies, which Windows (default) notepad doesn't have.
