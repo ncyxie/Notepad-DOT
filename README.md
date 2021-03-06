@@ -55,7 +55,7 @@ but you are free to modify it, and make run on your desired OS.
 
 4. **What are this Notepad system requirements?**
 
-No special requirements are needed, even junk PC can run this application, 
+No special requirements are needed, even very low-end PC can run this application, 
 but make sure you run Windows OS (minimum 7, but 10 is recommended).
 
 5. **How different is this Notepad compared to Windows (default) notepad?**
