@@ -4,7 +4,7 @@
 
 ## Latest Information
 
-As I have moved to Linux, I might discontinue the Notepad DOT for Windows. I have already started working on Notepad DOT for Linux, so expect release in few weeks.
+As I have moved to Linux, **I might discontinue the Notepad DOT for Windows**. I have already **started working on Notepad DOT for Linux**, so expect release in few weeks.
 
 ## Introduction
 
