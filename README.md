@@ -11,7 +11,7 @@
 **Notepad DOT** is an open source, lightweight and customizable text editor.
 It has all basic notepad functions and more customisation junk. 
 It is for everyday life, from newbies to advanced users. 
-Since it is open source, you can modify it and even make it better.
+As it is open source, you can modify it and even make it better.
 
 ## Download
 
