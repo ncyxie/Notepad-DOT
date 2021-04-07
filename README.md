@@ -46,7 +46,7 @@ Lmao, sure. This is why it is open-source. Do not hesitate, make it better :).
 3. **Does this Notepad runs on Linux?**
 
 Unfortunately, this edition, no. This application edition runs only on Windows OS.
-Use Notepad DOT Qt for Linux (or Windows) instead.
+Use [Notepad DOT Qt](https://github.com/ncyxie/Notepad-DOT-Qt) for Linux (or Windows) instead.
 
 4. **What are this Notepad system requirements?**
 
