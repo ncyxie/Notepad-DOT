@@ -15,7 +15,7 @@ As it is open source, you can modify it and even make it better.
 
 ## Download
 
-[Download Notepad DOT](https://github.com/ncyxie/Notepad-DOT/releases/)
+**[Download Notepad DOT](https://github.com/ncyxie/Notepad-DOT/releases/)**
 
 ## Screenshots
 
