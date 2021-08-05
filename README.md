@@ -4,7 +4,7 @@
 
 ## Latest Information
 
-**Notepad DOT (based on .NET Framework) is discontinued.** I strongly suggest to use [Notepad DOT Qt](https://github.com/ncyxie/Notepad-DOT-Qt) (has almost all features, compared to Notepad DOT) based on Qt framework (written in C++ language) and it runs on Windows and Linux operating systems.
+**Notepad DOT (based on .NET Framework) is discontinued.** I strongly suggest to use [Notepad DOT Qt](https://github.com/ncyxie/Notepad-DOT-Qt) (has almost all features, compared to Notepad DOT) based on Qt framework (written in C++ language), it is much more stable and it runs on Windows and Linux operating systems.
 
 ## Introduction
 
