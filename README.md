@@ -3,7 +3,6 @@
 ## Table of contents
 
 - [IMPORTANT!](#important)
-
 - [Introduction](#introduction)
 - [Screenshots](#screenshots)
 - [Download](#download)
