@@ -1,34 +1,38 @@
 # Notepad DOT
 
-## Latest Information
+## Table of contents
 
-**Notepad DOT (based on .NET Framework) is discontinued.** I strongly suggest to use [Notepad DOT Qt](https://github.com/ncyxie/Notepad-DOT-Qt) (has almost all features, compared to Notepad DOT) based on Qt framework (written in C++ language), it is much more stable, lighter on resources and it runs on Windows and Linux operating systems.
+- [IMPORTANT!](#IMPORTANT!)
+- [Introduction](#introduction)
+- [Screenshots](#screenshots)
+- [Download](#download)
+- [Bug reports](#bug-reports)
+- [Special thanks to](#special-thanks-to)
+
+## IMPORTANT!
+
+**Notepad DOT (based on .NET Framework) is discontinued and no longer maintained.** I strongly suggest to use [Notepad DOT Qt](https://github.com/ncyxie/Notepad-DOT-Qt) which is much more efficient, refined, and supports a wider variety of operating systems.
 
 ## Introduction
 
-**Notepad DOT** is an open-source, lightweight and customizable text editor.
-It has all basic notepad functions and more customisation junk. 
-It is for everyday life, from newbies to advanced users. 
-As it is open source, you can modify it and even make it better.
+**Notepad DOT** is an open-source, lightweight and customizable text editor. It has all the basic notepad features combined with more customization options. It is designed for everyday life, from newbies to advanced users.
+
+## Screenshots
+
+<p align="center">
+<img src="https://github.com/ncyxie/Notepad-DOT/blob/master/Screenshots/Screenshot-1.png" width="410" style="max-width:100%;">
+<img src="https://github.com/ncyxie/Notepad-DOT/blob/master/Screenshots/Screenshot-2.png" width="410" style="max-width:100%;">
 
 ## Download
 
 **[Download Notepad DOT](https://github.com/ncyxie/Notepad-DOT/releases/)**
 
-## Screenshots
-
-<p align="center">
-<img src="https://github.com/ncyxie/Notepad-Dot/blob/master/Screenshots/Screenshot-1.png" width="410" style="max-width:100%;">
-<img src="https://github.com/ncyxie/Notepad-Dot/blob/master/Screenshots/Screenshot-2.png" width="410" style="max-width:100%;">
-
 ## Bug reports
 
-Since you are here, you just need to enter [Issues](https://github.com/ncyxie/Notepad-Dot/issues/) page in GitHub, or contact with me using Discord or Telegram.
+You can report bugs in the [Issues](https://github.com/ncyxie/Notepad-DOT/issues/) page on GitHub, or contact me via [Telegram](https://t.me/ncyxie) or Discord **(@ncyxie)**.
 
-## Thanks to
+## Special thanks to
 
 - [XeZrunner](https://github.com/XeZrunner/);
 - [zero9178](https://github.com/zero9178/);
-- YouTube tutorials;
-- Forums support;
 - and most importantly.. YOU!
