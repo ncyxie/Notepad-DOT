@@ -1,5 +1,3 @@
-*Last time information was updated: 17/07/2021*
-
 # Notepad DOT
 
 ## Latest Information
@@ -26,32 +24,6 @@ As it is open source, you can modify it and even make it better.
 ## Bug reports
 
 Since you are here, you just need to enter [Issues](https://github.com/ncyxie/Notepad-Dot/issues/) page in GitHub, or contact with me using Discord or Telegram.
-
-## FAQ
-
-1. **Why did you decided to make a notepad?**
-
-Friend recommended me to do it, and it is fun to mess up with files.
-
-2. **Can I "kang" a little of this Notepad code?**
-
-Lmao, sure. This is why it is open-source. Do not hesitate, make it better :).
-
-3. **Does this Notepad runs on Linux?**
-
-Unfortunately, this edition, no. This application edition runs only on Windows OS.
-Use [Notepad DOT Qt](https://github.com/ncyxie/Notepad-DOT-Qt) for Linux (or Windows) instead.
-
-4. **What are this Notepad system requirements?**
-
-No special requirements are needed, even very low-end PC can run this application, 
-but make sure you run Windows OS (minimum 7, but 10 is recommended).
-
-5. **How different is this Notepad compared to Windows (default) notepad?**
-
-It has almost every Windows (default) notepad functions, but Notepad DOT has some 
-extra good and useful goodies, which Windows (default) notepad doesn't have.
-I call it a Windows (default) notepad and Microsoft Word hybrid. :)
 
 ## Thanks to
 
