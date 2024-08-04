@@ -15,7 +15,7 @@
 
 ## Introduction
 
-**Notepad DOT** is an open source and highly customizable text editor. It offers all the essential notepad features, along with enhanced customization options. It is designed for everyday life, from newbies to advanced users.
+**Notepad DOT** is an open source and highly customizable text editor. It offers all the essential notepad features, along with enhanced customization options. Designed for everyday life, from newbies to advanced users.
 
 ## Screenshots
 
