@@ -2,7 +2,8 @@
 
 ## Table of contents
 
-- [IMPORTANT!](#IMPORTANT!)
+- [IMPORTANT!](#important)
+
 - [Introduction](#introduction)
 - [Screenshots](#screenshots)
 - [Download](#download)
